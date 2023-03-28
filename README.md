@@ -25,3 +25,7 @@
 ## Arquivo .env
 
 ### Neste arquivo vão ficar as variáveis de ambiente
+
+## Arquivo navigations
+
+### Arquivo usado para o gerenciamento de rotas do menu principal

@@ -14,7 +14,7 @@ const MembersCarrousel = ({ members }) => {
         display: "flex",
         alignItems: "flex-end",
         justifyContent: "center",
-        gap: "1rem"
+        gap: "1rem",
       }}
     >
       {members &&
@@ -24,7 +24,7 @@ const MembersCarrousel = ({ members }) => {
               <div
                 key={key}
                 style={{
-                  width: "30%"
+                  width: "30%",
                 }}
               >
                 <img
@@ -47,7 +47,7 @@ const MembersCarrousel = ({ members }) => {
               <div
                 key={key}
                 style={{
-                  width: "20%"
+                  width: "20%",
                 }}
               >
                 <img

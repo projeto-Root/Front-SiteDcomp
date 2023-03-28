@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from "../navigations";
 
 const Template = ({ element }) => {
   return (
@@ -23,9 +24,9 @@ const Template = ({ element }) => {
                 gap: "1rem",
                 flexDirection: "row",
             }}>
-                <li><a href="/">Início</a></li>
-                <li><a href="/represents">Representações</a></li>
-                <li><a href="/representsComponents">Representações (Temporário)</a></li>
+              {navigate && navigate.map((elem, key) => {
+                return <li key={key}><a href={elem.path}>{elem.name}</a></li>
+              })}
             </ul>
         </nav>
       </header>
