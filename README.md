@@ -1,6 +1,7 @@
 # Projeto site DCOMP
 
 ### Para iniciar o projeto você pode ir no terminal e digitar `npm run start`
+### Você vai precisar instalar as dependências do projeto para poder rodar ele em sua máquina. Digite em seu terminal `npm i`
 
 ## Assets
 
