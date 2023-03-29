@@ -1,7 +1,16 @@
-import Home from "./views/Home/Home";
-import Representations from "./views/Representations/Representations";
-import { routes } from "./views/Representations/routes";
+//Aqui é importado os componentes referente as rotas de navegação
+import { componentRoutes } from './componentsRoutes'
 
+//Aqui são importadas as rotas de navegação
+import { routes } from './routes'
+
+//Aqui são os componentes de rota importados
+const { Home, Representations } = componentRoutes
+
+//Aqui são as rotas importadas
+const { routesRepresentations } = routes
+
+//navigate está relacionada com as rotas do menu principal
 export const navigate = [
     {
         path: '/',
@@ -15,7 +24,14 @@ export const navigate = [
         component: <Representations/>,
         template: true,
         collections: [
-           ...routes 
+           ...routesRepresentations 
         ]
     }
+]
+
+
+//Aqui são exportadas todas as rotas da aplicação
+export const navigations = [
+    ...navigate,
+    ...routesRepresentations
 ]

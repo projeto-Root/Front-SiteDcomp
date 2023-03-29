@@ -72,6 +72,6 @@ const simpleRoute = [
     }
 ]
 
-export const routes = simpleRoute.map((elem) => {
+export const routesRepresentations = simpleRoute.map((elem) => {
     return {...elem, component: <Representations data={elem.dataComponent}/>}
 })
