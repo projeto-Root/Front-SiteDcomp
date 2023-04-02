@@ -116,7 +116,21 @@ Pronto, sua alterações já estão no github.
 
 # 4. Pull Request
 
-O Pull Request é a etapa final para o desenvolvimento de uma nova feature ou hotfix. Você vai precisar entrar no seu github, no repositório do projeto, vai em `branchs`, Vai ter uma lista de branchs. Você vai procurar em suas branchs a que você acabou de enviar
+O Pull Request é a etapa final para o desenvolvimento de uma nova feature ou hotfix. Você vai precisar entrar no seu github, no repositório do projeto, vai em `branchs`, Vai ter uma lista de branchs. Você vai procurar em suas branchs a que você acabou de enviar.
+
+![GitFlow](./branchs.png)
+
+Você vai clicar em `New pull request` e vai abrir a seguinte página:
+
+![GitFlow](./commitPR.png)
+
+Verifique se o merge vai acontecer da sua branch para a main, neste exemplo está correto, se não estiver é só você alterar. Depois é só criar o pull request.
+
+![GitFlow](./pr.png)
+
+Quando você chegar nessa tela não vai precisar fazer mais nada, só esperar o code review e o adm faz o merge se estiver tudo ok no código.
+
+Pronto, rotina realiazada.
 
 # Termos citados
 
@@ -127,3 +141,7 @@ Branch, traduzindo significa ramificação. Um galho, um caminho criado apartir 
 ## Commit
 
 Commits são comentários e modificações sobre seu código.
+
+## Merge
+
+Merge vai juntar sua branch a outra. Basicamente isso.
