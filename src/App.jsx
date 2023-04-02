@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
         {navigations.map((elem, key) => {
             return (
-              <Route key={key} path={elem.path} element={ elem.template ? <Template element={elem.component} /> : elem.component} />
+              <Route key={key} path={elem.path} element={ elem.template ? <Template element={elem.component} isHome={elem.isHome} title={elem.title} /> : elem.component} />
             );
           })}
       </Routes>

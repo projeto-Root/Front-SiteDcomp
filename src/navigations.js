@@ -14,13 +14,50 @@ const { routesRepresentations } = routes
 export const navigate = [
     {
         path: '/',
-        name: 'Início',
+        name: 'INÍCIO',
         component: <Home/>,
-        template: true
+        template: true,
+        isHome: true
+    },
+    {
+        path: '/about',
+        name: 'SOBRE',
+        title: "Sobre o DCOMP",
+        component: <Home/>,
+        template: true,
+    },
+    {
+        path: '/courses',
+        name: 'CURSOS',
+        title: "Cursos do DCOMP",
+        component: <Home/>,
+        template: true,
+    },
+    {
+        path: '/forum',
+        name: 'FÓRUM',
+        title: "Diploma e Programa EAD",
+        component: <Home/>,
+        template: true,
+    },
+    {
+        path: '/contact',
+        name: 'CONTATO',
+        title: "Contate-nos",
+        component: <Home/>,
+        template: true,
+    },
+    {
+        path: '/profs',
+        name: 'PROFS',
+        title: "Professores do DCOMP",
+        component: <Home/>,
+        template: true,
     },
     {
         path: '/represents',
-        name: 'Representações',
+        name: 'REPRESENTAÇÕES',
+        title: "Representações do DCOMP",
         component: <Representations/>,
         template: true,
         collections: [
