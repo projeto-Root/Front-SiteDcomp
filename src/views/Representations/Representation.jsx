@@ -4,6 +4,7 @@ import { ButtonChangePage, LogoGroup } from "../../components/core-atoms";
 import Next from "../../assets/next.svg";
 import Previous from "../../assets/previous.svg";
 import MembersCarrousel from "../../components/MembersCarrousel";
+import { lorem } from "../../utils/utils_content_messages";
 
 const Representations = ({ data }) => {
   const [orderMembers, setOrderMembers] = useState(data.members);
@@ -43,13 +44,7 @@ const Representations = ({ data }) => {
           color: "#333",
         }}
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda,
-        dolor. Veritatis, eum earum! Pariatur, perspiciatis? Nulla, nobis?
-        Delectus minus nesciunt, ut doloremque quae commodi quod, beatae
-        quibusdam ad, eos vero. Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Assumenda, dolor. Veritatis, eum earum! Pariatur,
-        perspiciatis? Nulla, nobis? Delectus minus nesciunt, ut doloremque quae
-        commodi quod, beatae quibusdam ad, eos vero.
+        {lorem}
       </section>
       <h2 style={{ color: "#222", marginTop: "1rem" }}>
         Projetos do {data.title.toUpperCase()}

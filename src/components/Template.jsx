@@ -13,6 +13,7 @@ import {
   AiOutlineMenu,
   AiOutlineClose,
 } from "react-icons/ai";
+import { templateMessages } from "../utils/utils_content_messages";
 
 const Template = ({ element, isHome, title }) => {
   const [widthScreen, setWidthScreen] = useState(window.innerWidth);
@@ -187,11 +188,7 @@ const Template = ({ element, isHome, title }) => {
                   maxWidth: "700px",
                 }}
               >
-                O DComp dá suporte primordialmente aos cursos de Bacharelado em
-                Ciência da Computação, Bacharelado em Sistemas de Informação e
-                Bacharelado em Engenharia de Computação, além da oferta de
-                disciplinas na área de computação a diversos cursos da
-                Universidade.
+                {templateMessages.apresentationDepartment}
               </p>
               <ButtonEffect onClick={redirect}>
                 Visite-nos para saber mais
@@ -220,12 +217,7 @@ const Template = ({ element, isHome, title }) => {
             padding: "0rem 5rem",
           }}
         >
-          O Departamento de Computação (DComp) da Universidade Federal de
-          Sergipe surgiu em 2009. A área de Informática foi implementada na UFS
-          inicialmente com o curso de graduação em Informática,criado em 1990,
-          junto ao Departamento de Estatística e Informática (DEI), até o ano de
-          2009, quando criado o Departamento de Estatística e Ciências Atuariais
-          e alterada a denominação do DCCE para Departamento de Computação.
+          {templateMessages.about}
         </p>
         <div
           style={{
