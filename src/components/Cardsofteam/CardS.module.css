@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .card {
-  display: grid;
-  grid-template-columns: 1fr 0.03fr 3fr;
   width: 800px;
   height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 0.03fr 3fr;
+  margin: 50px 0;
   font-family: 'Poppins';
 }
 
 .vertical {
   border-left: 5px solid white;
-  height: 430px;
+  height: 450px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
   justify-content: space-around;
   padding: 5px;
   font-weight: bold;
-  background-color: #bb6197;
-  color: white;
-  font-size: 20px;
 }
 
 .left img {
@@ -30,13 +29,16 @@
   padding: 3px;
 }
 
-.calicomp__texto {
+.softeam {
+  height: 150px;
+}
+
+.softeam__texto {
   font-size: 33px;
 }
 
 .right {
   font-size: 25px;
-  background-image: linear-gradient(to right, #a23e7a 40%, #983e7e, #723a81);
   color: white;
   padding-left: 20px;
 }
