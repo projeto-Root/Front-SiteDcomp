@@ -4,9 +4,10 @@ import { componentRoutes } from './componentsRoutes'
 //Aqui são importadas as rotas de navegação
 import { routes } from './routes'
 import { Profs } from './views/Profs/Profs'
+import { routesForum } from './views/Forum/routesForum'
 
 //Aqui são os componentes de rota importados
-const { Home, Representations, Areas } = componentRoutes
+const { Home, Representations, Areas, Forum } = componentRoutes
 
 //Aqui são as rotas importadas
 const { routesRepresentations } = routes
@@ -37,8 +38,8 @@ export const navigate = [
     {
         path: '/forum',
         name: 'FÓRUM',
-        title: "Diploma e Programa EAD",
-        component: <Home/>,
+        title: "Forum de Discussões",
+        component: <Forum/>,
         template: true,
     },
     {
@@ -78,5 +79,6 @@ export const navigate = [
 //Aqui são exportadas todas as rotas da aplicação
 export const navigations = [
     ...navigate,
-    ...routesRepresentations
+    ...routesRepresentations,
+    ...routesForum
 ]
