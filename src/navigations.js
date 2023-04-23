@@ -6,7 +6,7 @@ import { routes } from './routes'
 import { Profs } from './views/Profs/Profs'
 
 //Aqui são os componentes de rota importados
-const { Home, Representations } = componentRoutes
+const { Home, Representations, Areas } = componentRoutes
 
 //Aqui são as rotas importadas
 const { routesRepresentations } = routes
@@ -53,6 +53,13 @@ export const navigate = [
         name: 'PROFS',
         title: "Professores do DCOMP",
         component: <Profs/>,
+        template: true,
+    },
+    {
+        path: '/areas',
+        name: 'ÁREAS',
+        title: "Página das áreas",
+        component: <Areas/>,
         template: true,
     },
     {
