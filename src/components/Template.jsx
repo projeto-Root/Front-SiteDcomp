@@ -223,6 +223,7 @@ const Template = ({ element, isHome, title }) => {
           style={{
             color: "#77c",
             margin: "1rem",
+            display: 'flex'
           }}
         >
           <AiFillFacebook style={{ fontSize: "1.5rem" }} />
