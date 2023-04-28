@@ -3,7 +3,9 @@ import { componentRoutes } from './componentsRoutes'
 
 //Aqui são importadas as rotas de navegação
 import { routes } from './routes'
+import Contato from './views/Contato/Contato'
 import { Profs } from './views/Profs/Profs'
+
 
 //Aqui são os componentes de rota importados
 const { Home, Representations, Areas } = componentRoutes
@@ -45,7 +47,7 @@ export const navigate = [
         path: '/contact',
         name: 'CONTATO',
         title: "Contate-nos",
-        component: <Home/>,
+        component: <Contato/>,
         template: true,
     },
     {
