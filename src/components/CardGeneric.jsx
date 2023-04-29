@@ -8,7 +8,7 @@ const CardGeneric = ({ data }) => {
         height: "auto",
         minHeight: "10rem",
         minWidth: "10rem",
-        maxWidth: "18rem",
+        maxWidth: "20rem",
         width: "100%",
       }}
     >
