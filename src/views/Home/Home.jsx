@@ -19,7 +19,7 @@ const Home = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          padding: "1rem 4rem",
+          padding: "1rem 1rem",
         }}
       >
         <h2 style={{ fontSize: "35px", fontWeight: "600" }}>Cursos</h2>
