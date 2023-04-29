@@ -214,7 +214,7 @@ const Template = ({ element, isHome, title }) => {
             marginTop: "1rem",
             maxWidth: "1200px",
             width: "100%",
-            padding: "0rem 5rem",
+            padding: "0rem 3rem",
           }}
         >
           {templateMessages.about}
