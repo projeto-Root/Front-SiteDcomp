@@ -64,6 +64,7 @@ const AreasSelected = ({ title, data }) => {
         style={{
           fontSize: "20px",
           fontWeight: "bold",
+          textAlign: 'center'
         }}
       >
         O que o profissional desta área faz?
@@ -79,6 +80,7 @@ const AreasSelected = ({ title, data }) => {
         style={{
           fontSize: "20px",
           fontWeight: "bold",
+          textAlign: 'center'
         }}
       >
         Um pouco mais sobre a atuação do profissional
@@ -100,6 +102,7 @@ const AreasSelected = ({ title, data }) => {
         style={{
           fontSize: "20px",
           fontWeight: "bold",
+          textAlign: 'center'
         }}
       >
         Professores que atuam nesta área
