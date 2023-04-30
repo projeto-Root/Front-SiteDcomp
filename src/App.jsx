@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Template from "./components/Template";
 import { navigations } from "./navigations";
 import { ChakraProvider } from "@chakra-ui/react";
+import Areas from "./views/Areas/Areas";
 
 //O esquema de rotas da aplicação é definido neste arquivo, ele não precisa ser alterado por enquanto
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
               />
             );
           })}
+          <Route path="/areas" element={<Template element={<Areas></Areas>}></Template>}></Route>
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
