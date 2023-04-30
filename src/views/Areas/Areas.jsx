@@ -2,11 +2,22 @@ import { Box, Select } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { areas } from "../../utils/utils_areas";
 import AreasSelected from "./AreasSelected";
+import { useLocation } from "react-router-dom";
 
 const Areas = () => {
-  const [areaSelected, setAreaSelected] = useState(
-    "Arquitetura de Computadores"
-  );
+
+  const location = useLocation()
+  let inicial
+
+  if (location.state) {
+    inicial = location.state.title
+  } else {
+    inicial = 'Arquitetura de Computadores'
+  }
+
+  const [areaSelected, setAreaSelected] = useState(inicial);
+
+  
 
   const handleChangeArea = (event) => {
     const { value } = event.target;

@@ -4,6 +4,7 @@ import { componentRoutes } from './componentsRoutes'
 //Aqui são importadas as rotas de navegação
 import { routes } from './routes'
 import Contato from './views/Contato/Contato'
+import MenuAreas from './views/MenuAreas/MenuAreas'
 import { Profs } from './views/Profs/Profs'
 
 
@@ -58,10 +59,10 @@ export const navigate = [
         template: true,
     },
     {
-        path: '/areas',
+        path: '/menuareas',
         name: 'ÁREAS',
         title: "Página das áreas",
-        component: <Areas/>,
+        component: <MenuAreas/>,
         template: true,
     },
     {
