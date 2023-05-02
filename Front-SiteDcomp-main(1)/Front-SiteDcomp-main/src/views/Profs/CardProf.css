@@ -1,0 +1,30 @@
+.nameProf{
+    font-size: 18px;
+}
+
+@media (max-width: 550px) {
+    .nameProf{
+        font-size: 15px;
+    }
+    .nameAreas{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .nameProf{
+        font-size: 13px;
+    }
+    .nameAreas{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nameProf{
+        font-size: 10px;
+    }
+    .nameAreas{
+        font-size: 9px;
+    }
+}
