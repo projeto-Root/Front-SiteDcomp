@@ -1,5 +1,6 @@
 import Representations from "./Representation"
 import Calicomp from "../../assets/LOGOCALICOMPSVG.svg";
+import Bugados from '../../assets/LOGOBUGADOS.png';
 import Softeam from "../../assets/LOGOSOFTEAMSVG.svg"
 //Arrays criados para testes
 
@@ -69,7 +70,18 @@ const simpleRoute = [
             image: Softeam,
             members: Members
         }
-    }
+    },
+    {
+      path: `${pathBase}/bugados`,
+      name: 'Bugados',
+      template: true,
+      dataComponent: {
+          projects: Projects,
+          title: "Bugados",
+          image: Bugados,
+          members: Members
+      }
+  }
 ]
 
 export const routesRepresentations = simpleRoute.map((elem) => {
