@@ -2,6 +2,9 @@ import Home from "./views/Home/Home";
 import Representations from "./views/Representations/Representations";
 import Areas from "./views/Areas/Areas";
 import { Sobre } from "./views/Sobre/Sobre";
+import Contato from './views/Contato/Contato';
+import MenuAreas from "./views/MenuAreas/MenuAreas";
+import { Profs } from "./views/Profs/Profs";
 
 //Neste arquivo ficam todos os componentes de rotas
 export const componentRoutes = {
@@ -9,4 +12,7 @@ export const componentRoutes = {
     Representations,
     Areas,
     Sobre,
+    Contato,
+    MenuAreas,
+    Profs
 }
