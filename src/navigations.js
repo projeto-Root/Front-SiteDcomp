@@ -19,13 +19,13 @@ export const navigate = [
         template: true,
         isHome: true
     },
-    {
-        path: '/about',
-        name: 'SOBRE',
-        title: "Sobre o DCOMP",
-        component: <Sobre/>,
-        template: true,
-    },
+    // {
+    //     path: '/about',
+    //     name: 'SOBRE',
+    //     title: "Sobre o DCOMP",
+    //     component: <Sobre/>,
+    //     template: true,
+    // },
     {
         path: '/courses',
         name: 'CURSOS',
@@ -33,13 +33,13 @@ export const navigate = [
         component: <Home/>,
         template: true,
     },
-    {
-        path: '/forum',
-        name: 'FÓRUM',
-        title: "Diploma e Programa EAD",
-        component: <Home/>,
-        template: true,
-    },
+    // {
+    //     path: '/forum',
+    //     name: 'FÓRUM',
+    //     title: "Diploma e Programa EAD",
+    //     component: <Home/>,
+    //     template: true,
+    // },
     {
         path: '/contact',
         name: 'CONTATO',
@@ -49,7 +49,7 @@ export const navigate = [
     },
     {
         path: '/profs',
-        name: 'PROFS',
+        name: 'PROFESSORES',
         title: "Professores do DCOMP",
         component: <Profs/>,
         template: true,
