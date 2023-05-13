@@ -10,14 +10,20 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
   AiFillTwitterSquare,
-  AiOutlineMenu,
-  AiOutlineClose,
 } from "react-icons/ai";
 import { templateMessages } from "../utils/utils_content_messages";
+import {
+  IconButton,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Template = ({ element, isHome, title }) => {
   const [widthScreen, setWidthScreen] = useState(window.innerWidth);
-  const [openMenu, setOpenMenu] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const updateScreen = () => {
@@ -31,13 +37,9 @@ const Template = ({ element, isHome, title }) => {
     };
   }, []);
 
-  useEffect(() => {
-    if (widthScreen <= 850) {
-      console.log("mobile");
-    } else {
-      setOpenMenu(false);
-    }
-  }, [widthScreen]);
+  const handleChangeMenu = (path) => {
+    window.location = path;
+  };
 
   const redirect = () => {
     window.location.href = window.location.origin;
@@ -46,70 +48,43 @@ const Template = ({ element, isHome, title }) => {
   return (
     <div style={{ width: "100%", height: "auto" }}>
       {widthScreen < 850 && (
-        <aside
-          style={{
-            height: "100vh",
-            width: openMenu ? "100%" : "0",
-            maxWidth: "20rem",
-            backgroundColor: "#228",
-            position: "fixed",
-            zIndex: "1000",
-            right: "0",
-            transition: "all .3s ease-in-out",
-          }}
-        >
-          <div style={{}}>
-            {!openMenu && (
-              <AiOutlineMenu
-                onClick={() => setOpenMenu(true)}
-                style={{
-                  fontSize: "1.5rem",
-                  color: "white",
-                  cursor: "pointer",
-                  position: "fixed",
-                  top: "3rem",
-                  transition: "all .3s ease-in-out",
-                  right: "4rem",
-                }}
-              />
-            )}
-            {openMenu && (
-              <AiOutlineClose
-                onClick={() => setOpenMenu(false)}
-                style={{
-                  fontSize: "1.5rem",
-                  color: "white",
-                  cursor: "pointer",
-                  position: "fixed",
-                  top: "3rem",
-                  transition: "all .3s ease-in-out",
-                  right: "4rem",
-                }}
-              />
-            )}
-          </div>
-          <nav
+        <Menu>
+          <MenuButton
+            colorScheme="blue"
+            as={IconButton}
+            icon={<HamburgerIcon />}
             style={{
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-              marginTop: "6rem",
-              overflow: "hidden",
+              border: "none",
+              position: "fixed",
+              zIndex: "1000",
+              right: "2rem",
+              top: "2rem",
             }}
-          >
-            {widthScreen < 850 &&
-              navigate.map((elem, key) => {
-                return (
-                  <li key={key} style={{ marginTop: "1rem" }}>
-                    <MenuOption style={{ fontSize: "20px" }} href={elem.path}>
-                      {elem.name}
-                    </MenuOption>
-                  </li>
-                );
-              })}
-          </nav>
-        </aside>
+          ></MenuButton>
+          <MenuList bg="#fff" zIndex="1000">
+            {navigate.map((elem, key) => {
+              return (
+                <li key={key} style={{ marginTop: "1rem" }}>
+                  <MenuItem
+                    color="#aaf"
+                    fontSize="15px"
+                    bg="#fff"
+                    transition="all .1s linear"
+                    _hover={{
+                      bg: "#f1f1f1",
+                      color: "#aaf",
+                      border: "none",
+                      transition: "all .1s linear",
+                    }}
+                    onClick={() => handleChangeMenu(elem.path)}
+                  >
+                    {elem.name}
+                  </MenuItem>
+                </li>
+              );
+            })}
+          </MenuList>
+        </Menu>
       )}
       <header
         style={{
@@ -223,7 +198,7 @@ const Template = ({ element, isHome, title }) => {
           style={{
             color: "#77c",
             margin: "1rem",
-            display: 'flex'
+            display: "flex",
           }}
         >
           <AiFillFacebook style={{ fontSize: "1.5rem" }} />

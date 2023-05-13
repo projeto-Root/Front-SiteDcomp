@@ -11,7 +11,7 @@ export const Profs = () => {
   const limitPerPage = 8;
   const totalPages = Math.ceil(profsInfo.length / limitPerPage);
 
-  const [widthPage, setWidthPage] = useState(window.innerWidth)
+  const [widthPage, setWidthPage] = useState(window.innerWidth);
 
   const handleChangePage = (page) => {
     setPagination(page);
@@ -49,13 +49,31 @@ export const Profs = () => {
         alignItems: "center",
       }}
     >
-      <div style={{
-        display: "flex",
-        flexWrap: "wrap",
-        width: "100%",
-        maxWidth: "1200px",
-        justifyContent: "center"
+      <h2 style={{ fontWeight: 'bold', fontSize: '25px', marginTop: '2rem' }}>Docentes Efetivos</h2>
+      <p style={{ 
+        width: '100%', 
+        textAlign: 'center', 
+        maxWidth: '1200px',
+        padding: '0rem 3rem',
+        marginTop: '2rem',
       }}>
+        Em 2022, os Docentes Efetivos do Departamento de Computação apresentavam
+        a pontuação máxima (5) no <strong>IQCD</strong>, que é um indicador de
+        desempenho adotado em instituições de ensino superior, principalmente
+        aquelas que mantêm uma produção científica. Seu valor varia de 1 (todos
+        os professores possuem apenas graduação) até 5, situação em que todos os
+        docentes são doutores.
+      </p>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          width: "100%",
+          maxWidth: "1200px",
+          justifyContent: "center",
+          marginTop: '1rem'
+        }}
+      >
         {data.map((elem, key) => {
           return (
             <CardProf
