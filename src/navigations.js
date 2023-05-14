@@ -74,6 +74,13 @@ export const navigate = [
            ...routesRepresentations 
         ]
     }
+    //{
+    //    path: '/pefil',
+    //    name: 'PERFIL DCOMP',
+    //   title: "PERFIL DCOMP",
+    //    component: <Home/>,
+    //    template: true,
+    //}
 ]
 
 
