@@ -1,7 +1,7 @@
 import styles from "./CardB.module.css";
 import CardBugados from "../../assets/CardBugados.svg";
 import ICONbugados from "../../assets/ICONbugados.svg";
-import LOGOBUGADOS from "../../assets/LOGOBUGADOS.png";
+import LOGOBUGADOS from "../../assets/BUGADOS1.png";
 
 function CardB() {
   return (

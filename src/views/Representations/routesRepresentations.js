@@ -1,6 +1,6 @@
 import Representations from "./Representation"
 import Calicomp from "../../assets/LOGOCALICOMPSVG.svg";
-import Bugados from '../../assets/LOGOBUGADOS.png';
+import Bugados from '../../assets/BUGADOS1.png';
 import Softeam from "../../assets/LOGOSOFTEAMSVG.svg"
 //Arrays criados para testes
 

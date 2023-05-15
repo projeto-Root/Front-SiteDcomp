@@ -1,7 +1,7 @@
 import React from "react";
 import './MenuRepresentações.css'; 
 import calicomp from '../../assets/LOGOCALICOMPSVG.svg';
-import bugados from '../../assets/LOGOBUGADOS.png';
+import bugados from '../../assets/BUGADOS1.png';
 import sofTeam from '../../assets/LOGOSOFTEAM.svg';
 
 const Representations = () => {
