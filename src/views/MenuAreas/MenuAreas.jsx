@@ -54,7 +54,7 @@ const MenuAreas = () => {
           gap: "120px",
           width: "100%",
           justifyContent: "center",
-          padding: "70px 200px",
+          padding: "5vh 10vw",
         }}
       >
         {data.map((area) => {
