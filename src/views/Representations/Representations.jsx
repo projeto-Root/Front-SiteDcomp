@@ -1,8 +1,8 @@
 import React from "react";
 import "./MenuRepresentações.css";
-import calicomp from "../../assets/calicomp.png";
-import bugados from "../../assets/bugados.png";
-import softeam from "../../assets/softeam.png";
+import calicomp from "../../assets/calicomp.svg";
+import BUGADOS1 from "../../assets/BUGADOS1.png";
+import LOGOSOFTEAMSVG from "../../assets/LOGOSOFTEAMSVG.svg";
 
 const Representations = () => {
   return (
@@ -22,7 +22,7 @@ const Representations = () => {
           </a>
         </div>
         <div className="sofTeam">
-          <img src={softeam} className="images" alt="Logo SofTeam" />
+          <img src={LOGOSOFTEAMSVG} className="images" alt="Logo SofTeam" />
           <h1>SofTeam</h1>
           <p className="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -35,7 +35,7 @@ const Representations = () => {
           </a>
         </div>
         <div className="atletica">
-          <img src={bugados} className="images" alt="Logo atlética" />
+          <img src={BUGADOS1} className="images" alt="Logo atlética" />
           <h1>Atlética</h1>
           <p className="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis

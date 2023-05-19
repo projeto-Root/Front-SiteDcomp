@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 600px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container img {
+    width: auto;
+    margin: 15px auto;
+    height: 125px
+}
+
+.container h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: solid 2px;
+    color: #6367a8;
+    margin: 15px;
+    border-radius: 10px;
+}

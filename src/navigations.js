@@ -5,7 +5,7 @@ import { componentRoutes } from './componentsRoutes'
 import { routes } from './routes'
 
 //Aqui são os componentes de rota importados
-const { Home, Representations, Sobre, Profs, MenuAreas, Contato } = componentRoutes
+const { Home, Representations, Profs, MenuAreas, Contato, Cursos } = componentRoutes
 
 //Aqui são as rotas importadas
 const { routesRepresentations, routesMenuAreas } = routes
@@ -30,7 +30,7 @@ export const navigate = [
         path: '/courses',
         name: 'CURSOS',
         title: "Cursos do DCOMP",
-        component: <Home/>,
+        component: <Cursos/>,
         template: true,
     },
     // {
