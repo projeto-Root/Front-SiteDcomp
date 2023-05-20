@@ -41,6 +41,7 @@ const AreasSelected = ({ title, data }) => {
         style={{
           fontSize: "22px",
           fontWeight: "bold",
+          
         }}
       >
         {title}
