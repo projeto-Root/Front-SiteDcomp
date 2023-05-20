@@ -1,5 +1,5 @@
 import styles from "./InfoCC.module.css";
-import cc from "../../assets/cc.png";
+import cc from "../../assets/scienceComputer.png";
 
 function InfoCC() {
   return (
