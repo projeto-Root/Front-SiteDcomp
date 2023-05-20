@@ -1,4 +1,3 @@
-import prof from '../assets/prof.jpeg'
 import eng from '../assets/engenharia-de-software.png'
 import info from '../assets/informatica-em-saude.png'
 import apren from '../assets/aprendizado-de-maquina.png'
@@ -424,7 +423,7 @@ export const profsInfo = [
         ]
     },
     {
-        name: 'SAULO ANTONIO DE LIMA MATOS',
+        name: 'Saulo Antonio de Lima Matos',
         image: 'https://www.sigaa.ufs.br/sigaa/verFoto?idFoto=3888147&key=112b450a0e1a57b2fa25fe55287513b2',
         areas: [
             {
@@ -433,7 +432,7 @@ export const profsInfo = [
             },
             {
                 name: 'Smart Cities',
-                image: info
+                image: smart
             }
         ]
     },
