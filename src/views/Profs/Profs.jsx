@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { CardProf } from "./CardProf";
 import { profsInfo } from "../../utils/utils_profs";
 import { Pagination } from "./Pagination";
+import { Spinner } from "@chakra-ui/react";
 
 export const Profs = () => {
   const [pagination, setPagination] = useState(0);
@@ -11,10 +12,20 @@ export const Profs = () => {
   const limitPerPage = 8;
   const totalPages = Math.ceil(profsInfo.length / limitPerPage);
 
-  const [widthPage, setWidthPage] = useState(window.innerWidth);
+  const [currentPage, setCurrentPage] = useState('0')
+
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 500)
+  }, [data])
 
   const handleChangePage = (page) => {
     setPagination(page);
+    setCurrentPage(page)
   };
 
   const renderItems = () => {
@@ -74,7 +85,8 @@ export const Profs = () => {
           marginTop: '1rem'
         }}
       >
-        {data.map((elem, key) => {
+        {loading && <Spinner margin='1rem' />}
+        {!loading && data.map((elem, key) => {
           return (
             <CardProf
               key={key}
@@ -85,7 +97,7 @@ export const Profs = () => {
           );
         })}
       </div>
-      <Pagination handleChangePage={handleChangePage} pages={pages} />
+      <Pagination handleChangePage={handleChangePage} pages={pages} page={currentPage}/>
     </div>
   );
 };
