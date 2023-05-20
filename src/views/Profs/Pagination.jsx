@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-export const Pagination = ({ pages, handleChangePage }) => {
+export const Pagination = ({ pages, handleChangePage, page }) => {
+
   return (
     <div>
       <nav style={{
@@ -18,10 +19,20 @@ export const Pagination = ({ pages, handleChangePage }) => {
             padding: ".5rem 1rem"
           }}
         >
-          {pages.map((elem, key) => {
-            return <li onClick={() => handleChangePage(key)} style={{
-                cursor: "pointer"
-            }}>{elem}</li>;
+          {pages.map((elem, index) => {
+            if (page == index) {
+              return (
+                <li onClick={() => handleChangePage(index)} style={{
+                  cursor: "pointer"
+                }}><p style={{ backgroundColor: '#fff', color: '#55c', width: '1.5rem', height: '1.5rem', borderRadius: '50%', textAlign: 'center' }}>{elem}</p></li>
+              )
+            } else {
+              return (
+                <li onClick={() => handleChangePage(index)} style={{
+                  cursor: "pointer"
+                }}>{elem}</li>
+              )
+            }
           })}
         </ul>
       </nav>

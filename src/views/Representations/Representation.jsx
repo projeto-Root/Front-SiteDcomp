@@ -33,7 +33,7 @@ const Representations = ({ data }) => {
       }}
     >
       <LogoGroup src={data.image}></LogoGroup>
-      <h1 style={{ marginTop: "1rem", color: "#222" }}>
+      <h1 style={{ marginTop: "1rem", color: "#222", textAlign: 'center' }}>
         O que é {data.title.toUpperCase()}
       </h1>
       <section
@@ -42,11 +42,12 @@ const Representations = ({ data }) => {
           maxWidth: "1200px",
           padding: "2rem",
           color: "#333",
+          textAlign: 'center'
         }}
       >
         {lorem}
       </section>
-      <h2 style={{ color: "#222", marginTop: "1rem" }}>
+      <h2 style={{ color: "#222", marginTop: "1rem", textAlign: 'center' }}>
         Projetos do {data.title.toUpperCase()}
       </h2>
       <section

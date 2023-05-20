@@ -41,7 +41,7 @@ const AreasSelected = ({ title, data }) => {
         style={{
           fontSize: "22px",
           fontWeight: "bold",
-          
+          textAlign: 'center'
         }}
       >
         {title}
@@ -57,6 +57,7 @@ const AreasSelected = ({ title, data }) => {
       <p
         style={{
           maxWidth: "60rem",
+          textAlign: 'center'
         }}
       >
         {lorem}
@@ -73,6 +74,7 @@ const AreasSelected = ({ title, data }) => {
       <p
         style={{
           maxWidth: "60rem",
+          textAlign: 'center'
         }}
       >
         {lorem}
@@ -89,6 +91,7 @@ const AreasSelected = ({ title, data }) => {
       <p
         style={{
           maxWidth: "60rem",
+          textAlign: 'center'
         }}
       >
         {lorem}
