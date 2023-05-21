@@ -19,30 +19,34 @@ const CardAreas = ({titulo, descricao, imagem, link}) => {
     <div  >
         <div  style={{
         width: '290px',
-        height: '520px',
+        maxHeight: '30rem',
+        minHeight: '30rem',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'space-between',
         flexDirection: 'column',
         textAlign: 'center',
     }}>
             <img src={imagem} alt=""  style={{
                 width: '64px',
                 height: '64px',
-                marginBottom: '40px'
             }}/>
             <h2  style={{
                 fontSize: '24px',
                 fontWeight: '700',
-                marginBottom:'20px',
-                minHeight: '72px'
 
             }}> {titulo} </h2>
             <p  style={{
                 color: '#777',
                 fontWeight: '300',
                 padding: '10px',
-                marginBottom: '90px',
-                minHeight: '90px'
+                marginBottom: '30px',
+                minHeight: '9.8rem',
+                display: '-webkit-box',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                width: '100%',
+
             }}> {descricao} </p>
             <button onClick={() => readMore(titulo)} onMouseLeave={() => setSelected(false)} onMouseOver={() => setSelected(true)} href={link} style={{
                 padding: '12px 34px',

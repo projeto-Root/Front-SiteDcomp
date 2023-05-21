@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { areas } from "../../utils/utils_areas";
 import CardArea from "./CardAreas";
 import { Pagination } from "../Profs/Pagination";
+import './MenuAreas.css'
 
 const MenuAreas = () => {
   const [pagination, setPagination] = useState(0);
@@ -48,14 +49,7 @@ const MenuAreas = () => {
       }}
     >
       <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "120px",
-          width: "100%",
-          justifyContent: "center",
-          padding: "5vh 10vw",
-        }}
+         className="gridareas"
       >
         {data.map((area) => {
           return (
