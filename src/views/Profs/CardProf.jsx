@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Dcomp from "../../assets/dcomp-icon.png";
 import "./CardProf.css";
 
@@ -413,9 +413,15 @@ const StyleCard = () => {
   );
 };
 
-export const CardProf = ({ name, areas, image }) => {
+export const CardProf = ({ name, areas, image, dataProf, isModal, handleOpen }) => {
+
   return (
     <div
+      onClick={() => {
+        if(!isModal) {
+          handleOpen(dataProf)
+        } 
+      }}
       className="card"
       style={{
         margin: "2rem",
