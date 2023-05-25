@@ -1,0 +1,15 @@
+.quizperfil {
+    width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+    .quizperfil {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .quizperfil {
+        width: 100%;
+    }
+}

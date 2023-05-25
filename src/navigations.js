@@ -3,6 +3,8 @@ import { componentRoutes } from './componentsRoutes'
 
 //Aqui são importadas as rotas de navegação
 import { routes } from './routes'
+import DataComp from './views/DataComp/DataComp'
+import MyComp from './views/MyComp/MyComp'
 
 //Aqui são os componentes de rota importados
 const { Home, Representations, Profs, MenuAreas, Contato, Cursos } = componentRoutes
@@ -19,6 +21,7 @@ export const navigate = [
         template: true,
         isHome: true
     },
+    
     // {
     //     path: '/about',
     //     name: 'SOBRE',
@@ -41,20 +44,6 @@ export const navigate = [
     //     template: true,
     // },
     {
-        path: '/contact',
-        name: 'CONTATO',
-        title: "Contate-nos",
-        component: <Contato/>,
-        template: true,
-    },
-    {
-        path: '/profs',
-        name: 'PROFESSORES',
-        title: "Professores do DCOMP",
-        component: <Profs/>,
-        template: true,
-    },
-    {
         path: '/menuareas',
         name: 'ÁREAS',
         title: "Página das áreas",
@@ -65,6 +54,15 @@ export const navigate = [
         ]
     },
     {
+        path: '/profs',
+        name: 'PROFESSORES',
+        title: "Professores do DCOMP",
+        component: <Profs/>,
+        template: true,
+    },
+    
+    
+    {
         path: '/represents',
         name: 'REPRESENTAÇÕES',
         title: "Representações do DCOMP",
@@ -73,14 +71,29 @@ export const navigate = [
         collections: [
            ...routesRepresentations 
         ]
+    },
+   
+    {
+        path: '/datacomp',
+        name: 'DATACOMP',
+        title: 'DATACOMP',
+        component: <DataComp/>,
+        template: true
+    },
+    {
+        path: '/mycomp',
+        name: 'MYCOMP',
+        title: "MYCOMP",
+        component: <MyComp/>,
+        template: true,
+    },
+    {
+        path: '/contact',
+        name: 'CONTATO',
+        title: "Contate-nos",
+        component: <Contato/>,
+        template: true,
     }
-    //{
-    //    path: '/pefil',
-    //    name: 'PERFIL DCOMP',
-    //   title: "PERFIL DCOMP",
-    //    component: <Home/>,
-    //    template: true,
-    //}
 ]
 
 
