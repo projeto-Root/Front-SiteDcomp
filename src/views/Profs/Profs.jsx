@@ -2,7 +2,16 @@ import React, { useEffect, useState } from "react";
 import { CardProf } from "./CardProf";
 import { profsInfo } from "../../utils/utils_profs";
 import { Pagination } from "./Pagination";
-import { Spinner } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalOverlay,
+  Spinner,
+} from "@chakra-ui/react";
 
 export const Profs = () => {
   const [pagination, setPagination] = useState(0);
@@ -12,20 +21,34 @@ export const Profs = () => {
   const limitPerPage = 8;
   const totalPages = Math.ceil(profsInfo.length / limitPerPage);
 
-  const [currentPage, setCurrentPage] = useState('0')
+  const [currentPage, setCurrentPage] = useState("0");
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
+
+  const [open, setOpen] = useState(false);
+
+  const [dataProf, setDataProf] = useState({});
+
+  const handleOpen = (data, isModal) => {
+    setOpen(true);
+    setDataProf(data);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setDataProf({});
+  };
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
-    }, 500)
-  }, [data])
+      setLoading(false);
+    }, 500);
+  }, [data]);
 
   const handleChangePage = (page) => {
     setPagination(page);
-    setCurrentPage(page)
+    setCurrentPage(page);
   };
 
   const renderItems = () => {
@@ -52,52 +75,86 @@ export const Profs = () => {
   }, [pagination]);
 
   return (
-    <div
-      style={{
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <h2 style={{ fontWeight: 'bold', fontSize: '25px', marginTop: '2rem' }}>Docentes Efetivos</h2>
-      <p style={{ 
-        width: '100%', 
-        textAlign: 'center', 
-        maxWidth: '1200px',
-        padding: '0rem 3rem',
-        marginTop: '2rem',
-      }}>
-        Em 2022, os Docentes Efetivos do Departamento de Computação apresentavam
-        a pontuação máxima (5) no <strong>IQCD</strong>, que é um indicador de
-        desempenho adotado em instituições de ensino superior, principalmente
-        aquelas que mantêm uma produção científica. Seu valor varia de 1 (todos
-        os professores possuem apenas graduação) até 5, situação em que todos os
-        docentes são doutores.
-      </p>
+    <>
       <div
         style={{
-          display: "flex",
-          flexWrap: "wrap",
           width: "100%",
-          maxWidth: "1200px",
-          justifyContent: "center",
-          marginTop: '1rem'
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        {loading && <Spinner margin='1rem' />}
-        {!loading && data.map((elem, key) => {
-          return (
-            <CardProf
-              key={key}
-              name={elem.name}
-              areas={elem.areas}
-              image={elem.image}
-            />
-          );
-        })}
+        <h2 style={{ fontWeight: "bold", fontSize: "25px", marginTop: "2rem" }}>
+          Docentes Efetivos
+        </h2>
+        <p
+          style={{
+            width: "100%",
+            textAlign: "center",
+            maxWidth: "1200px",
+            padding: "0rem 3rem",
+            marginTop: "2rem",
+          }}
+        >
+          Em 2022, os Docentes Efetivos do Departamento de Computação
+          apresentavam a pontuação máxima (5) no <strong>IQCD</strong>, que é um
+          indicador de desempenho adotado em instituições de ensino superior,
+          principalmente aquelas que mantêm uma produção científica. Seu valor
+          varia de 1 (todos os professores possuem apenas graduação) até 5,
+          situação em que todos os docentes são doutores.
+        </p>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            width: "100%",
+            maxWidth: "1200px",
+            justifyContent: "center",
+            marginTop: "1rem",
+          }}
+        >
+          {loading && <Spinner margin="1rem" />}
+          {!loading &&
+            data.map((elem, key) => {
+              return (
+                <CardProf
+                  key={key}
+                  name={elem.name}
+                  areas={elem.areas}
+                  image={elem.image}
+                  dataProf={elem}
+                  handleOpen={handleOpen}
+                />
+              );
+            })}
+        </div>
+        <Pagination
+          handleChangePage={handleChangePage}
+          pages={pages}
+          page={currentPage}
+        />
       </div>
-      <Pagination handleChangePage={handleChangePage} pages={pages} page={currentPage}/>
-    </div>
+      <Modal isOpen={open} onClose={handleClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalBody style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {dataProf && (
+              <CardProf
+                name={dataProf.name}
+                areas={dataProf.areas}
+                image={dataProf.image}
+                isModal={true}
+              />
+            )}
+          </ModalBody>
+          <ModalFooter>
+            <Box style={{ display: 'flex', gap: '1rem' }}>
+              <Button colorScheme="purple" size='sm' onClick={() => window.location = '/menuareas'}>Menu das áreas</Button>
+              <Button size='sm' onClick={handleClose}>Fechar</Button>
+            </Box>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
   );
 };
