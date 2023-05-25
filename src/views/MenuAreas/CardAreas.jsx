@@ -43,6 +43,7 @@ const CardAreas = ({titulo, descricao, imagem, link}) => {
                 marginBottom: '30px',
                 minHeight: '9.8rem',
                 display: '-webkit-box',
+                WebkitBoxOrient: 'vertical',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
                 width: '100%',

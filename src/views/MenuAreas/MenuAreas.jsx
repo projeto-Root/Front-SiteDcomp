@@ -9,9 +9,11 @@ const MenuAreas = () => {
   const [listAreas, setListAreas] = useState(areas);
   const [pages, setPages] = useState([]);
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState('0')
 
   const handleChangePage = (page) => {
     setPagination(page);
+    setCurrentPage(page)
   };
 
   const renderItems = () => {
@@ -65,6 +67,7 @@ const MenuAreas = () => {
       <Pagination
         handleChangePage={handleChangePage}
         pages={pages}
+        page={currentPage}
       ></Pagination>
     </div>
   );
