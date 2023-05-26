@@ -2,6 +2,7 @@ import Representations from "./Representation"
 import Calicomp from "../../assets/calicomp.svg";
 import Bugados from '../../assets/BUGADOS1.png';
 import Softeam from "../../assets/LOGOSOFTEAM.svg"
+import inter from "../../assets/inter.png"
 //Arrays criados para testes
 
 const pathBase = 'represents'
@@ -36,7 +37,7 @@ const Projects = [
     {
       name: "Campeonato Interatléticas",
       describe: 
-      "O primeiro campeonato entre atléticas da UFS, com 6 atléticas como participantes, entre elas, a Bugados. A disputa ocorreu em esportes como futsal, vôlei, dominó, basquete e queimado."
+      "O primeiro campeonato entre atléticas da UFS, com 6 atléticas como participantes, entre elas, a Bugados. A disputa ocorreu em esportes como futsal, vôlei, dominó, basquete e queimado.",
     },
     {
       name: "Calourada DCOMP",
