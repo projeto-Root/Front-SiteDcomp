@@ -134,10 +134,10 @@ export const Profs = () => {
           page={currentPage}
         />
       </div>
-      <Modal isOpen={open} onClose={handleClose}>
+      <Modal isOpen={open} onClose={handleClose} size='xl'>
         <ModalOverlay />
         <ModalContent>
-          <ModalBody style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <ModalBody style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '-1rem -2rem' }}>
             {dataProf && (
               <CardProf
                 name={dataProf.name}

@@ -5,7 +5,7 @@ import MembersCarrousel from "../../components/MembersCarrousel";
 import Next from "../../assets/next.svg";
 import Previous from "../../assets/previous.svg";
 
-const AreasSelected = ({ title, data }) => {
+const AreasSelected = ({ data }) => {
   const [orderMembers, setOrderMembers] = useState(data?.members);
 
   const handleCircularList = (operation) => {
@@ -37,80 +37,16 @@ const AreasSelected = ({ title, data }) => {
           backgroundColor: "dodgerblue",
         }}
       ></Box>
-      <h2
-        style={{
-          fontSize: "22px",
-          fontWeight: "bold",
-          textAlign: 'center'
-        }}
-      >
-        {title}
-      </h2>
-      <h3
-        style={{
-          fontSize: "20px",
-          fontWeight: "bold",
-        }}
-      >
-        O que é?
-      </h3>
-      <p
-        style={{
-          maxWidth: "60rem",
-          textAlign: 'center'
-        }}
-      >
-        {lorem}
-      </p>
-      <h3
-        style={{
-          fontSize: "20px",
-          fontWeight: "bold",
-          textAlign: 'center'
-        }}
-      >
-        O que o profissional desta área faz?
-      </h3>
-      <p
-        style={{
-          maxWidth: "60rem",
-          textAlign: 'center'
-        }}
-      >
-        {lorem}
-      </p>
-      <h3
-        style={{
-          fontSize: "20px",
-          fontWeight: "bold",
-          textAlign: 'center'
-        }}
-      >
-        Um pouco mais sobre a atuação do profissional
-      </h3>
-      <p
-        style={{
-          maxWidth: "60rem",
-          textAlign: 'center'
-        }}
-      >
-        {lorem}
-      </p>
-      <Box style={{
-        width: '100%',
-        maxWidth: '30rem',
-        height: '20rem',
-        backgroundColor: 'dodgerblue'
-      }}></Box>
-      <h3
-        style={{
-          fontSize: "20px",
-          fontWeight: "bold",
-          textAlign: 'center'
-        }}
-      >
-        Professores que atuam nesta área
-      </h3>
+      <Box>
+        {data && (
+          <>
+            {/* {data.img ? <p>{data.img}</p> : ''}
+            {data.topic ? <p>{data.topic}</p> : ''}
+            {data.content ? <p>{data.content}</p> : ''}
+            {data.name ? <p>{data.name}</p> : ''} */}
+          </>
+        )}
+      </Box>
       <div
         style={{
           maxWidth: "30rem",

@@ -4,6 +4,7 @@ import CardArea from "./CardAreas";
 import { Pagination } from "../Profs/Pagination";
 import './MenuAreas.css'
 import { Spinner } from "@chakra-ui/react";
+import CardGeneric from "../../components/CardGeneric";
 
 const MenuAreas = () => {
   const [pagination, setPagination] = useState(0);
@@ -66,11 +67,9 @@ const MenuAreas = () => {
         {loading && <Spinner margin='1rem'/>}
         {!loading && data.map((area) => {
           return (
-            <CardArea
+            <CardGeneric
               link={area.link}
-              imagem={area.image}
-              descricao={area.description}
-              titulo={area.name}
+              data={area}
             />
           );
         })}

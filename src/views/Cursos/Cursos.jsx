@@ -1,17 +1,26 @@
 import React from "react";
-import InfoCC from "../../components/InfoCC";
-import InfoSI from "../../components/InfoSI";
-import InfoEC from "../../components/InfoEC";
-import styles from "./Cursos.module.css"
+import { Box } from "@chakra-ui/react";
+import { descriptionOfCourses } from "../../utils/utils_home";
+import CardGeneric from "../../components/CardGeneric";
 
 const Cursos = () => {
-    return (
-        <div className={styles.cursos}>
-            <InfoCC />
-            <InfoEC />
-            <InfoSI />
-        </div>
-    )
-}
+  return (
+    <Box
+      style={{
+        width: "100%",
+        display: "flex",
+        flexWrap: "wrap",
+        rowGap: "3rem",
+        columnGap: "4rem",
+        justifyContent: "center",
+        marginTop: "3rem",
+      }}
+    >
+      {descriptionOfCourses.map((elem, key) => {
+        return <CardGeneric data={elem} key={key} link='#'/>;
+      })}
+    </Box>
+  );
+};
 
 export default Cursos;
