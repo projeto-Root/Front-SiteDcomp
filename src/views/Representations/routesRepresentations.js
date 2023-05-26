@@ -9,21 +9,44 @@ const pathBase = 'represents'
 
 const Projects = [
     {
-      name: "Projeto 1",
+      name: "Semac 8° Edição",
       describe:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus atque culpa architecto nulla, accusamus fugiat delectus praesentium, illum non iste incidunt vitae fuga rem. Eos assumenda praesentium ut pariatur?",
+        "A semana de acolhimento aos calouros (SEMAC) foi um evento promovido pela Atlética Bugados, a empresa júnior Softeam, o Centro acadêmico de Computação e o Departamento de Computação. Realizado com o intuito de apresentar a Universidade Federal de Sergipe, o DCOMP e suas representações dentro da UFS.",
     },
     {
-      name: "Projeto 2",
+      name: "HackaComp",
       describe:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus atque culpa architecto nulla, accusamus fugiat delectus praesentium, illum non iste incidunt vitae fuga rem. Eos assumenda praesentium ut pariatur?",
-    },
-    {
-      name: "Projeto 3",
-      describe:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus atque culpa architecto nulla, accusamus fugiat delectus praesentium, illum non iste incidunt vitae fuga rem. Eos assumenda praesentium ut pariatur?",
+        "Hackathon promovido pelo DComp juntamente com suas representações, para promover o desenvolvimento através de uma competição, realizado em 48 horas diretas dentro da Universidade.",
     },
   ];
+
+  const ProjectsS = [
+    {
+      name: "Clínica Dermatológica Michelle Pontes",
+      describe:
+      "Um site profissional e moderno desenvolvido pelos membros da Softeam para uma clínica dermatológica."
+    },
+    {
+      name: "Inovector 3D",
+      describe: "Um projeto desenvolvido usando as tecnologias mais recentes para uma empresa de venda de impressoras 3D, ferramentas e suprimentos para a mesma. O site foi desenvolvido com métodos de pagamento online e uma calculadora de frete para melhor venda dos produtos."
+    }
+  ];
+
+  const ProjectsB = [
+    {
+      name: "Campeonato Interatléticas",
+      describe: 
+      "O primeiro campeonato entre atléticas da UFS, com 6 atléticas como participantes, entre elas, a Bugados. A disputa ocorreu em esportes como futsal, vôlei, dominó, basquete e queimado."
+    },
+    {
+      name: "Calourada DCOMP",
+      describe: "Primeira calourada realizada pela atlética Bugados, realizada atrás do departamento de computação com o tema Halloween."
+    },
+    {
+      name: "Noite de Jogos",
+      describe: "Evento realizado pela atlética Bugados no ano de 2023 para os associados, onde houveram jogos eletrônicos, músicas entre outros."
+    }
+  ]
 
   const Members = [
     {
@@ -65,7 +88,7 @@ const simpleRoute = [
         name: 'Softeam',
         template: true,
         dataComponent: {
-            projects: Projects,
+            projects: ProjectsS,
             title: "Softeam",
             image: Softeam,
             members: Members
@@ -76,7 +99,7 @@ const simpleRoute = [
       name: 'Bugados',
       template: true,
       dataComponent: {
-          projects: Projects,
+          projects: ProjectsB,
           title: "Bugados",
           image: Bugados,
           members: Members
