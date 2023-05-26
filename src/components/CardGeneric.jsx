@@ -1,7 +1,7 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import React from "react";
 
-const CardGeneric = ({ data }) => {
+const CardGeneric = ({ data, link }) => {
   return (
     <Box
       style={{
@@ -10,25 +10,26 @@ const CardGeneric = ({ data }) => {
         minWidth: "10rem",
         maxWidth: "20rem",
         width: "100%",
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
       }}
     >
       <Box
         style={{
-          width: "100%",
-          height: "12rem",
-          backgroundColor: "dodgerblue",
-          borderRadius: "10px",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundImage: `url(${data.img})`,
+          width: "80%",
+          height: "14rem",
         }}
-      ></Box>
+      >
+        <img src={data.img} style={{ width: '100%', height: '100%', borderRadius: "10px" }} alt="course"/>
+      </Box>
       <p style={{ textAlign: "center", marginTop: "1rem", fontWeight: "500" }}>
         {data.name}
       </p>
-      <p style={{ textAlign: "center", marginTop: "1rem", fontSize: "14px" }}>
+      <p style={{ textAlign: "justify", marginTop: "1rem", fontSize: "14px" }}>
         {data.describe}
       </p>
+      {link && <Button colorScheme="purple" style={{ marginTop: '2rem' }} onClick={() => window.location = link}>Saiba mais</Button>}
     </Box>
   );
 };

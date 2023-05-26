@@ -5,6 +5,7 @@ import Next from "../../assets/next.svg";
 import Previous from "../../assets/previous.svg";
 import MembersCarrousel from "../../components/MembersCarrousel";
 import { lorem } from "../../utils/utils_content_messages";
+import CardGeneric from "../../components/CardGeneric";
 
 const Representations = ({ data }) => {
   const [orderMembers, setOrderMembers] = useState(data.members);
@@ -64,7 +65,7 @@ const Representations = ({ data }) => {
       >
         {data?.projects &&
           data.projects.map((elem, key) => {
-            return <CardProJect key={key} card={elem} />;
+            return <CardGeneric key={key} data={elem} link="#"/>;
           })}
       </section>
       <section>

@@ -1,6 +1,6 @@
-import washington from '../assets/washington.png'
-import newyork from '../assets/newyork.png'
-import london from '../assets/london.png'
+import cc from '../assets/cc.png'
+import ec from '../assets/ec.png'
+import si from '../assets/si.png'
 import dcomp from '../assets/dcomp.jpg'
 import labinfo from '../assets/labinfo.jpg'
 import audit from '../assets/audit.jpg'
@@ -21,7 +21,7 @@ export const descriptionOfCourses = [
       das organizações, e no suporte aos seus sistemas de controle 
       operacional e gerencial, através da análise, projeto e implementação 
       de sistemas.`,
-    img: washington,
+    img: cc,
   },
   {
     name: "Engenharia da Computação",
@@ -29,7 +29,7 @@ export const descriptionOfCourses = [
       O Engenheiro de Computação deverá ter uma sólida formação técnico-científica 
       e profissional geral que o capacite com os conhecimentos de Ciência da Computação 
       e de Engenharia Elétrica necessários ao projeto de sistemas de computação completos.`,
-    img: newyork,
+    img: ec,
   },
   {
     name: "Sistemas da Informação",
@@ -37,7 +37,7 @@ export const descriptionOfCourses = [
       O Bacharel em Sistemas de Informação deve ser capaz de gerenciar e desenvolver modelos 
       associados e métodos de gestão da área de sistemas de informação além de modelos empregados 
       no diagnóstico, planejamento, implementação e avaliação de projetos de sistemas de informação.`,
-    img: london,
+    img: si,
   },
 ];
 

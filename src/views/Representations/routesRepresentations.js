@@ -1,7 +1,7 @@
 import Representations from "./Representation"
-import Calicomp from "../../assets/LOGOCALICOMPSVG.svg";
+import Calicomp from "../../assets/calicomp.svg";
 import Bugados from '../../assets/BUGADOS1.png';
-import Softeam from "../../assets/LOGOSOFTEAMSVG.svg"
+import Softeam from "../../assets/LOGOSOFTEAM.svg"
 //Arrays criados para testes
 
 const pathBase = 'represents'
@@ -10,17 +10,17 @@ const pathBase = 'represents'
 const Projects = [
     {
       name: "Projeto 1",
-      description:
+      describe:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus atque culpa architecto nulla, accusamus fugiat delectus praesentium, illum non iste incidunt vitae fuga rem. Eos assumenda praesentium ut pariatur?",
     },
     {
       name: "Projeto 2",
-      description:
+      describe:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus atque culpa architecto nulla, accusamus fugiat delectus praesentium, illum non iste incidunt vitae fuga rem. Eos assumenda praesentium ut pariatur?",
     },
     {
       name: "Projeto 3",
-      description:
+      describe:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus atque culpa architecto nulla, accusamus fugiat delectus praesentium, illum non iste incidunt vitae fuga rem. Eos assumenda praesentium ut pariatur?",
     },
   ];

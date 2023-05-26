@@ -44,7 +44,7 @@
   padding: 0 20px;
 }
 
-button:hover {
+/* button:hover {
   background-color: blue;
   border: 2px solid blue;
   color: white;
@@ -57,4 +57,4 @@ button:hover:after {
   font-variant-caps: normal;
   font-variant-ligatures: normal;
   text-rendering: auto;
-}
+} */
