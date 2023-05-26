@@ -201,13 +201,13 @@ export const areas = [
     {
         name: 'Teoria da Computação',
         link: '/areas',
-        describe: 'Machine Learning, traduzido como aprendizagem de máquina, é um subgrupo inserido no campo da Inteligência Artificial, sendo esta uma tecnologia e área de estudo exemplo exemplo exemplo',
+        describe: 'A teoria da computação é um subcampo da ciência da computação e matemática que busca determinar quais problemas podem ser computados em um dado modelo de computação.',
         img: teoria
     },
     {
         name: 'Visão Computacional',
         link: '/areas',
-        describe: 'Machine Learning, traduzido como aprendizagem de máquina, é um subgrupo inserido no campo da Inteligência Artificial, sendo esta uma tecnologia e área de estudo exemplo exemplo exemplo',
+        describe: 'Visão computacional é a ciência e tecnologia das máquinas que enxergam. Ela desenvolve teoria e tecnologia para a construção de sistemas artificiais que obtêm informação de imagens ou quaisquer dados multidimensionais.',
         img: visao
     }
 ]
