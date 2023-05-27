@@ -14,14 +14,15 @@ import VenhaFazerParte from "../../assets/venha-fazer-parte.jpg";
 const Home = () => {
   return (
     <>
-      <h2 style={{ fontSize: "35px", fontWeight: "600" }}>Cursos</h2>
+      <h2 style={{ fontSize: "35px", fontWeight: "600", marginTop: '1rem' }}>Cursos</h2>
       <p
         style={{
-          textAlign: "center",
+          textAlign: "justify",
           fontWeight: "300",
           fontSize: "14px",
           marginTop: "1rem",
           maxWidth: "1200px",
+          padding: '0rem 3rem'
         }}
       >
         {dcompHomeIntroduction}
@@ -90,8 +91,8 @@ const Home = () => {
         style={{
           fontSize: "14px",
           fontWeight: "300",
-          marginTop: "1rem",
-          textAlign: "center",
+          margin: "1rem 3rem",
+          textAlign: "justify",
         }}
       >
         Confira alguns depoimentos de nossos alunos sobre a experiência deles

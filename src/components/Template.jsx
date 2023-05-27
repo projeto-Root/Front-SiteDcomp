@@ -182,14 +182,14 @@ const Template = ({ element, isHome, title }) => {
           alignItems: "center",
         }}
       >
-        <h3 style={{ color: "#000", fontWeight: "bold" }}>Sobre nós</h3>
+        <h3 style={{ color: "#000", fontWeight: "bold", marginTop: '1rem' }}>Sobre nós</h3>
         <p
           style={{
             textAlign: "justify",
             fontSize: "16px",
             marginTop: "1rem",
             maxWidth: "1200px",
-            padding: '0rem 1rem'
+            padding: '1rem 4rem'
           }}
         >
           {templateMessages.about}

@@ -90,7 +90,7 @@ export const Profs = () => {
         <p
           style={{
             textAlign: "justify",
-            marginTop: "2rem",
+            margin: "2rem 4rem",
           }}
         >
           Em 2022, os Docentes Efetivos do Departamento de Computação

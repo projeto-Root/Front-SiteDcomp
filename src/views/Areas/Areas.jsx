@@ -26,7 +26,7 @@ const Areas = () => {
 
   return (
     <Box style={{ 
-        padding: "2rem", 
+        padding: "2rem 4rem", 
         display: "flex", 
         flexDirection: "column",
         alignItems: 'center'

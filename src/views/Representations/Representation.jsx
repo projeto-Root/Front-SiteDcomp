@@ -31,6 +31,7 @@ const Representations = ({ data }) => {
         alignItems: "center",
         height: "auto",
         width: "100%",
+        margin: '2rem 0rem'
       }}
     >
       <LogoGroup src={data.image}></LogoGroup>
@@ -41,7 +42,7 @@ const Representations = ({ data }) => {
         style={{
           color: "#333",
           textAlign: 'justify',
-          marginTop: '1rem'
+          margin: '1rem 3rem'
         }}
       >
         {lorem}
