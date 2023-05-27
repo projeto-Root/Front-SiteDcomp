@@ -47,7 +47,7 @@ const Areas = () => {
           })}
         </Select>
       </Box>
-      <AreasSelected title={areaSelected} />
+      <AreasSelected data={areaSelected} />
     </Box>
   );
 };

@@ -21,9 +21,10 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
+import './template.css'
+
 const Template = ({ element, isHome, title }) => {
   const [widthScreen, setWidthScreen] = useState(window.innerWidth);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const updateScreen = () => {
@@ -172,7 +173,7 @@ const Template = ({ element, isHome, title }) => {
           )}
           {!isHome && <TitlePage>{title}</TitlePage>}
         </section>
-        <section style={{ margin: "1rem 0rem" }}>{element}</section>
+        <section className="mainSection">{element}</section>
       </main>
       <footer
         style={{
@@ -184,12 +185,11 @@ const Template = ({ element, isHome, title }) => {
         <h3 style={{ color: "#000", fontWeight: "bold" }}>Sobre nós</h3>
         <p
           style={{
-            textAlign: "center",
+            textAlign: "justify",
             fontSize: "16px",
             marginTop: "1rem",
             maxWidth: "1200px",
-            width: "100%",
-            padding: "0rem 3rem",
+            padding: '0rem 1rem'
           }}
         >
           {templateMessages.about}

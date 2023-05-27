@@ -39,11 +39,9 @@ const Representations = ({ data }) => {
       </h1>
       <section
         style={{
-          width: "100%",
-          maxWidth: "1200px",
-          padding: "2rem",
           color: "#333",
-          textAlign: 'center'
+          textAlign: 'justify',
+          marginTop: '1rem'
         }}
       >
         {lorem}
@@ -59,7 +57,7 @@ const Representations = ({ data }) => {
           display: "flex",
           justifyContent: "center",
           gap: "3rem",
-          marginTop: "1rem",
+          marginTop: "2rem",
           flexWrap: "wrap",
         }}
       >
