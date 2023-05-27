@@ -70,6 +70,7 @@ const MenuAreas = () => {
             <CardGeneric
               link={area.link}
               data={area}
+              style={{ marginTop: '1rem' }}
             />
           );
         })}

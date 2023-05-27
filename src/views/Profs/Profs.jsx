@@ -89,10 +89,7 @@ export const Profs = () => {
         </h2>
         <p
           style={{
-            width: "100%",
-            textAlign: "center",
-            maxWidth: "1200px",
-            padding: "0rem 3rem",
+            textAlign: "justify",
             marginTop: "2rem",
           }}
         >
