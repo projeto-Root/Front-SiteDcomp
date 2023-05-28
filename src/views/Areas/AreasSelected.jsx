@@ -22,6 +22,7 @@ const AreasSelected = ({ data }) => {
             <>
               {elem.icon && (
                 <img
+                  key={index}
                   src={elem.icon}
                   style={{ width: "3rem", height: "3rem", marginTop: "2rem" }}
                 />
