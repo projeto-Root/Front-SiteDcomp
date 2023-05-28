@@ -21,7 +21,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-import './template.css'
+import "./template.css";
 
 const Template = ({ element, isHome, title }) => {
   const [widthScreen, setWidthScreen] = useState(window.innerWidth);
@@ -48,7 +48,7 @@ const Template = ({ element, isHome, title }) => {
 
   return (
     <div style={{ width: "100%", height: "auto" }}>
-      {widthScreen < 850 && (
+      {widthScreen < 950 && (
         <Menu>
           <MenuButton
             colorScheme="blue"
@@ -122,7 +122,7 @@ const Template = ({ element, isHome, title }) => {
               flexDirection: "row",
             }}
           >
-            {widthScreen >= 850 &&
+            {widthScreen >= 950 &&
               navigate.map((elem, key) => {
                 return (
                   <li key={key}>
@@ -133,7 +133,7 @@ const Template = ({ element, isHome, title }) => {
           </ul>
         </nav>
       </header>
-      <main style={{ backgroundColor: '#fafafa' }}>
+      <main style={{ backgroundColor: "#fafafa" }}>
         <section
           style={{
             height: isHome ? "100vh" : "50vh",
@@ -180,40 +180,62 @@ const Template = ({ element, isHome, title }) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          backgroundColor: '#fafafa'
+          backgroundColor: "dodgerblue",
+          marginTop: "2rem",
+          borderRadius: "15px 15px 0px 0px",
         }}
       >
-        <h3 style={{ color: "#000", fontWeight: "bold", marginTop: '1rem' }}>Sobre nós</h3>
-        <p
-          style={{
-            textAlign: "justify",
-            fontSize: "16px",
-            marginTop: "1rem",
-            maxWidth: "1200px",
-            padding: '1rem 4rem'
-          }}
-        >
-          {templateMessages.about}
-        </p>
+        <div className="dispositionFooter">
+          <div className="dispositionAbout">
+            <p style={{ fontSize: "20px" }}>Sobre</p>
+            <p
+              style={{
+                textAlign: "justify",
+                fontSize: "16px",
+                maxWidth: "600px",
+                marginTop: "1rem",
+              }}
+            >
+              {templateMessages.about}
+            </p>
+          </div>
+          <div className="iconsControl">
+            <p style={{ fontSize: "20px" }}>Contatos</p>
+            <div className="dispositionIcons">
+              <AiFillFacebook style={{ fontSize: "1.5rem" }} />
+              facebook
+            </div>
+            <div className="dispositionIcons">
+              <AiFillTwitterSquare style={{ fontSize: "1.5rem" }} />
+              twitter
+            </div>
+            <div className="dispositionIcons">
+              <AiFillInstagram style={{ fontSize: "1.5rem" }} />
+              instagram
+            </div>
+            <div className="dispositionIcons">
+              <AiFillLinkedin style={{ fontSize: "1.5rem" }} />
+              linkedin
+            </div>
+          </div>
+        </div>
         <div
           style={{
-            color: "#77c",
-            margin: "1rem",
+            width: "calc(100% - 2rem)",
+            borderTop: "1px solid #eee",
             display: "flex",
+            alignItems: "center",
+            padding: "1rem",
           }}
         >
-          <AiFillFacebook style={{ fontSize: "1.5rem" }} />
-          <AiFillTwitterSquare style={{ fontSize: "1.5rem" }} />
-          <AiFillInstagram style={{ fontSize: "1.5rem" }} />
-          <AiFillLinkedin style={{ fontSize: "1.5rem" }} />
+          <p
+            style={{
+              color: "#fff",
+            }}
+          >
+            Feito por Projeto Root, 2023
+          </p>
         </div>
-        <p
-          style={{
-            marginBottom: "1rem",
-          }}
-        >
-          Feito por Project Root
-        </p>
       </footer>
     </div>
   );

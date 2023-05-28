@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Dcomp from "../../assets/dcomp-icon.png";
 import "./CardProf.css";
 

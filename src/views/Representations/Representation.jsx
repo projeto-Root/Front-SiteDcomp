@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CardProJect from "../../components/CardProject";
 import { ButtonChangePage, LogoGroup } from "../../components/core-atoms";
 import Next from "../../assets/next.svg";
 import Previous from "../../assets/previous.svg";

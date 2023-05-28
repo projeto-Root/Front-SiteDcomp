@@ -14,7 +14,6 @@ const MenuAreas = () => {
   const handleChangePage = (page) => {
     setPagination(page-1);
     setPage(page-1)
-    window.scrollTo(0, 0)
   };
 
   const [loading, setLoading] = useState(false)

@@ -4,6 +4,103 @@
     align-items: center;
 }
 
+.dispositionFooter{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.dispositionIcons{
+    display: flex;
+    gap: 1rem;
+}
+
+.iconsControl{
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dispositionAbout{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eee;
+}
+
+.dispositionAbout p{
+    width: 90%;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .dispositionAbout{
+        width: 60%;
+    }
+    .iconsControl{
+        width: 40%;
+        padding-left: 5rem;
+    }
+}
+
+@media (max-width: 940px) {
+    .dispositionAbout{
+        width: 100%;
+    }
+    .iconsControl{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 0;
+    }
+    .iconsControl p{
+        position: absolute;
+    }
+    .dispositionIcons{
+        margin-top: 5rem;
+    }
+    .dispositionFooter{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .dispositionAbout{
+        width: 100%;
+        padding: 0rem;
+    }
+    .dispositionAbout p{
+        width: 100%;
+        text-align: center;
+    }
+    .iconsControl{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+    .iconsControl p{
+        position: absolute;
+        top: 1rem;
+    }
+    .dispositionIcons{
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dispositionFooter{
+        flex-direction: column;
+    }
+}
+
 /* html{
     scroll-behavior: smooth;
 } */

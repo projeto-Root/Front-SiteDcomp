@@ -6,11 +6,9 @@ import { Spinner } from "@chakra-ui/react";
 
 export const Profs = () => {
   const [pagination, setPagination] = useState(0);
-  const [listProfs, setListProfs] = useState(profsInfo);
-  const [pages, setPages] = useState([]);
+  const [listProfs] = useState(profsInfo);
   const [data, setData] = useState([]);
   const limitPerPage = 10;
-  const totalPages = Math.ceil(profsInfo.length / limitPerPage);
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -40,7 +38,6 @@ export const Profs = () => {
   const handleChangePage = (page) => {
     setPagination(page - 1);
     setCurrentPage(page - 1);
-    window.scrollTo(0, 0);
   };
 
   const renderItems = () => {
@@ -48,19 +45,6 @@ export const Profs = () => {
     const endPage = startPage + limitPerPage;
     setData(listProfs.slice(startPage, endPage));
   };
-
-  const renderPagination = () => {
-    const page = [];
-    for (let index = 1; index <= totalPages; index++) {
-      page.push(index);
-    }
-    setPages(page);
-  };
-
-  useEffect(() => {
-    renderPagination();
-    renderItems();
-  }, []);
 
   useEffect(() => {
     renderItems();

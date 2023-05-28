@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { dataMenuAreas } from "../../utils/utils_menu_areas";
 
 const AreasSelected = ({ data }) => {

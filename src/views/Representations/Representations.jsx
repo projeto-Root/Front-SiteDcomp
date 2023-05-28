@@ -1,8 +1,5 @@
 import React from "react";
 import "./MenuRepresentações.css";
-import calicomp from "../../assets/calicomp.svg";
-import BUGADOS1 from "../../assets/BUGADOS1.png";
-import LOGOSOFTEAMSVG from "../../assets/LOGOSOFTEAMSVG.svg";
 import { Box } from "@chakra-ui/react";
 import { dataRepresents } from "../../utils/utils_represents";
 import CardGeneric from "../../components/CardGeneric";

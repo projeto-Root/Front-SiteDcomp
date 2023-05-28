@@ -2,7 +2,6 @@ import Representations from "./Representation"
 import Calicomp from "../../assets/calicomp.svg";
 import Bugados from '../../assets/BUGADOS1.png';
 import Softeam from "../../assets/LOGOSOFTEAM.svg"
-import inter from "../../assets/inter.png"
 //Arrays criados para testes
 
 const pathBase = 'represents'
