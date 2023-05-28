@@ -3,27 +3,11 @@ import "./MyComp.css";
 
 const MyComp = () => {
   return (
-    <div
-      style={{
-        width: "100%",
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        gap: "1rem",
-      }}
-    >
+    <>
       <h2 style={{ fontWeight: "bold", fontSize: "25px", marginTop: "2rem" }}>
         MyComp
       </h2>
-      <p
-        style={{
-          width: "100%",
-          textAlign: "center",
-          maxWidth: "1200px",
-          padding: "0rem 3rem",
-          marginTop: "2rem",
-        }}
-      >
+      <p className="mycomp">
         O MyComp é um serviço oferecido pelo Projec Root com o objetivo de
         auxiliar o estudante de computação a entender melhor como suas
         preferências e experiências refletem nas áreas de estudo da Computação.
@@ -56,7 +40,7 @@ const MyComp = () => {
         data-of="gyovani-santos"
         data-opinionstage-widget="0641cea8-2dc4-480c-9c3e-7db982f2aa5c"
       ></div>
-    </div>
+    </>
   );
 };
 

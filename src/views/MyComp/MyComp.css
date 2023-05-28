@@ -1,15 +1,31 @@
 .quizperfil {
-    width: 70%;
+  width: 70%;
 }
 
 @media screen and (max-width: 1000px) {
-    .quizperfil {
-        width: 80%;
-    }
+  .quizperfil {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .quizperfil {
-        width: 100%;
-    }
+  .quizperfil {
+    width: 100%;
+  }
+}
+
+.mycomp {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 1rem 0rem;
+  max-width: 1200px;
+  padding: 0rem 4rem;
+}
+
+@media (max-width: 1100px) {
+  .mycomp {
+    max-width: 800px;
+    padding: 0rem 2rem;
+  }
 }

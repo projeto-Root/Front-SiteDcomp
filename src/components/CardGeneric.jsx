@@ -55,7 +55,7 @@ const CardGeneric = ({ data, link }) => {
           <img
             src={data.img}
             style={{ width: "100%", height: "100%", borderRadius: "10px" }}
-            alt="course"
+            alt={data.name}
           />
         </Box>
         <p
