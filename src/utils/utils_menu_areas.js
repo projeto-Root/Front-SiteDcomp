@@ -31,13 +31,48 @@ import teoria from "../assets/teoria-da-computacao.png";
 import visao from "../assets/visao-computacional.png";
 
 /*Import das imagens de cada área*/
+import imgModelAp from "../assets/Img_aquisição e modelagem.jpg"
+import imgArqui from "..//assets/Img_arquitetura.png"
+import imgVisao from "..//assets/Img_viaso.png"
+import imgTeoria from "..//assets/Img_teoria.png"
+import imgSmart from "..//assets/Img_smart.png"
+import imgSistEmb from "..//assets/Img_sistEmba.png"
+import imgSistDis from "..//assets/Img_sistDist.png"
+import imgRedes from "..//assets/Img_redes.jpg"
+import imgProgramacaoLinear from "..//assets/Img_programacaoLinear.png"
+import imgProceLin from "..//assets/Img_linguaNatural.png"
+import imgProceImg from "..//assets/Img_processImagem.png"
+import imgOtiMulti from "..//assets/Img_otiMulti.png"
+import imgOtiComb from "..//assets/Img_OtiComb.png"
+import imgModelSimu from "..//assets/Img_modelagem e simulacao.png"
+import imgMolda from "..//assets/Img_modelagem de avaliacao.png"
+import imgMine from "..//assets/Img_mineracao.png"
+import imgLingua from "..//assets/linguagem-de-programacao.png"
+import imgLab1 from "..//assets/Img1_labEnsino.png"
+import imgLab2 from "..//assets/Img2_labEnsino.png"
+import imgJogos from "..//assets/Img_jogos.png"
+import imgIOT from "..//assets/Img_iot.jpg"
+import imgArtificial from "..//assets/Img_IA.png"
+import imgInfoEdu from "..//assets/Img_informaticaEducativa.png"
+import imgEdu from "..//assets/Img_educação em engenharia.jpg"
+import imgInfoSaude from "..//assets/Img_infoSaude.jpg"
+import imgInfoSaude2 from "..//assets/Img2_infoSaude.png"
+import imgCompMus from "..//assets/Img_compMus.png"
+import imgCompGra from "..//assets/Img_compGra.png"
+import imgCienDados from "..//assets/Img_cienDados.png"
+import imgBanco from "..//assets/Img_banco.png"
+import imgApren from "..//assets/Img_aprendizado.png"
+import imgEng1 from "..//assets/Img1_engenharia.jpg"
+import imgEng2 from "..//assets/Img2_engenharia.png"
+
+
 
 export const dataMenuAreas = {
   "Aquisição e Modelagem de Aparência": {
     content: [
       {
-        icon: molda,
-        img: "",
+        icon: modelAp,
+        img: imgModelAp,
         topic: "O que é?",
         content:
           "A composição de cenas com alto grau de realismo sempre foi um forte tema de pesquisa em Computação Gráfica. Muitas vezes, gerar cenas naturais requer uma compreensão prévia dos agentes que alteram a aparência do ambiente e de como integrá-los a efeitos processados no computador. Uma das prioridades na Aquisição e Modelagem de Aparência consiste em gerar cenas com uma ótima qualidade e fidelidade visual ao mundo real. Mesmo que certas cenas renderizadas pareçam bem coerentes na simulação de efeitos fundamentais como iluminação, sombras e reflexão, muitas vezes é necessário incluir determinadas “imperfeições” para tornar os resultados mais naturais. A adição de imperfeições melhora a percepção final de uma imagem como natural.",
@@ -54,10 +89,14 @@ export const dataMenuAreas = {
     content: [
       {
         icon: apren,
-        img: "",
+        img: imgApren,
         topic: "O que é?",
         content:
-          "Machine Learning, traduzido como aprendizagem de máquina, é um subgrupo inserido no campo da Inteligência Artificial, sendo esta uma tecnologia e área de estudo mais ampla. Enquanto a Inteligência Artificial abrange todos os processos e resultados da engenharia envolvida na produção de uma máquina ou programa que possibilite imitar a inteligência humana, o Machine Learning diz respeito à habilidade dessa máquina de aprender “sozinha”, analisando bancos de dados independentemente da sua programação inicial. Os modelos gerados através de ML conseguem reconhecer padrões nos dados aos quais são expostos e, a partir disso, são capazes de melhorar o seu próprio desempenho. De modo geral, os algoritmos de Machine Learning podem ser divididos em três categorias principais: ML supervisionado, ML não supervisionado e aprendizado por reforço. Como o nome sugere, algoritmos supervisionados são conduzidos por um cientista de dados que possui um objetivo, espera um resultado específico e auxilia no processo de aprendizagem. No caso do processo não supervisionado, não existe uma condução constante por parte do cientista e o processo ocorre de maneira mais independente, sem um propósito ou resultado particular em vista. Já o aprendizado é o ensino que leva em conta a experiência, onde a máquina vai aprender de acordo com o que ela já errou anteriormente, buscando uma melhor performance.",
+          "Machine Learning, traduzido como aprendizagem de máquina, é um subgrupo inserido no campo da Inteligência Artificial, sendo esta uma tecnologia e área de estudo mais ampla. Enquanto a Inteligência Artificial abrange todos os processos e resultados da engenharia envolvida na produção de uma máquina ou programa que possibilite imitar a inteligência humana, o Machine Learning diz respeito à habilidade dessa máquina de aprender “sozinha”, analisando bancos de dados independentemente da sua programação inicial. Os modelos gerados através de ML conseguem reconhecer padrões nos dados aos quais são expostos e, a partir disso, são capazes de melhorar o seu próprio desempenho.",
+      },
+      {
+        content:
+          "De modo geral, os algoritmos de Machine Learning podem ser divididos em três categorias principais: ML supervisionado, ML não supervisionado e aprendizado por reforço. Como o nome sugere, algoritmos supervisionados são conduzidos por um cientista de dados que possui um objetivo, espera um resultado específico e auxilia no processo de aprendizagem. No caso do processo não supervisionado, não existe uma condução constante por parte do cientista e o processo ocorre de maneira mais independente, sem um propósito ou resultado particular em vista. Já o aprendizado é o ensino que leva em conta a experiência, onde a máquina vai aprender de acordo com o que ela já errou anteriormente, buscando uma melhor performance.",
       },
       {
         topic: "O que faz um profissional da área?",
@@ -72,7 +111,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: arqui,
-        img: "",
+        img: imgArqui,
         topic: "O que é?",
         content:
           "A Arquitetura de Computadores é o projeto conceitual e fundamental da estrutura operacional de um sistema computacional. É o estudo dos requisitos necessários para que um computador funcione e de como organizar os diversos componentes para obter melhores desempenhos. O termo Arquitetura é principalmente utilizado na construção e decoração de edificações. Ele diz respeito à forma e a estrutura de uma construção. O termo refere-se à arte ou a técnica de projetar e edificar o ambiente habitado pelo ser humano. Na Computação o termo foi adaptado para denominar a técnica de projetar e construir computadores.",
@@ -89,7 +128,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: banco,
-        img: "",
+        img: imgBanco,
         topic: "O que é?",
         content:
           "Um banco de dados é uma coleção organizada de informações - ou dados - estruturadas, normalmente armazenadas eletronicamente em um sistema de computador. Um banco de dados é geralmente controlado por um sistema de gerenciamento de banco de dados DBMS. Juntos, os dados e o DBMS, juntamente com os aplicativos associados a eles, são chamados de sistema de banco de dados, geralmente abreviados para apenas banco de dados. Os dados nos tipos mais comuns de bancos de dados em operação atualmente são modelados em linhas e colunas em uma série de tabelas para tornar o processamento e a consulta de dados eficientes. Os dados podem ser facilmente acessados, gerenciados, modificados, atualizados, controlados e organizados. A maioria dos bancos de dados usa a linguagem de consulta estruturada SQL para escrever e consultar dados.",
@@ -107,7 +146,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: cienDados,
-        img: "",
+        img: imgCienDados,
         topic: "O que é?",
         content:
           "A ciência de dados é o estudo dos dados para extrair insights significativos para os negócios. Ela é uma abordagem multidisciplinar que combina princípios e práticas das áreas de matemática, estatística, inteligência artificial e engenharia da computação para analisar grandes quantidades de dados. Essa análise ajuda os cientistas de dados a fazer e responder perguntas como o que aconteceu, por que aconteceu, o que acontecerá e o que pode ser feito com os resultados.",
@@ -125,7 +164,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: compGra,
-        img: "",
+        img: imgCompGra,
         topic: "O que é?",
         content:
           "A computação gráfica é a área da computação destinada à geração de imagens em geral em forma de representação de dados e informação, ou em forma de arte e recriação do mundo real. Ela pode possuir uma infinidade de aplicações para diversas áreas, desde a própria informática, ao produzir interfaces gráficas para software, sistemas operacionais e sites na Internet, quanto para produzir animações e jogos. É muito utilizada na indústria do entretenimento, engenharia, arquitetura, design, pesquisa científica e na área de comunicação.",
@@ -143,7 +182,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: compMus,
-        img: "",
+        img: imgCompMus,
         topic: "O que é?",
         content:
           "É um campo de pesquisa em ciência da computação com características multidisciplinares, voltado ao tratamento de elementos musicais por meio do computador. Trabalhos realizados neste campo envolvem conceitos como interação humano-computador, sistemas de recomendação, inteligência computacional, projeto de hardware, educação mediada por computador, sistemas interativos de tempo real, jogos digitais, realidade virtual, entre outros.",
@@ -160,7 +199,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: edu,
-        img: "",
+        img: imgEdu,
         topic: "O que é?",
         content:
           "A educação em Engenharia de Software, em resumo, se aplica por conta das várias deficiências apresentadas pelos profissionais de engenharia de software recém-formados que trabalham na indústria. O método de ensino usualmente aplicado na educação em engenharia de software resume-se à extensa exposição de conteúdo e à realização de um projeto prático, que pouco reflete a situação real dos projetos existentes na indústria. Dentre as possibilidades de aproximar os estudantes a ambientes mais realísticos, a abordagem de adoção de projetos de código aberto (open source) tem-se apresentado como opção interessante, principalmente para os casos onde o contrato de cooperação com a indústria não seja viável. Diferentemente de projetos proprietários, o código e ambientes de desenvolvimento reais estão acessíveis por meio da Internet. O estudante pode estudar seu código, gerar contribuições e interagir com a comunidade de usuários e desenvolvedores do projeto.",
@@ -177,13 +216,21 @@ export const dataMenuAreas = {
     content: [
       {
         icon: eng,
-        img: "",
+        img: imgEng1,
         topic: "O que é?",
-        content: "",
+        content: "A Engenharia de Software capacita as pessoas com a utilização de teorias, técnicas e ferramentas da Ciência da Computação para produção e desenvolvimento de sistemas. Por meio da análise, coleta e processamento de dados, ainda identificam potenciais falhas nesses produtos e criam soluções de alta performance. O objetivo dessa Engenharia é acompanhar as inovações e ensinar aos alunos as melhores técnicas e modelos a serem seguidos. Com esse conhecimento adquirido em uma graduação, o profissional tem diversas oportunidades de atuação no mercado, como veremos a seguir.",
       },
       {
+        img: imgEng2,
         topic: "O que faz um profissional da área?",
-        content: "",
+        content: "O engenheiro de software cuida de toda a parte técnica e científica dos sistemas, desde o desenvolvimento até a gestão. Ele pode cuidar tanto das aplicações visíveis aos usuários (que é chamada de front-end) quanto dos bastidores –– nesse caso, o back-end. O engenheiro de software cuida de toda a parte técnica e científica dos sistemas, desde o desenvolvimento até a gestão. Ele pode cuidar tanto das aplicações visíveis aos usuários (que é chamada de front-end) quanto dos bastidores –– nesse caso, o back-end.",
+      },
+      {
+        topic: "Algumas atribuições profissionais são:",
+        content: "No desenvolvimento, ele pode criar jogos e softwares para computadores, videogames e dispositivos móveis (tablets e smartphones).",
+      },
+      {
+        content: "Na arquitetura de softwares, o profissional fica responsável pela parte estrutural das aplicações, com um alto controle de qualidade para garantir eficiência.",
         video:
           "https://www.youtube.com/watch?app=desktop&v=uUCGKJni7Nk&ab_channel=Refatorando",
       },
@@ -193,7 +240,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: infoEdu,
-        img: "",
+        img: imgInfoEdu,
         topic: "O que é?",
         content:
           "É a utilização de recursos computacionais, hardware e software, no processo ensino-aprendizagem. É a informática utilizada como recurso adicional, a serviço do professor e do aluno, independentemente da disciplina. Portanto, não é a substituição do professor por recursos tecnológicos, vez que o professor permanece como o principal ator do processo. Não existem regras de como aplicar a informática na educação, mas alguns fatores são determinantes para a obtenção de resultados positivos, como criatividade, planejamento, domínio de informática e tecnologias.",
@@ -211,10 +258,11 @@ export const dataMenuAreas = {
     content: [
       {
         icon: info,
-        img: "",
+        img: imgInfoSaude,
         topic: "O que é?",
         content:
           "A Informática em Saúde é a área do conhecimento que trata da aplicação de conceitos e tecnologias de Informação e Comunicação (TIC) para a melhoria e transformação de sistemas, serviços e processos de Saúde. O termo eSaúde (tradução do inglês – eHealth) pode ser entendido dentro da mesma definição de informática em saúde e tem sido um termo bastante utilizado recentemente.",
+        img: imgInfoSaude2,
       },
       {
         topic: "O que faz um profissional da área?",
@@ -227,15 +275,37 @@ export const dataMenuAreas = {
   "Inteligência Artificial": {
     content: [
       {
-        icon: artificial,
-        img: "",
+        icon: artificial, 
         topic: "O que é?",
-        content: "",
+        content: "Em termos mais simples, IA que significa inteligência artificial refere-se a sistemas ou máquinas que mimetizam a inteligência humana para executar tarefas e podem se aprimorar iterativamente com base nas informações que eles coletam. A IA se manifesta de várias formas. Alguns exemplos são:",
       },
       {
-        topic: "O que faz um profissional da área?",
-        content: "",
-        video: "",
+        content: "Os chatbots usam a IA para entender os problemas dos clientes mais rapidamente e fornecer respostas mais eficientes.",
+      },
+      {
+        content: "Os assistentes inteligentes usam a IA para analisar informações críticas de grandes conjuntos de dados de texto livre para melhorar a programação.",
+      },
+      {
+        content: "Os mecanismos de recomendação podem fornecer recomendações automatizadas para programas de TV com base nos hábitos de visualização dos usuários.",
+      },
+      {
+        img: imgArtificial,
+        content: "Exemplo de conteúdo (Chat GPT) : https://chat.openai.com/chat",
+      },
+      {
+        content: "A IA está mais relacionada ao processo e a capacidade de pensamento superpoderoso e a análise de dados do que a qualquer formato ou função em particular. Embora a IA traga imagens de robôs parecidos com os homens de alto funcionamento que dominam o mundo, a IA não pretende substituir os seres humanos. Seu objetivo é melhorar significativamente as habilidades e contribuições humanas. Isso faz dela um ativo de negócios muito valioso.",
+        video: "https://www.youtube.com/watch?v=NZlIYr1slAk&list=PLPWikzi38KIwwQdolewJb_Ei1NAb4BSFg",
+      },
+      {
+        topic: "O que faz um especialista de IA?",
+        content: "Os desenvolvedores usam inteligência artificial para executar tarefas de maneira mais eficiente, que de outra forma são feitas manualmente, conectar-se com clientes, identificar padrões e resolver problemas. Para começar a usar IA, os desenvolvedores devem ter uma formação em matemática e se sentir confortáveis com algoritmos.",
+        video: "https://www.youtube.com/watch?v=TWVYGlzviKQ",
+      },
+      {
+        content: "Ao começar a usar a inteligência artificial para criar um aplicativo, é útil começar pequeno. Construindo um projeto relativamente simples, como tic-tac-toe, por exemplo, você aprenderá os conceitos básicos da inteligência artificial. Aprender fazendo é uma ótima maneira de aprimorar qualquer habilidade, e a inteligência artificial não é diferente. Depois de concluir com sucesso um ou mais projetos em pequena escala, não há limites para onde a inteligência artificial pode levá-lo.",
+      },
+      {
+        content: "Se interessou pelo tema? Comece a estudar agora mesmo, com um material desenvolvido pelo professor Hendrik Teixeira, disponível em: https://hendrikdcomp.github.io/ia/.",
       },
     ],
   },
@@ -243,7 +313,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: iot,
-        img: "",
+        img: imgIOT,
         topic: "O que é?",
         content:
           "A Internet das Coisas (IoT) descreve a rede de objetos físicos incorporados a sensores, software e outras tecnologias com o objetivo de conectar e trocar dados com outros dispositivos e sistemas pela internet. Esses dispositivos variam de objetos domésticos comuns a ferramentas industriais sofisticadas. Com mais de 7 bilhões de dispositivos IoT conectados hoje, os especialistas esperam que esse número cresça para 10 bilhões em 2020 e 22 bilhões em 2025.",
@@ -261,7 +331,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: jogos,
-        img: "",
+        img: imgJogos,
         topic: "O que é?",
         content:
           "O desenvolvimento e em seguida a utilização de jogos educativos computacionais como recurso pedagógico está sendo cada vez mais adotado pelas instituições de Educação Infantil. Isso se deve aos benefícios advindos dessa nova forma de ensinar e aprender e, com isso, os educadores têm proporcionado um melhor ambiente de aprendizagem para os seus educandos.",
@@ -279,10 +349,11 @@ export const dataMenuAreas = {
     content: [
       {
         icon: lab,
-        img: "",
+        img: imgLab1,
         topic: "O que é?",
         content:
           "Um laboratório virtual é um elemento tecnológico capaz de levar o aluno a um ambiente prático de aprendizagem simulando um ambiente real, uma situação real. Costuma-se chamar os laboratórios virtuais de Simuladores de Prática Profissional, já que a ideia é expor o aluno a uma realidade virtual de aprendizado. Essa tecnologia possui extrema precisão nas operações e medidas, possíveis erros e equívocos cometidos pelos alunos durante os procedimentos. Com a diferença de o ambiente ser controlado, sem riscos ou custos elevados.",
+        img: imgLab2,
       },
       {
         topic: "O que faz um profissional da área?",
@@ -297,7 +368,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: lingua,
-        img: "",
+        img: imgLingua,
         topic: "O que é?",
         content:
           "É por onde o hardware (máquina) e o programador se comunicam. É uma linguagem formal que funciona por meio de uma série de instruções, símbolos, palavras-chave, regras semânticas e sintáticas. A linguagem de programação permite que um programador crie programas a partir de um conjunto de ordens, ações consecutivas, dados e algoritmos. As linguagens de programação foram criadas para solucionar qualquer tipo de problema na área tecnológica computacional. Acompanhando todas as tendências da tecnologia, elas estão sempre em constante evolução, buscando oferecer as mais modernas ferramentas para as mais complexas tarefas. Cada linguagem possui suas particularidades, e isso as torna adequadas para solucionar os mais diversos problemas e desenvolver inovações.",
@@ -314,10 +385,13 @@ export const dataMenuAreas = {
     content: [
       {
         icon: mine,
-        img: "",
+        img: imgMine,
         topic: "O que é?",
         content:
-          "A mineração de dados é formada por um conjunto de ferramentas e técnicas que através do uso de algoritmos de aprendizagem ou classificação baseados em redes neurais e estatística, são capazes de explorar um conjunto de dados, extraindo ou ajudando a evidenciar padrões nestes dados e auxiliando na descoberta de conhecimento. Esse conhecimento pode ser apresentado por essas ferramentas de diversas formas: agrupamentos, hipóteses, regras, árvores de decisão, grafos, ou dendrogramas. Diariamente as empresas acumulam grande volume de dados em seus aplicativos operacionais. São dados brutos que dizem quem comprou o quê, onde, quando e em que quantidade. É a informação vital para o dia-a-dia da empresa. Se fizermos estatística ao final do dia para repor estoques e detectar tendências de compra, estaremos praticando business intelligence (BI). Se analisarmos os dados com estatística de modo mais refinado, à procura de padrões de vinculações entre as variáveis registradas, então estaremos fazendo mineração de dados. Buscamos com a MD conhecer melhor os clientes, seus padrões de consumo e motivações. A MD resgata em organizações grandes o papel do dono atendendo no balcão e conhecendo sua clientela. Através da MD, esses dados agora podem agregar valor às decisões da empresa, sugerir tendências, desvendar particularidades dela e de seu meio ambiente e permitir ações melhor informadas aos seus gestores.",
+          "A mineração de dados é formada por um conjunto de ferramentas e técnicas que através do uso de algoritmos de aprendizagem ou classificação baseados em redes neurais e estatística, são capazes de explorar um conjunto de dados, extraindo ou ajudando a evidenciar padrões nestes dados e auxiliando na descoberta de conhecimento. Esse conhecimento pode ser apresentado por essas ferramentas de diversas formas: agrupamentos, hipóteses, regras, árvores de decisão, grafos, ou dendrogramas.",
+      },
+      {
+        content: " Diariamente as empresas acumulam grande volume de dados em seus aplicativos operacionais. São dados brutos que dizem quem comprou o quê, onde, quando e em que quantidade. É a informação vital para o dia-a-dia da empresa. Se fizermos estatística ao final do dia para repor estoques e detectar tendências de compra, estaremos praticando business intelligence (BI). Se analisarmos os dados com estatística de modo mais refinado, à procura de padrões de vinculações entre as variáveis registradas, então estaremos fazendo mineração de dados. Buscamos com a MD conhecer melhor os clientes, seus padrões de consumo e motivações. A MD resgata em organizações grandes o papel do dono atendendo no balcão e conhecendo sua clientela. Através da MD, esses dados agora podem agregar valor às decisões da empresa, sugerir tendências, desvendar particularidades dela e de seu meio ambiente e permitir ações melhor informadas aos seus gestores.",
       },
       {
         topic: "O que faz um profissional da área?",
@@ -331,8 +405,8 @@ export const dataMenuAreas = {
   "Modelagem de Avaliação e Desempenho de Sistemas": {
     content: [
       {
-        icon: modelAp,
-        img: "",
+        icon: molda,
+        img: imgMolda,
         topic: "O que é?",
         content:
           "Com a evolução tecnológica experimentada nas últimas décadas, outros tipos de requisitos foram acrescentados aos sistemas que fornecem serviços aos seus usuários, tal como desempenho, aqui com a conotação de algum tipo de satisfação gerada pela eficiência na realização da tarefa. De maneira que a execução dessa tarefa possa ser mais ou menos eficiente, tomando-se algum parâmetro como critério. A maneira pela qual será avaliado o desempenho depende diretamente das características do sistema envolvido.",
@@ -349,7 +423,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: modelSimu,
-        img: "",
+        img: imgModelSimu,
         topic: "O que é?",
         content:
           "A Modelagem e Simulação de Sistemas Computacionais permite representar Sistemas Computacionais por meio de modelos de simulação e reproduzir suas cadeias de causalidade, estimar e avaliar resultados e subsidiar o processo de tomada de decisões em nível de engenharia.",
@@ -367,15 +441,10 @@ export const dataMenuAreas = {
     content: [
       {
         icon: otiComb,
-        img: "",
+        img: imgOtiComb,
         topic: "O que é?",
         content:
           "É um ramo da ciência da computação e da matemática aplicada que estuda problemas de otimização em conjuntos finitos. Em um problema de otimização temos uma função objetivo e um conjunto de restrições, ambos relacionados às variáveis de decisão. Os valores possíveis às variáveis de decisão são delimitados pelas restrições impostas sobre essas variáveis, formando um conjunto discreto (finito ou não) de soluções factíveis a um problema. O problema pode ser de minimização ou de maximização da função objetivo. A resposta para o problema de otimização, ou seja, o ótimo global, será o menor (ou maior) valor possível para a função objetivo para o qual o valor atribuído às variáveis não viole nenhuma restrição.",
-      },
-      {
-        topic: "O que faz um profissional da área?",
-        content: "",
-        video: "",
       },
     ],
   },
@@ -383,7 +452,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: otiMult,
-        img: "",
+        img: imgOtiMulti,
         topic: "O que é?",
         content:
           "A otimização multiobjetivo é uma área de tomada de decisão de múltiplos critérios que se preocupa com problemas de otimização matemática envolvendo mais de uma função objetivo a ser otimizada simultaneamente .A otimização multiobjetivo tem sido aplicada em muitos campos da ciência, incluindo engenharia, economia e logística, onde decisões ótimas precisam ser tomadas na presença de compensações entre dois ou mais objetivos conflitantes. Minimizar o custo maximizando o conforto ao comprar um carro e maximizar o desempenho minimizando o consumo de combustível e a emissão de poluentes de um veículo são exemplos de problemas de otimização multiobjetivo envolvendo dois e três objetivos, respectivamente. Em problemas práticos, pode haver mais de três objetivos.",
@@ -401,13 +470,26 @@ export const dataMenuAreas = {
     content: [
       {
         icon: proceLin,
-        img: "",
+        img: imgProceLin,
         topic: "O que é?",
-        content: "",
+        content: "Processamento de linguagem natural (PLN) é uma vertente da inteligência artificial que ajuda computadores a entender, interpretar e manipular a linguagem humana. O PLN resulta de diversas disciplinas, incluindo ciência da computação e linguística computacional, que buscam preencher a lacuna entre a comunicação humana e o entendimento dos computadores.",
       },
       {
         topic: "Importância do Processamento de Linguagem Natural",
-        content: "",
+        content: "Grandes volumes de dados textuais:",
+      },
+      {
+        content: "O processamento de linguagem natural ajuda computadores a se comunicarem com seres humanos em sua própria linguagem e escala outras tarefas relacionadas à linguagem. Por exemplo, o PLN possibilita que computadores leiam textos, ouçam e interpretem falas, identifiquem sentimentos e determinem quais trechos são importantes. As máquinas de hoje podem analisar mais dados baseados em linguagem do que seres humanos, sem fadiga, de maneira consistente e imparcial. Considerando a quantidade gigantesca de dados não-estruturados que é gerada todos os dias, de registros médicos a mídias sociais, a automação será imprescindível para uma análise de texto e fala completa e eficiente.",
+      },
+      {
+        content: "Estruturando uma fonte de dados altamente não-estruturada:",
+      },
+      {
+        content: "A linguagem humana é surpreendentemente complexa e diversa. Nós nos expressamos de infinitas maneiras, tanto verbalmente quanto por escrito. Não apenas existem centenas de idiomas e dialetos, como há também um conjunto único de regras gramaticais e de sintaxe, expressões e gírias dentro de cada um deles. Quando escrevemos, costumamos cometer erros ou abreviar palavras, ou omitimos pontuações; quando falamos, carregamos sotaques regionais, tendemos a murmurar e emprestamos termos de outros idiomas. Embora o aprendizado supervisionado, o aprendizado não-supervisionado e, especificamente, o deep learning sejam hoje amplamente utilizados para modelar a linguagem humana, há também a necessidade de compreensão sintática e semântica, além de domínio, que não estão necessariamente presentes nessas abordagens de machine learning. O PLN é importante porque ajuda a resolver a ambiguidade na linguagem e adiciona uma estrutura numérica útil aos dados para muitas aplicações downstream, como reconhecimento de fala ou análise de texto.",
+      },
+      {
+        topic: "Importância do Processamento de Linguagem Natural",
+        content: "Em geral, um profissional da área cria aplicativos de processamentos de linguagem natural e com isso muitas empresas conseguem analisar textos e extrair informações sobre pessoas, lugares e eventos para entender melhor as opiniões em mídias sociais e conversas de clientes.",
         video:
           "https://www.youtube.com/watch?v=vbtErRXkHqg&ab_channel=IAExpertAcademy",
       },
@@ -417,13 +499,25 @@ export const dataMenuAreas = {
     content: [
       {
         icon: proceImg,
-        img: "",
+        img: imgProceImg,
         topic: "O que é?",
-        content: "",
+        content: "As técnicas voltadas para a análise de dados multidimensionais, adquiridos por diversos tipos de sensores recebem o nome de processamento digital de imagens, ou seja, é a manipulação de uma imagem por computador de modo onde a entrada e a saída do processo são imagens. Usa-se para melhorar o aspecto visual de certas feições estruturais para o analista humano e para fornecer outros subsídios para a sua interpretação, inclusive gerando produtos que possam ser posteriormente submetidos a outros processamentos. Inclui diversas áreas como a análise de recursos naturais e meteorologia por meio de imagens de satélites; transmissão digital de sinais de televisão ou fac-símile; análise de imagens biomédicas; análise de imagens metalográficas e de fibras vegetais; obtenção de imagens médicas por ultra-som, radiação nuclear ou técnicas de tomografia computadorizada; aplicações em automação industrial envolvendo o uso de sensores visuais em robôs.",
+      },
+      {
+        content: "O uso de imagens multiespectrais registradas por satélites tais como, Landsat, SPOT ou similares é uma valiosa técnica para a extração dos dados destinados às várias aplicações de pesquisa de recursos naturais. A obtenção das informações espectrais registradas pelos sistemas nas diferentes partes do espectro eletromagnético, visando a identificação e discriminação dos alvos de interesse, depende principalmente da qualidade da representação dos dados contidos nas imagens. As técnicas de processamento digital de imagens, além de permitirem analisar uma cena nas várias regiões do espectro eletromagnético, também possibilitam a integração de vários tipos de dados, devidamente georeferenciados.",
       },
       {
         topic: "O que faz um profissional da área?",
-        content: "",
+        content: "Em geral um Profissional dessa área trabalha em três etapas:",
+      },
+      {
+        content: "Pré-processamento refere-se ao processamento inicial de dados brutos para calibração radiométrica da imagem, correção de distorções geométricas e remoção de ruído.",
+      },
+      {
+        content: "Realce visa melhorar a qualidade da imagem, permitindo uma melhor discriminação dos objetos presentes na imagem.",
+      },
+      {
+        content: "Na classificação são atribuídas classes aos objetos presentes na imagem.",
         video:
           "https://www.youtube.com/watch?v=T9V_axU6jU8&ab_channel=ProgramaçãoDinâmica",
       },
@@ -433,7 +527,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: programacao,
-        img: "",
+        img: imgProgramacaoLinear,
         topic: "O que é?",
         content:
           "A Programação Inteira pode ser entendida como uma caso específico da Programação Linear, onde as variáveis devem ser inteiras (ou ao menos, parte destas variáveis). A rigor, o nome mais correto para a Programação Inteira é Programação Linear Inteira. Quando todas as variáveis devam possuir valores inteiros, o modelo é denominado de um problema de Programação Inteira Pura, caso contrário, é denominado de um problema de Programação Inteira Mista.",
@@ -450,7 +544,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: redes,
-        img: "",
+        img: imgRedes,
         topic: "O que é?",
         content:
           "Redes de computadores referem-se a dispositivos de computação interconectados que podem trocar dados e compartilhar recursos entre si. Esses dispositivos em rede usam um sistema de regras, chamados de protocolos de comunicação, para transmitir informações por meio de tecnologias físicas ou sem fio. Nós e links são os blocos de construção básicos em redes de computadores. Um nó de rede pode ser um equipamento de comunicação de dados (DCE), como um modem, hub ou switch, ou um equipamento terminal de dados (DTE), como dois ou mais computadores e impressoras. Um link refere-se ao meio de transmissão que conecta dois nós. Os links podem ser físicos, como fios de cabos ou fibras ópticas, ou espaço livre usado por redes sem fio. Em uma rede de computadores em funcionamento, nós seguem um conjunto de regras ou protocolos que definem como enviar e receber dados eletrônicos por meio dos links. A arquitetura de rede de computadores define o design desses componentes físicos e lógicos. Ela fornece as especificações para os componentes físicos da rede, organização funcional, protocolos e procedimentos.",
@@ -468,7 +562,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: sistDis,
-        img: "",
+        img: imgSistDis,
         topic: "O que é?",
         content:
           "O conceito de sistema distribuído é de um sistema que possui componentes localizados em computadores interligados em rede e que se comunicam e coordenam suas ações através da troca de mensagens entre os componentes. É comum pensarmos em componentes como sendo apenas servidores e máquinas conectadas em rede, mas quando falamos de componentes podem ser componentes de hardware ( servidores ) ou de software ( aplicações e serviços ). Os componentes interligados em rede podem estar separados por qualquer distância. No mesmo edifício de uma empresa, na mesma cidade, mesmo estado, no mesmo país ou até em continentes diferentes.",
@@ -485,7 +579,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: sistEmb,
-        img: "",
+        img: imgSistEmb,
         topic: "O que é?",
         content:
           "Sistemas embarcados são dispositivos com capacidade de processamento de dados e que estão inseridos em um determinado dispositivo ou produto, de forma a desempenhar uma função ou servir a uma aplicação específica. O núcleo destes sistemas são os microcontroladores, que nada mais são que unidades de processamento bastante flexíveis em termos de sua utilização e facilidade de aplicação. Um bom exemplo disto são os “smartphones” ou telefones celulares, que possuem atualmente incontáveis aplicações. Os sistemas embarcados estão irreversivelmente inseridos em nosso cotidiano e encontram aplicações não somente em produtos comerciais de prateleira, mas nas áreas de saúde, financeira, energia, recursos hídricos, comunicações, transportes, construção civil, serviços essenciais à comunidades, aeroespacial, defesa, entre outras.",
@@ -503,7 +597,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: smart,
-        img: "",
+        img: imgSmart,
         topic: "O que é?",
         content:
           "Smart cities (cidades inteligentes) são sistemas de pessoas interagindo e usando energia, materiais, serviços e financiamento para catalisar o desenvolvimento econômico e a melhoria da qualidade de vida. Fazem uso da tecnologia em seu processo de planejamento com a participação dos cidadãos.",
@@ -520,7 +614,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: teoria,
-        img: "",
+        img: imgTeoria,
         topic: "O que é?",
         content:
           "A teoria da computação é um subcampo da ciência da computação e matemática que busca determinar quais problemas podem ser computados em um dado modelo de computação. A computação pode ser definida como a solução de um problema ou, formalmente, o cálculo de uma função por meio de um algoritmo.",
@@ -538,7 +632,7 @@ export const dataMenuAreas = {
     content: [
       {
         icon: visao,
-        img: "",
+        img: imgVisao,
         topic: "O que é?",
         content:
           "Visão computacional é a ciência e tecnologia das máquinas que enxergam. Ela desenvolve teoria e tecnologia para a construção de sistemas artificiais que obtêm informação de imagens ou quaisquer dados multidimensionais. Exemplos de aplicações incluem o controle de processos (como robôs industriais ou veículos autônomos), detecção de eventos, organização de informação, modelagem de objetos ou ambientes e interação (atrelado a interação humano-computador). A visão computacional também pode ser descrita como um complemento da visão biológica. Na visão biológica, a percepção visual dos humanos e outros animais é estudada, resultando em modelos em como tais sistemas operam em termos de processos fisiológicos. Por outro lado, a visão computacional estuda e descreve sistemas de visão artificial implementados por hardware ou software.",
