@@ -62,7 +62,7 @@ const AreasSelected = ({ data }) => {
                   width={widthScreen > 600 ? '500' : widthScreen > 500 ? '400' : '300'}
                   height={widthScreen > 600 ? '300' : widthScreen > 500 ? '250' : '200'}
                   style={{ marginTop: '2rem' }}
-                  src={`http://www.youtube.com/embed/${idVideo(elem.video)}?autoplay=0`}
+                  src={`https://www.youtube.com/embed/${idVideo(elem.video)}?autoplay=0`}
                   frameborder="0"
                 ></iframe>
               )}
