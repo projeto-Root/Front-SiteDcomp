@@ -424,7 +424,7 @@ export const CardProf = ({ name, areas, image, dataProf, isModal, handleOpen }) 
       }}
       className="card"
       style={{
-        margin: "2rem",
+        margin: "1rem",
         width: "100%",
         maxWidth: "500px",
         background: "linear-gradient(45deg, dodgerblue, rgb(30, 30, 256))",

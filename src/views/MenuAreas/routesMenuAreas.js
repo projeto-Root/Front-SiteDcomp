@@ -3,12 +3,12 @@ import Areas from "../Areas/Areas"
 
 const simpleRoute = areas.map(elem => {
     return {
-        path: 'areas',
+        path: elem.link,
         name: elem.name,
         template: true
     }
 })
 
 export const routesMenuAreas = simpleRoute.map((elem) => {
-    return {...elem, component: <Areas data={elem.dataComponent}/>}
+    return {...elem, component: <Areas areaDefault={areas[elem.path?.split('/')[2]]?.name}/>}
 })

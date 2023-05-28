@@ -11,7 +11,6 @@ const CardAreas = ({titulo, descricao, imagem, link}) => {
     const [selected, setSelected ] = useState(false)
 
     const readMore = (name) => {
-      console.log(name)
       navigate('/areas' , {state: {title: name}})
     }
 

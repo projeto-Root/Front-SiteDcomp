@@ -1,53 +1,65 @@
-import { Box, Select } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { Box, Spinner } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
 import { areas } from "../../utils/utils_areas";
 import AreasSelected from "./AreasSelected";
-import { useLocation } from "react-router-dom";
+import { Select } from "antd";
 
-const Areas = () => {
+const Areas = ({ areaDefault }) => {
 
-  const location = useLocation()
-  let inicial
+  const [areaSelected, setAreaSelected] = useState(areaDefault);
 
-  if (location.state) {
-    inicial = location.state.title
-  } else {
-    inicial = 'Arquitetura de Computadores'
-  }
-
-  const [areaSelected, setAreaSelected] = useState(inicial);
-
-  
-
-  const handleChangeArea = (event) => {
-    const { value } = event.target;
+  const handleChangeArea = (value) => {
     setAreaSelected(value);
   };
 
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 500);
+  }, [areaSelected])
+
   return (
-    <Box style={{ 
-        padding: "2rem 4rem", 
-        display: "flex", 
+    <Box
+      style={{
+        padding: "2rem 4rem",
+        display: "flex",
         flexDirection: "column",
-        alignItems: 'center'
-    }}>
+        alignItems: "center",
+      }}
+    >
       <Box
         style={{
-          maxWidth: "60rem",
-          width: '100%',
+          maxWidth: "50rem",
+          width: "100%",
         }}
       >
-        <Select value={areaSelected} onChange={handleChangeArea} style={{ width: '100%' }}>
-          {areas.map((elem, key) => {
-            return (
-              <option key={key}>
-                <a href={elem.link}>{elem.name}</a>
-              </option>
-            );
+        <Select
+          onChange={handleChangeArea}
+          style={{ width: "100%" }}
+          showSearch
+          placeholder="Search to Select"
+          optionFilterProp="children"
+          filterOption={(input, option) =>
+            (option?.label?.toLowerCase() ?? "").includes(input?.toLowerCase())
+          }
+          filterSort={(optionA, optionB) =>
+            (optionA?.label ?? "")
+              .toLowerCase()
+              .localeCompare((optionB?.label ?? "").toLowerCase())
+          }
+          options={areas.map((elem) => {
+            return {
+              value: elem.name,
+              label: elem.name,
+            };
           })}
-        </Select>
+        />
       </Box>
-      <AreasSelected data={areaSelected} />
+      {loading && <Spinner style={{ marginTop: '1rem' }} />}
+      {!loading && <AreasSelected data={areaSelected} />}
     </Box>
   );
 };

@@ -133,7 +133,7 @@ const Template = ({ element, isHome, title }) => {
           </ul>
         </nav>
       </header>
-      <main>
+      <main style={{ backgroundColor: '#fafafa' }}>
         <section
           style={{
             height: isHome ? "100vh" : "50vh",
@@ -180,6 +180,7 @@ const Template = ({ element, isHome, title }) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          backgroundColor: '#fafafa'
         }}
       >
         <h3 style={{ color: "#000", fontWeight: "bold", marginTop: '1rem' }}>Sobre nós</h3>

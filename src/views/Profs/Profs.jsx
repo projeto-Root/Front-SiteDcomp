@@ -1,27 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { CardProf } from "./CardProf";
 import { profsInfo } from "../../utils/utils_profs";
-import { Pagination } from "./Pagination";
-import {
-  Box,
-  Button,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalOverlay,
-  Spinner,
-} from "@chakra-ui/react";
+import { Modal, Pagination } from "antd";
+import { Spinner } from "@chakra-ui/react";
 
 export const Profs = () => {
   const [pagination, setPagination] = useState(0);
   const [listProfs, setListProfs] = useState(profsInfo);
   const [pages, setPages] = useState([]);
   const [data, setData] = useState([]);
-  const limitPerPage = 8;
+  const limitPerPage = 10;
   const totalPages = Math.ceil(profsInfo.length / limitPerPage);
 
-  const [currentPage, setCurrentPage] = useState("0");
+  const [currentPage, setCurrentPage] = useState(1);
 
   const [loading, setLoading] = useState(false);
 
@@ -47,8 +38,9 @@ export const Profs = () => {
   }, [data]);
 
   const handleChangePage = (page) => {
-    setPagination(page);
-    setCurrentPage(page);
+    setPagination(page - 1);
+    setCurrentPage(page - 1);
+    window.scrollTo(0, 0);
   };
 
   const renderItems = () => {
@@ -126,31 +118,35 @@ export const Profs = () => {
             })}
         </div>
         <Pagination
-          handleChangePage={handleChangePage}
-          pages={pages}
-          page={currentPage}
+          onChange={handleChangePage}
+          defaultCurrent={currentPage}
+          total={listProfs?.length}
         />
       </div>
-      <Modal isOpen={open} onClose={handleClose} size='xl'>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalBody style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '-1rem -2rem' }}>
-            {dataProf && (
-              <CardProf
-                name={dataProf.name}
-                areas={dataProf.areas}
-                image={dataProf.image}
-                isModal={true}
-              />
-            )}
-          </ModalBody>
-          <ModalFooter>
-            <Box style={{ display: 'flex', gap: '1rem' }}>
-              <Button colorScheme="purple" size='sm' onClick={() => window.location = '/menuareas'}>Menu das áreas</Button>
-              <Button size='sm' onClick={handleClose}>Fechar</Button>
-            </Box>
-          </ModalFooter>
-        </ModalContent>
+      <Modal
+        open={open}
+        onCancel={handleClose}
+        cancelText="Área 1"
+        onOk={handleClose}
+        okText="Área 2"
+        width={600}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+          {dataProf && (
+            <CardProf
+              name={dataProf.name}
+              areas={dataProf.areas}
+              image={dataProf.image}
+              isModal={true}
+            />
+          )}
+        </div>
       </Modal>
     </>
   );

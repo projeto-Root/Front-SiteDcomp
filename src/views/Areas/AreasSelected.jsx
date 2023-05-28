@@ -10,7 +10,7 @@ const AreasSelected = ({ data }) => {
             fontSize: "25px",
             fontWeight: "bold",
             textAlign: "center",
-            marginTop: '1rem'
+            marginTop: '2rem'
           }}
         >
           {data}
