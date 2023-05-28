@@ -133,7 +133,7 @@ const Template = ({ element, isHome, title }) => {
           </ul>
         </nav>
       </header>
-      <main style={{ backgroundColor: "#fafafa" }}>
+      <main style={{ backgroundColor: "#fafafa", paddingBottom: '2rem' }}>
         <section
           style={{
             height: isHome ? "100vh" : "50vh",
@@ -181,7 +181,6 @@ const Template = ({ element, isHome, title }) => {
           flexDirection: "column",
           alignItems: "center",
           backgroundColor: "dodgerblue",
-          marginTop: "2rem",
           borderRadius: "15px 15px 0px 0px",
         }}
       >

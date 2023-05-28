@@ -8,25 +8,17 @@ import {
 } from "../../utils/utils_home";
 import CardGeneric from "../../components/CardGeneric";
 import CardComment from "../../components/CardComment";
-import { ButtonAbout, ButtonEffect } from "../../components/core-atoms";
+import { ButtonEffect } from "../../components/core-atoms";
 import VenhaFazerParte from "../../assets/venha-fazer-parte.jpg";
+import "./Home.css";
 
 const Home = () => {
   return (
     <>
-      <h2 style={{ fontSize: "35px", fontWeight: "600", marginTop: '1rem' }}>Cursos</h2>
-      <p
-        style={{
-          textAlign: "justify",
-          fontWeight: "300",
-          fontSize: "14px",
-          marginTop: "1rem",
-          maxWidth: "1200px",
-          padding: '0rem 3rem'
-        }}
-      >
-        {dcompHomeIntroduction}
-      </p>
+      <h2 style={{ fontSize: "35px", fontWeight: "600", marginTop: "1rem" }}>
+        Cursos
+      </h2>
+      <p className="home">{dcompHomeIntroduction}</p>
       <Box
         style={{
           width: "100%",
@@ -52,14 +44,7 @@ const Home = () => {
       >
         Nossa estrutura
       </h2>
-      <p
-        style={{
-          fontSize: "14px",
-          fontWeight: "300",
-          marginTop: "1rem",
-          textAlign: "center",
-        }}
-      >
+      <p className="home">
         Conheça um pouco mais da estrutura localizada em nosso Departamento.
       </p>
       <Box
@@ -87,14 +72,7 @@ const Home = () => {
       >
         O que nossos estudantes dizem
       </h2>
-      <p
-        style={{
-          fontSize: "14px",
-          fontWeight: "300",
-          margin: "1rem 3rem",
-          textAlign: "justify",
-        }}
-      >
+      <p className="home">
         Confira alguns depoimentos de nossos alunos sobre a experiência deles
         nos cursos do DCOMP.
       </p>

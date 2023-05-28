@@ -5,7 +5,7 @@ import Previous from "../../assets/previous.svg";
 import MembersCarrousel from "../../components/MembersCarrousel";
 import { lorem } from "../../utils/utils_content_messages";
 import CardGeneric from "../../components/CardGeneric";
-
+import './Representation.css'
 const Representations = ({ data }) => {
   const [orderMembers, setOrderMembers] = useState(data.members);
 
@@ -38,11 +38,7 @@ const Representations = ({ data }) => {
         O que é {data.title.toUpperCase()}
       </h1>
       <section
-        style={{
-          color: "#333",
-          textAlign: 'justify',
-          margin: '1rem 3rem'
-        }}
+        className="representation"
       >
         {lorem}
       </section>

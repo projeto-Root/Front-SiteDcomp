@@ -24,7 +24,6 @@ const Areas = ({ areaDefault }) => {
   return (
     <Box
       style={{
-        padding: "2rem 4rem",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -38,7 +37,7 @@ const Areas = ({ areaDefault }) => {
       >
         <Select
           onChange={handleChangeArea}
-          style={{ width: "100%" }}
+          style={{ width: "100%", marginTop: '2rem' }}
           showSearch
           placeholder="Search to Select"
           optionFilterProp="children"

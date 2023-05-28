@@ -1,0 +1,17 @@
+.prof {
+    text-align: justify;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 1rem;
+    max-width: 1200px;
+    padding: 0rem 4rem;
+  }
+  
+  
+  @media (max-width: 1100px) {
+      .prof {
+          max-width: 800px;
+          padding: 0rem 2rem;
+        }
+        
+  }

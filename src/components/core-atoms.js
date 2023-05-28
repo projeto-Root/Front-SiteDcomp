@@ -6,6 +6,8 @@ export const LogoGroup = styled.img.attrs({
   height: ${(props) => props.size || "10rem"};
   width: ${(props) => props.size || "10rem"};
   border-radius: 50%;
+  border: 1px solid #222;
+  padding: 5px;
 `;
 
 export const ButtonAbout = styled.button`

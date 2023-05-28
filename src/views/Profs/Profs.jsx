@@ -3,6 +3,7 @@ import { CardProf } from "./CardProf";
 import { profsInfo } from "../../utils/utils_profs";
 import { Modal, Pagination } from "antd";
 import { Spinner } from "@chakra-ui/react";
+import './Profs.css'
 
 export const Profs = () => {
   const [pagination, setPagination] = useState(0);
@@ -64,10 +65,7 @@ export const Profs = () => {
           Docentes Efetivos
         </h2>
         <p
-          style={{
-            textAlign: "justify",
-            margin: "2rem 4rem",
-          }}
+          className="prof"
         >
           Em 2022, os Docentes Efetivos do Departamento de Computação
           apresentavam a pontuação máxima (5) no <strong>IQCD</strong>, que é um
