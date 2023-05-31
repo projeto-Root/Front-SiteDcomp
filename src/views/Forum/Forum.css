@@ -21,6 +21,8 @@
     box-shadow: 5px 3px 3px 3px rgba(0, 0, 0, 0.3)
 }
 
+
+
 .navforum button {
     display: flex;
     align-items: center;
@@ -31,6 +33,23 @@
     padding: 1rem;
     cursor: pointer;
     font-size: 2rem;
+}
+
+.secondcontainerforum {
+    display: flex;
+    gap: 2rem;
+}
+
+.postsforum {
+    padding: 2rem;
+    overflow-y: auto;
+    max-height: 60vh;
+    border-top: 1px solid lightgray;
+    padding-top: 5rem;
+}
+
+.dropdownforum {
+    width: 18vw;
 }
 
 .navforummobile {
@@ -55,46 +74,6 @@
     scale: 110%;
 }
 
-.sideforum {
-    display: flex;
-    flex-direction: column;
-}
-
-.sideforum button {
-    display: flex;
-    padding: 1rem;
-    width: 100%;
-    justify-content: center;
-    border: 1px solid lightblue;   
-}
-
-.secondcontainerforum {
-    display: flex;
-    gap: 2rem;
-}
-
-.postsforum {
-    padding: 2rem;
-    overflow-y: auto;
-    max-height: 60vh;
-    border-top: 1px solid lightgray;
-    padding-top: 5rem;
-}
-
-.buttonoption {
-    width: 100%;
-    display: flex;
-}
-
-.buttonoption:hover {
-    color: rgb(120, 120, 120);
-    scale: 101%;
-}
-
-.dropdownforum {
-    width: 18vw;
-}
-
 
 @media screen and (max-width:850px) {
 
@@ -108,10 +87,6 @@
         padding: 1rem;
     }
 
-    .sideforum button {
-        padding: .7rem;
-        font-size: medium;
-    }
     .navforum {
         padding: 1rem;
         display: none;

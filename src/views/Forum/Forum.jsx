@@ -16,6 +16,18 @@ const Forum = () => {
   const options = ["Últimas Discussões", "Fixadas", "Mais Curtidas"];
   const [widthScreen, setWidthScreen] = useState(window.innerWidth);
 
+  useEffect(() => {
+    const updateScreen = () => {
+      setWidthScreen(window.innerWidth);
+    };
+
+    window.addEventListener("resize", updateScreen);
+
+    return () => {
+      window.removeEventListener("resize", updateScreen);
+    };
+  }, []);
+
   return (
     <div>
       <div className="forumcontainer">
