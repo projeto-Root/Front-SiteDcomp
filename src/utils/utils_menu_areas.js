@@ -84,6 +84,9 @@ export const dataMenuAreas = {
         video: "",
       },
     ],
+    profs: [
+      "Beatriz Trinchao Andrade De Carvalho"
+    ],
   },
   "Aprendizado de Máquina": {
     content: [
@@ -106,6 +109,13 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=0PrOA2JK6GQ&ab_channel=CiênciaTodoDia",
       },
     ],
+    profs: [
+      "Carlos Alberto Estombelo Montesco",
+      "Janio Coutinho Canuto",
+      "Leonardo Nogueira Matos",
+      "Rene Pereira de Gusmão",
+      "Rodolfo Botto de Barros Garcia"
+    ],
   },
   "Arquitetura de Computadores": {
     content: [
@@ -126,7 +136,7 @@ export const dataMenuAreas = {
     profs: [
       "Bruno Otavio Piedade Prado",
       "Edward David Moreno Ordonez"
-    ]
+    ],
   },
   "Banco de Dados": {
     content: [
@@ -144,6 +154,9 @@ export const dataMenuAreas = {
         video:
           "https://www.youtube.com/watch?v=ovnliKtbt0M&ab_channel=DevMedia",
       },
+    ],
+    profs: [
+      "Henrique Nou Schneider"
     ],
   },
   "Ciência de Dados": {
@@ -163,6 +176,9 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=ykSILAQQu6o&ab_channel=Nerdologia",
       },
     ],
+    profs: [
+      "Glauco De Figueiredo Carneiro"
+    ],
   },
   "Computação Gráfica": {
     content: [
@@ -181,6 +197,10 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=-4_OU95nKuU&ab_channel=Nerdologia",
       },
     ],
+    profs: [
+      "Beatriz Trinchao Andrade De Carvalho",
+      "Daniel Oliveira Dantas"
+    ],
   },
   "Computação Musical": {
     content: [
@@ -198,6 +218,9 @@ export const dataMenuAreas = {
         video: "",
       },
     ],
+    profs: [
+      "Tarcisio da Rocha"
+    ],
   },
   "Educação em Engenharia de Software": {
     content: [
@@ -214,6 +237,9 @@ export const dataMenuAreas = {
           "A importância em estudar educação em engenharia de software se dar pelo fato da vivência atual nas universidades não preparar totalmente o aluno para as situações atuais do mercado de trabalho, já que a engenharia de software como é passada em sala de aula muitas das vezes divergem do que realmente acontece no dia a dia em uma indústria por exemplo, o que se faz cada vez mais necessário o estudo dessa área.",
         video: "",
       },
+    ],
+    profs: [
+      "Debora Maria Coelho Nascimento"
     ],
   },
   "Engenharia de Software": {
@@ -239,6 +265,17 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?app=desktop&v=uUCGKJni7Nk&ab_channel=Refatorando",
       },
     ],
+    profs: [
+      "Adicineia Aparecida De Oliveira",
+      "Alberto Costa Neto",
+      "Debora Maria Coelho Nascimento",
+      "Giovanny Fernando Lucero Palma",
+      "Glauco De Figueiredo Carneiro",
+      "Henrique Nou Schneider",
+      "Leila Maciel de Almeida e Silva",
+      "Michel Dos Santos Soares",
+      "Rogério Patrico Chagas do Nascimento"
+    ],
   },
   "Informática Educativa": {
     content: [
@@ -257,6 +294,9 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=OKba9et2t2I&ab_channel=ELIANEALIRA",
       },
     ],
+    profs: [
+      "Kenia Kodel Cox"
+    ],
   },
   "Informática em Saúde": {
     content: [
@@ -274,6 +314,9 @@ export const dataMenuAreas = {
           "Um profissional da área de eHealth pode trabalhar em diversos tópicos, alguns deles são: desenvolvimento de sistemas de informação em saúde, telemedicina, processamento de imagens médicas, processamento de sinais biológicos e outros.",
         video: "",
       },
+    ],
+    profs: [
+      "Adicineia Aparecida De Oliveira"
     ],
   },
   "Inteligência Artificial": {
@@ -312,6 +355,11 @@ export const dataMenuAreas = {
         content: "Se interessou pelo tema? Comece a estudar agora mesmo, com um material desenvolvido pelo professor Hendrik Teixeira, disponível em: https://hendrikdcomp.github.io/ia/.",
       },
     ],
+    profs: [
+      "Carlos Alberto Estombelo Montesco",
+      "Hendrik Teixeira Macedo",
+      "Janio Coutinho Canuto"
+    ],
   },
   "Internet das Coisas": {
     content: [
@@ -330,6 +378,11 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=Bu0m9Iq_dTI&ab_channel=TecMundo",
       },
     ],
+    profs: [
+      "Gilton José Ferreira Da Silva",
+      "Rafael Oliveira Vasconcelos",
+      "Kalil Araujo Bispo"
+    ],
   },
   "Jogos Educativos Computacionais": {
     content: [
@@ -347,6 +400,9 @@ export const dataMenuAreas = {
         video:
           "https://www.youtube.com/watch?v=IGsQzOgzjaQ&ab_channel=MovimentosDocentes",
       },
+    ],
+    profs: [
+      "Kenia Kodel Cox"
     ],
   },
   "Laboratórios Virtuais de Ensino": {
@@ -367,6 +423,9 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=pweav7My8wA&ab_channel=SistemadeEnsinoCNEC",
       },
     ],
+    profs: [
+      "Edilayne Meneses Salgueiro"
+    ],
   },
   "Linguagens de Programação": {
     content: [
@@ -383,6 +442,10 @@ export const dataMenuAreas = {
           "Como o nome nos indica, a função do programador é programar. Certo, mas programar o quê? A programação em questão se refere a programas (softwares) de computador, aplicativos para smartphone e para outros dispositivos eletrônicos. Além disso, desenvolve sites e outras ferramentas para a web. Além das atribuições mencionadas acima, desenvolver sites, aplicativos e softwares para os mais variados dispositivos, o programador também atua com a manutenção dessas ferramentas, garantindo que elas continuem funcionando bem sem se tornarem obsoletas e consertando possíveis bugs da criação.",
         video: "https://youtu.be/yT22ylhonfs",
       },
+    ],
+    profs: [
+      "Alberto Costa Neto",
+      "Giovanny Fernando Lucero Palma"
     ],
   },
   "Mineração de Dados": {
@@ -405,6 +468,10 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=dWL0jvj1PJw&ab_channel=tecnologiaemvideo",
       },
     ],
+    profs: [
+      "Andre Britto De Carvalho",
+      "Rodolfo Botto de Barros Garcia"
+    ],
   },
   "Modelagem de Avaliação e Desempenho de Sistemas": {
     content: [
@@ -421,6 +488,9 @@ export const dataMenuAreas = {
           "A função deste profissional é modelar técnicas estatísticas e matemáticas para a compreensão dos dados e ajudar as empresas a acelerar a identificar tendências, fazer previsões e tomar decisões baseadas em dados, da forma mais eficiente possível com base em indicadores de desempenho, por exemplo, acelerando o tempo de resposta de um sistema que cumpre bem sua função, porém, apresenta uma resposta lenta em relação ao que é exigido.",
         video: "https://youtu.be/5SrZnAkoZDs",
       },
+    ],
+    profs: [
+      "Ricardo José Paiva de Britto"
     ],
   },
   "Modelagem e simulação de sistemas": {
@@ -440,6 +510,9 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=97907MOrXZI&ab_channel=WilsonCastello",
       },
     ],
+    profs: [
+      "Bruno Otavio Piedade Prado"
+    ],
   },
   "Otimização Combinatória": {
     content: [
@@ -450,6 +523,10 @@ export const dataMenuAreas = {
         content:
           "É um ramo da ciência da computação e da matemática aplicada que estuda problemas de otimização em conjuntos finitos. Em um problema de otimização temos uma função objetivo e um conjunto de restrições, ambos relacionados às variáveis de decisão. Os valores possíveis às variáveis de decisão são delimitados pelas restrições impostas sobre essas variáveis, formando um conjunto discreto (finito ou não) de soluções factíveis a um problema. O problema pode ser de minimização ou de maximização da função objetivo. A resposta para o problema de otimização, ou seja, o ótimo global, será o menor (ou maior) valor possível para a função objetivo para o qual o valor atribuído às variáveis não viole nenhuma restrição.",
       },
+    ],
+    profs: [
+      "Breno Piva Ribeiro",
+      "Rene Pereira de Gusmão"
     ],
   },
   "Otimização Multiobjeto": {
@@ -468,6 +545,9 @@ export const dataMenuAreas = {
         video:
           "https://www.youtube.com/watch?v=R3wzECA3tDI&ab_channel=AneirsonSilva",
       },
+    ],
+    profs: [
+      "Andre Britto De Carvalho"
     ],
   },
   "Processamento de Linguagem Natural": {
@@ -498,6 +578,9 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=vbtErRXkHqg&ab_channel=IAExpertAcademy",
       },
     ],
+    profs: [
+      "Hendrik Teixeira Macedo"
+    ],
   },
   "Processamento de Imagens Digitais": {
     content: [
@@ -526,6 +609,9 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=T9V_axU6jU8&ab_channel=ProgramaçãoDinâmica",
       },
     ],
+    profs: [
+      "Daniel Oliveira Dantas"
+    ],
   },
   "Programação Linear Inteira": {
     content: [
@@ -542,6 +628,9 @@ export const dataMenuAreas = {
           "Os profissionais que possuem conhecimento na área de programação linear inteira, fazem uso da mesma técnica de otimização, é utilizada para solucionar problemas operacionais dos mais variados tipos, tais como programação da produção, definição de mix de produção, definição de rotas, planejamento de investimentos, priorização de atendimento de pedidos, entre outros tipos de problemas.",
         video: "https://youtu.be/EFkL74og09k",
       },
+    ],
+    profs: [
+      "Breno Piva Ribeiro"
     ],
   },
   "Redes de Computadores": {
@@ -561,6 +650,11 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=sxp3jfaV7TA&ab_channel=ProfessoraNattane",
       },
     ],
+    profs: [
+      "Admilson De Ribamar Lima Ribeiro",
+      "Edilayne Meneses Salgueiro",
+      "Ricardo José Paiva de Britto"
+    ],
   },
   "Sistemas Distribuídos": {
     content: [
@@ -577,6 +671,10 @@ export const dataMenuAreas = {
           "Em geral, para um técnico fazer um sistema distribuído para se comportar como um sistema único se faz necessário o compartilhamento de dados dos sistemas componentes. Este é um elemento chave que permite às diferentes partes trabalharem juntas. Isto é comumente realizado utilizando interfaces de memória reflexiva. Com o intuito de que aconteça o compartilhamento de recursos é a principal motivação para se construir sistemas distribuídos. O recurso pode ser um componente de hardware, um disco ou impressora, um software, um serviço, um arquivo e objetos de dados de todos os tipos, áudio, vídeo, etc.",
         video: "https://www.youtube.com/watch?v=34RvRBXzvMo&ab_channel=UNIVESP",
       },
+    ],
+    profs: [
+      "Kalil Araujo Bispo",
+      "Tarcisio da Rocha"
     ],
   },
   "Sistemas Embarcados": {
@@ -596,6 +694,10 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=XppU8kKpa6I&ab_channel=CódigoFonteTV",
       },
     ],
+    profs: [
+      "Admilson De Ribamar Lima Ribeiro",
+      "Edward David Moreno Ordonez"
+    ],
   },
   "Smart Cities": {
     content: [
@@ -612,6 +714,12 @@ export const dataMenuAreas = {
           "Temas como Cidade 4.0, interação com cidadão, desburocratização, governança e gestão pública ágil permearam o segundo módulo do curso Smart City Expert. Dentro desta seara de criação e desenvolvimento de mecanismos e políticas públicas para desenvolver o “cidadão 4.0”, o trabalho do desenvolvedor de aplicativos, softwares e plataformas (geralmente ligado à TI) é essencial no incentivo e na aproximação cidadã nas decisões municipais. Ao se pensar a cidade como uma plataforma tecnológica, que interconecta todos os setores e necessidades dos cidadãos, abre-se caminho para os desafios da digitalização urbana, em que a Internet das Coisas (IOT) é uma das possibilidades aplicadas. Nesse sentido, profissionais que aplicam e adaptam tecnologias disponíveis para melhorar a gestão urbana, com Big Data, geoprocessamento e georreferenciamento, além das soluções de inteligência artificial, estão ganhando seu espaço em empresas e gestões públicas.",
         video: "https://youtu.be/dneYymnsM4M",
       },
+    ],
+    profs: [
+      "Gilton José Ferreira Da Silva",
+      "Michel Dos Santos Soares",
+      "Rafael Oliveira Vasconcelos",
+      "Rogério Patrico Chagas do Nascimento"
     ],
   },
   "Teoria da Computação": {
@@ -631,6 +739,9 @@ export const dataMenuAreas = {
           "https://www.youtube.com/watch?v=H_d9uGc_K2c&ab_channel=AulasdeComputação",
       },
     ],
+    profs: [
+      "Leila Maciel de Almeida e Silva"
+    ],
   },
   "Visão Computacional": {
     content: [
@@ -648,6 +759,9 @@ export const dataMenuAreas = {
         video:
           "https://www.youtube.com/watch?v=RSkbjZZb-1c&ab_channel=ProgramaçãoDinâmica",
       },
+    ],
+    profs: [
+      "Leonardo Nogueira Matos"
     ],
   },
 };

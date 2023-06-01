@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="LOGOCALICOMP" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 836 836">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: url(#Gradiente_sem_nome_29);
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-width: 12px;
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_29" data-name="Gradiente sem nome 29" x1="152.63" y1="186.75" x2="782.91" y2="735.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ad3d77"/>
+      <stop offset=".16" stop-color="#a53c77"/>
+      <stop offset=".38" stop-color="#923c79"/>
+      <stop offset=".49" stop-color="#863c7b"/>
+      <stop offset=".87" stop-color="#5f3980"/>
+    </linearGradient>
+  </defs>
+  <circle id="Frame" class="cls-4" cx="418" cy="418" r="418"/>
+  <g id="Ligações">
+    <circle class="cls-1" cx="340.42" cy="144.08" r="33.25"/>
+    <circle class="cls-1" cx="660.25" cy="220.08" r="33.25"/>
+    <circle class="cls-1" cx="669.75" cy="527.25" r="33.25"/>
+    <circle class="cls-1" cx="482.92" cy="669.75" r="33.25"/>
+    <circle class="cls-2" cx="166.25" cy="511.42" r="33.25"/>
+    <line class="cls-3" x1="342" y1="142.5" x2="167.83" y2="509.83"/>
+    <line class="cls-3" x1="660.25" y1="220.08" x2="166.25" y2="511.42"/>
+    <line class="cls-3" x1="343.58" y1="140.92" x2="482.92" y2="669.75"/>
+    <line class="cls-3" x1="166.25" y1="511.42" x2="482.92" y2="679.25"/>
+    <line class="cls-3" x1="669.75" y1="527.25" x2="482.92" y2="669.75"/>
+    <line class="cls-3" x1="166.25" y1="511.42" x2="669.75" y2="527.25"/>
+    <line class="cls-3" x1="660.25" y1="220.08" x2="669.75" y2="527.25"/>
+    <line class="cls-3" x1="343.58" y1="144.08" x2="660.25" y2="220.08"/>
+  </g>
+</svg>
