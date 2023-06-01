@@ -1,4 +1,4 @@
-import calicomp from "./../assets/calicomp.svg";
+import calicomp from "./../assets/callicompSemNome.svg";
 import BUGADOS1 from "./../assets/BUGADOS1.png";
 import LOGOSOFTEAMSVG from "./../assets/LOGOSOFTEAM.svg";
 import { lorem } from './utils_content_messages'

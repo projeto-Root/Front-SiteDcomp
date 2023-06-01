@@ -31,16 +31,16 @@ import visao from '../assets/visao-computacional.png'
 
 export const areas = [
     {
-        name: 'Aquisição e Modelagem de Aparência',
-        link: '/areas/0',
-        describe: 'Uma das prioridades na Aquisição e Modelagem de Aparência consiste em gerar cenas com uma ótima qualidade e fidelidade visual ao mundo real.',
-        img: modelAp
-    },
-    {
         name: 'Aprendizado de Máquina',
-        link: '/areas/1',
+        link: '/areas/0',
         describe: 'Machine Learning, traduzido como aprendizagem de máquina, é um subgrupo inserido no campo da Inteligência Artificial, sendo esta uma tecnologia e área de estudo mais ampla.',
         img: apren
+    },
+    {
+        name: 'Aquisição e Modelagem de Aparência',
+        link: '/areas/1',
+        describe: 'Uma das prioridades na Aquisição e Modelagem de Aparência consiste em gerar cenas com uma ótima qualidade e fidelidade visual ao mundo real.',
+        img: modelAp
     },
     {
         name: 'Arquitetura de Computadores',
@@ -157,16 +157,16 @@ export const areas = [
         img: otiMult
     },
     {
-        name: 'Processamento de Linguagem Natural',
-        link: '/areas/21',
-        describe: 'Processamento de linguagem natural (PLN) é uma vertente da inteligência artificial que ajuda computadores a entender, interpretar e manipular a linguagem humana.',
-        img: proceLin
-    },
-    {
         name: 'Processamento de Imagens Digitais',
         link: '/areas/22',
         describe: 'As técnicas voltadas para a análise de dados multidimensionais, adquiridos por diversos tipos de sensores recebem o nome de processamento digital de imagens, ou seja, é a manipulação de uma imagem por computador de modo onde a entrada e a saída do processo são imagens.',
         img: proceImg
+    },
+    {
+        name: 'Processamento de Linguagem Natural',
+        link: '/areas/21',
+        describe: 'Processamento de linguagem natural (PLN) é uma vertente da inteligência artificial que ajuda computadores a entender, interpretar e manipular a linguagem humana.',
+        img: proceLin
     },
     {
         name: 'Programação Linear Inteira',
