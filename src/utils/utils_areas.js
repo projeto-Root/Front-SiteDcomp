@@ -31,7 +31,7 @@ import visao from '../assets/visao-computacional.png'
 
 export const areas = [
     {
-        name: 'Aquisição e modelagem da aparencia',
+        name: 'Aquisição e Modelagem de Aparência',
         link: '/areas/0',
         describe: 'Uma das prioridades na Aquisição e Modelagem de Aparência consiste em gerar cenas com uma ótima qualidade e fidelidade visual ao mundo real.',
         img: modelAp
@@ -55,7 +55,7 @@ export const areas = [
         img: banco
     },
     {
-        name: 'Ciência de dados',
+        name: 'Ciência de Dados',
         link: '/areas/4',
         describe: 'A ciência de dados é o estudo dos dados para extrair insights significativos para os negócios.',
         img: cienDados
@@ -133,13 +133,13 @@ export const areas = [
         img: mine
     },
     {
-        name: 'Modelagem de D/A de Sistemas',
+        name: 'Modelagem de Avaliação e Desempenho de Sistemas',
         link: '/areas/17',
         describe: 'Com a evolução tecnológica experimentada nas últimas décadas, outros tipos de requisitos foram acrescentados aos sistemas que fornecem serviços aos seus usuários, tal como desempenho, aqui com a conotação de algum tipo de satisfação gerada pela eficiência na realização da tarefa.',
         img: molda
     },
     {
-        name: 'Modelagem e simulação de Sistemas',
+        name: 'Modelagem e simulação de sistemas',
         link: '/areas/18',
         describe: 'A Modelagem e Simulação de Sistemas Computacionais permite representar Sistemas Computacionais por meio de modelos de simulação e reproduzir suas cadeias de causalidade, estimar e avaliar resultados e subsidiar o processo de tomada de decisões em nível de engenharia.',
         img: modelSimu
@@ -151,9 +151,9 @@ export const areas = [
         img: otiComb
     },
     {
-        name: 'Otimização Multiobjetivo',
+        name: 'Otimização Multiobjeto',
         link: '/areas/20',
-        describe: 'A otimização multiobjetivo é uma área de tomada de decisão de múltiplos critérios que se preocupa com problemas de otimização matemática envolvendo mais de uma função objetivo a ser otimizada simultaneamente.',
+        describe: 'A otimização multiobjeto é uma área de tomada de decisão de múltiplos critérios que se preocupa com problemas de otimização matemática envolvendo mais de uma função objetivo a ser otimizada simultaneamente.',
         img: otiMult
     },
     {

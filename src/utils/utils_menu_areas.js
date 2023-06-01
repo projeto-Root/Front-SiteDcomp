@@ -123,6 +123,10 @@ export const dataMenuAreas = {
         video: "https://youtu.be/z1dKDcsdofg",
       },
     ],
+    profs: [
+      "Bruno Otavio Piedade Prado",
+      "Edward David Moreno Ordonez"
+    ]
   },
   "Banco de Dados": {
     content: [
@@ -262,9 +266,9 @@ export const dataMenuAreas = {
         topic: "O que é?",
         content:
           "A Informática em Saúde é a área do conhecimento que trata da aplicação de conceitos e tecnologias de Informação e Comunicação (TIC) para a melhoria e transformação de sistemas, serviços e processos de Saúde. O termo eSaúde (tradução do inglês – eHealth) pode ser entendido dentro da mesma definição de informática em saúde e tem sido um termo bastante utilizado recentemente.",
-        img: imgInfoSaude2,
       },
       {
+        img: imgInfoSaude2,
         topic: "O que faz um profissional da área?",
         content:
           "Um profissional da área de eHealth pode trabalhar em diversos tópicos, alguns deles são: desenvolvimento de sistemas de informação em saúde, telemedicina, processamento de imagens médicas, processamento de sinais biológicos e outros.",
@@ -353,9 +357,9 @@ export const dataMenuAreas = {
         topic: "O que é?",
         content:
           "Um laboratório virtual é um elemento tecnológico capaz de levar o aluno a um ambiente prático de aprendizagem simulando um ambiente real, uma situação real. Costuma-se chamar os laboratórios virtuais de Simuladores de Prática Profissional, já que a ideia é expor o aluno a uma realidade virtual de aprendizado. Essa tecnologia possui extrema precisão nas operações e medidas, possíveis erros e equívocos cometidos pelos alunos durante os procedimentos. Com a diferença de o ambiente ser controlado, sem riscos ou custos elevados.",
-        img: imgLab2,
       },
       {
+        img: imgLab2,
         topic: "O que faz um profissional da área?",
         content:
           "As plataformas são desenvolvidas por uma equipe de Tecnologia da Informação (TI) em parceria com profissionais das disciplinas que estão sendo virtualizadas. As equipes formadas por esses profissionais usam ambientes de desenvolvimento para criar vários tipos de laboratórios, simulando assim experimentos, buscando apresentar o máximo nível de imersão e compromisso com a realidade durante o uso do laboratório.",

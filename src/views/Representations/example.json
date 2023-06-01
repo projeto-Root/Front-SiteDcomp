@@ -1,0 +1,38 @@
+{
+    "softeam": {
+        "members": {
+            "Membro1": {
+                "img": "",
+                "name": ""
+            },
+            "Membro2": {
+                "img": "",
+                "name": ""
+            }
+        }
+    },
+    "calicomp": {
+        "members": {
+            "Membro1": {
+                "img": "",
+                "name": ""
+            },
+            "Membro2": {
+                "img": "",
+                "name": ""
+            }
+        }
+    },
+    "bugados": {
+        "members": {
+            "Membro1": {
+                "img": "",
+                "name": ""
+            },
+            "Membro2": {
+                "img": "",
+                "name": ""
+            }
+        }
+    }
+}
