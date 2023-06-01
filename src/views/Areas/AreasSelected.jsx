@@ -53,8 +53,9 @@ const AreasSelected = ({ data }) => {
                 }}
               >
                 {elem.topic}
-              </p>
+              </p> 
               <p className="area">{elem.content}</p>
+              {elem.img && <img style={{ marginTop: '2rem' }} src={elem.img} alt={data}/>}
               {elem.video && (
                 <iframe
                   id="player"
