@@ -166,7 +166,7 @@ const Template = ({ element, isHome, title }) => {
               >
                 {templateMessages.apresentationDepartment}
               </p>
-              <ButtonEffect onClick={redirect}>
+              <ButtonEffect onClick={() => window.location = '/contact'}>
                 Visite-nos para saber mais
               </ButtonEffect>
             </>

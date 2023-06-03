@@ -8,7 +8,7 @@ const MyComp = () => {
         MyComp
       </h2>
       <p className="mycomp">
-        O MyComp é um serviço oferecido pelo Projec Root com o objetivo de
+        O MyComp é um serviço oferecido pelo Projeto Root com o objetivo de
         auxiliar o estudante de computação a entender melhor como suas
         preferências e experiências refletem nas áreas de estudo da Computação.
         De acordo com algumas perguntas, o aluno poderá conhecer qual das áreas

@@ -54,7 +54,7 @@ const CardGeneric = ({ data, link, maximize }) => {
         >
           <img
             src={data.img}
-            style={{ width: "100%", height: "100%", borderRadius: "10px" }}
+            style={{ width: "100%", height: "100%", borderRadius: maximize ? "0px" : "10px" }}
             alt={data.name}
           />
         </Box>

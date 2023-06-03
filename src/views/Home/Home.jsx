@@ -117,7 +117,7 @@ const Home = () => {
           Escolha um de nossos cursos e venha fazer parte dessa jornada de
           aprendizado.
         </p>
-        <ButtonEffect>Contate-nos</ButtonEffect>
+        <ButtonEffect onClick={() => window.location = '/contact'}>Contate-nos</ButtonEffect>
       </Box>
     </>
   );
