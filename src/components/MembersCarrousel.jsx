@@ -13,7 +13,7 @@ const MembersCarrousel = ({ members }) => {
         display: "flex",
         alignItems: "flex-end",
         justifyContent: "center",
-        gap: "1rem",
+        gap: ".5rem",
       }}
     >
       {members &&
@@ -23,8 +23,8 @@ const MembersCarrousel = ({ members }) => {
               <div
                 key={key}
                 style={{
-                  width: "6rem",
-                  height: '6rem',
+                  width: "5.5rem",
+                  height: '5.5rem',
                   borderRadius: '50%',
                   overflow: 'hidden'
                 }}
@@ -48,8 +48,8 @@ const MembersCarrousel = ({ members }) => {
               <div
                 key={key}
                 style={{
-                  width: "4rem",
-                  height: '4rem',
+                  width: "3.5rem",
+                  height: '3.5rem',
                   borderRadius: '50%',
                   overflow: 'hidden'
                 }}
