@@ -59,7 +59,7 @@ const Home = () => {
         }}
       >
         {descriptionOfEstructures.map((elem, key) => {
-          return <CardGeneric data={elem} key={key} />;
+          return <CardGeneric data={elem} key={key} maximize={true}/>;
         })}
       </Box>
       <h2

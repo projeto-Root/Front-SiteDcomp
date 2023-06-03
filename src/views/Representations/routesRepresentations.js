@@ -1,31 +1,3 @@
-// Membros da Bugados
-import alexBugados from "../../assets/mebrosBugados/Álex Matheus.jpeg"
-import anaBugados from "../../assets/mebrosBugados/Ana Bizo.jpg"
-import annaBugados from "../../assets/mebrosBugados/Anna Clara.jpeg"
-import danielBugados from "../../assets/mebrosBugados/Daniel D'Ávila .jpg"
-import deanBugados from "../../assets/mebrosBugados/Dean Vinícius.jpeg"
-import gabryelBugados from "../../assets/mebrosBugados/Gabryel de Jesus.jpeg"
-import joaoBugados from "../../assets/mebrosBugados/João Vitor (Lampiola).jpeg"
-import laurenBugados from "../../assets/mebrosBugados/Lauren Victoria.jpeg"
-import luanBugados from "../../assets/mebrosBugados/Luan Meireles.jpeg"
-import lucioBugados from "../../assets/mebrosBugados/Lucio melo.jpeg"
-import manoelBugados from "../../assets/mebrosBugados/Manoel Vítor.jpeg"
-import mariaBugados from "../../assets/mebrosBugados/Maria Luiza(Malu).jpeg"
-import ryanBugados from "../../assets/mebrosBugados/Ryan Oliveira.jpeg"
-import victor from "../../assets/mebrosBugados/Victor Benevides.jpg"
-import virnaBugados from "../../assets/mebrosBugados/Virna Oliveira.jpeg"
-import vitorBugados from "../../assets/mebrosBugados/Vitor Pinho (Topinho).jpeg"
-
-// Membros do Calicomp
-import anaCalicomp from "../../assets/membrosCalicomp/Ana_2.jpg"
-import augustoCalicomp from "../../assets/membrosCalicomp/Augusto.jpg"
-import camiloCalicomp from "../../assets/membrosCalicomp/Camilo.jpg"
-import edilsonCalicomp from "../../assets/membrosCalicomp/Edilson.jpg"
-import emilyCalicomp from "../../assets/membrosCalicomp/Emily_Luna.jpg"
-import gustavoCalicomp from "../../assets/membrosCalicomp/Gustavo_1.jpg"
-import pauloCalicomp from "../../assets/membrosCalicomp/Paulo_2.jpg"
-import pedroCalicomp from "../../assets/membrosCalicomp/Pedro.jpg"
-
 import Representations from "./Representation"
 import Calicomp from "../../assets/callicompSemNome.svg";
 import Bugados from '../../assets/BUGADOS1.png';
@@ -95,41 +67,6 @@ const Projects = [
     }
   ]
 
-  const Members = [
-    {
-      name: "Pablo",
-      img: anaCalicomp,
-    },
-    {
-      name: "Pablo",
-      img: augustoCalicomp,
-    },
-    {
-      name: "Gyovani",
-      img: camiloCalicomp,
-    },
-    {
-      name: "Ícaro",
-      img: edilsonCalicomp,
-    },
-    {
-      name: "Fernanda",
-      img: emilyCalicomp,
-    },
-    {
-      name: "Vinícius",
-      img: gustavoCalicomp,
-    },
-    {
-      name: "Vinícius",
-      img: pauloCalicomp,
-    },
-    {
-      name: "Vinícius",
-      img: pedroCalicomp,
-    },
-  ];
-
 const simpleRoute = [
     {
         path: `${pathBase}/calicomp`,
@@ -139,7 +76,6 @@ const simpleRoute = [
             projects: Projects,
             title: "Calicomp",
             image: Calicomp,
-            members: Members
         }
     },
     {
@@ -150,7 +86,6 @@ const simpleRoute = [
             projects: ProjectsS,
             title: "Softeam",
             image: Softeam,
-            members: Members
         }
     },
     {
@@ -160,8 +95,7 @@ const simpleRoute = [
       dataComponent: {
           projects: ProjectsB,
           title: "Bugados",
-          image: Bugados,
-          members: Members
+          image: Bugados
       }
   }
 ]

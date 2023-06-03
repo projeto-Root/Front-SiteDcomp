@@ -1,5 +1,34 @@
-{
-    "softeam": {
+// Membros da Bugados
+import alexBugados from "../../assets/mebrosBugados/Álex Matheus.jpeg"
+import anaBugados from "../../assets/mebrosBugados/Ana Bizo.jpg"
+import annaBugados from "../../assets/mebrosBugados/Anna Clara.jpeg"
+import danielBugados from "../../assets/mebrosBugados/Daniel D'Ávila .jpg"
+import deanBugados from "../../assets/mebrosBugados/Dean Vinícius.jpeg"
+import gabryelBugados from "../../assets/mebrosBugados/Gabryel de Jesus.jpeg"
+import joaoBugados from "../../assets/mebrosBugados/João Vitor (Lampiola).jpeg"
+import laurenBugados from "../../assets/mebrosBugados/Lauren Victoria.jpeg"
+import luanBugados from "../../assets/mebrosBugados/Luan Meireles.jpeg"
+import lucioBugados from "../../assets/mebrosBugados/Lucio melo.jpeg"
+import manoelBugados from "../../assets/mebrosBugados/Manoel Vítor.jpeg"
+import mariaBugados from "../../assets/mebrosBugados/Maria Luiza(Malu).jpeg"
+import ryanBugados from "../../assets/mebrosBugados/Ryan Oliveira.jpeg"
+import victor from "../../assets/mebrosBugados/Victor Benevides.jpg"
+import virnaBugados from "../../assets/mebrosBugados/Virna Oliveira.jpeg"
+import vitorBugados from "../../assets/mebrosBugados/Vitor Pinho (Topinho).jpeg"
+
+// Membros do Calicomp
+import anaCalicomp from "../../assets/membrosCalicomp/Ana_2.jpg"
+import augustoCalicomp from "../../assets/membrosCalicomp/Augusto.jpg"
+import camiloCalicomp from "../../assets/membrosCalicomp/Camilo.jpg"
+import edilsonCalicomp from "../../assets/membrosCalicomp/Edilson.jpg"
+import emilyCalicomp from "../../assets/membrosCalicomp/Emily_Luna.jpg"
+import gustavoCalicomp from "../../assets/membrosCalicomp/Gustavo_1.jpg"
+import pauloCalicomp from "../../assets/membrosCalicomp/Paulo_2.jpg"
+import pedroCalicomp from "../../assets/membrosCalicomp/Pedro.jpg"
+
+
+export const members = {
+    "Softeam": {
         "members": {
             "Membro1": {
                 "img": "",
@@ -79,102 +108,102 @@
             }
         }
     },
-    "calicomp": {
+    "Calicomp": {
         "members": {
             "Membro1": {
-                "img": "",
+                "img": anaCalicomp,
                 "name": "Ana Vitória de Almeida Bizo"
             },
             "Membro2": {
-                "img": "",
+                "img": camiloCalicomp,
                 "name": "Antonio Camilo Santos Feitosa"
             },
             "Membro3": {
-                "img": "",
+                "img": augustoCalicomp,
                 "name": "Augusto Cesar Honorato dos Santosv"
             },
             "Membro4": {
-                "img": "",
+                "img": edilsonCalicomp,
                 "name": "Edilson Leite Santos Junior"
             },
             "Membro5": {
-                "img": "",
+                "img": emilyCalicomp,
                 "name": "Emilly Maria Santos Luna"
             },
-            "Membro6": {
-                "img": "",
-                "name": "Luan Felix de Jesus"
-            },
+            // "Membro6": {
+            //     "img": "",
+            //     "name": "Luan Felix de Jesus"
+            // },
             "Membro7": {
-                "img": "",
+                "img": pauloCalicomp,
                 "name": "Paulo Henrique Barreto dos Santos"
             }
         }
     },
-    "bugados": {
+    "Bugados": {
         "members": {
             "Membro1": {
-                "img": "",
+                "img": alexBugados,
                 "name": "Álex Matheus"
             },
             "Membro2": {
-                "img": "",
+                "img": anaBugados,
                 "name": "Ana Bizo"
             },
             "Membro3": {
-                "img": "",
+                "img": annaBugados,
                 "name": "Anna Clara"
             },
             "Membro4": {
-                "img": "",
-                "name": "Danoel D'Ávilla"
+                "img": danielBugados,
+                "name": "Daniel D'Ávilla"
             },
             "Membro5": {
-                "img": "",
+                "img": deanBugados,
                 "name": "Dean Vinícius"
             },
             "Membro6": {
-                "img": "",
-                "name": "Gabryel de Jesun"
+                "img": gabryelBugados,
+                "name": "Gabryel de Jesus"
             },
             "Membro7": {
-                "img": "",
+                "img": joaoBugados,
                 "name": "João Vitor"
             },
             "Membro8": {
-                "img": "",
+                "img": laurenBugados,
                 "name": "Lauren Victoria"
             },
             "Membro9": {
-                "img": "",
+                "img": luanBugados,
                 "name": "Luan Meireles"
             },
             "Membro10": {
-                "img": "",
+                "img": lucioBugados,
                 "name": "Lucio Melo"
             },
             "Membro11": {
-                "img": "",
+                "img": manoelBugados,
                 "name": "Manoel Vítor"
             },
             "Membro12": {
-                "img": "",
+                "img": mariaBugados,
                 "name": "Maria Luiza"
             },
             "Membro13": {
-                "img": "",
+                "img": ryanBugados,
                 "name": "Ryan Oliveira"
             },
             "Membro14": {
-                "img": "",
+                "img": victor,
                 "name": "Victor Benevides"
             },
             "Membro15": {
-                "img": "",
+                "img": virnaBugados,
                 "name": "Virna Oliveira"
             },
             "Membro16": {
-                "img": "",
+                "img": vitorBugados,
                 "name": "Vitor Pinho"
             }
         }

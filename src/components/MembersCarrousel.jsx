@@ -1,5 +1,4 @@
 import React from "react";
-import User from "../assets/user.svg";
 
 const MembersCarrousel = ({ members }) => {
   const memberIndexDestacs = 2;
@@ -18,21 +17,23 @@ const MembersCarrousel = ({ members }) => {
       }}
     >
       {members &&
-        members.map((elem, key) => {
+        members?.map((elem, key) => {
           if (key === memberIndexDestacs) {
             return (
               <div
                 key={key}
                 style={{
-                  width: "30%",
+                  width: "7rem",
+                  height: '7rem',
+                  borderRadius: '50%',
+                  overflow: 'hidden'
                 }}
               >
                 <img
-                  src={elem.img || User}
+                  src={elem.img}
                   style={{
                     width: "100%",
-                    borderRadius: "50%",
-                    overflow: "hidden",
+                    height: '100%',
                     backgroundColor: "#111",
                   }}
                   alt="members"
@@ -47,15 +48,17 @@ const MembersCarrousel = ({ members }) => {
               <div
                 key={key}
                 style={{
-                  width: "20%",
+                  width: "5rem",
+                  height: '5rem',
+                  borderRadius: '50%',
+                  overflow: 'hidden'
                 }}
               >
                 <img
-                  src={elem.img || User}
+                  src={elem.img}
                   style={{
                     width: "100%",
-                    borderRadius: "50%",
-                    overflow: "hidden",
+                    height: '100%',
                     backgroundColor: "#111",
                   }}
                   alt="members"
