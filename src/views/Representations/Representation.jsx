@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ButtonChangePage, LogoGroup } from "../../components/core-atoms";
 import Next from "../../assets/next.svg";
 import Previous from "../../assets/previous.svg";
@@ -6,8 +6,9 @@ import MembersCarrousel from "../../components/MembersCarrousel";
 import { lorem } from "../../utils/utils_content_messages";
 import CardGeneric from "../../components/CardGeneric";
 import "./Representation.css";
+import { members } from './members'
 const Representations = ({ data }) => {
-  const [orderMembers, setOrderMembers] = useState(data.members);
+  const [orderMembers, setOrderMembers] = useState(Object.values(members[data.title].members));
 
   const handleCircularList = (operation) => {
     if (operation === "next")
@@ -55,11 +56,11 @@ const Representations = ({ data }) => {
       >
         {data?.projects &&
           data.projects.map((elem, key) => {
-            return <CardGeneric key={key} data={elem} link={elem.link} />;
+            return <CardGeneric maximize={true} key={key} data={elem} link={elem.link} />;
           })}
       </section>
       <section>
-        {data?.name != "SofTeam" && (
+        {data?.title != "Softeam" && (
           <>
             <h2
               style={{ color: "#222", marginTop: "3rem", textAlign: "center" }}
@@ -81,12 +82,13 @@ const Representations = ({ data }) => {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  gap: '1rem'
                 }}
               >
                 <button
                   style={{
-                    width: "3rem",
-                    height: "3rem",
+                    width: "2.5rem",
+                    height: "2.5rem",
                     padding: ".8rem",
                     borderRadius: "50%",
                     border: "1px solid #333",
@@ -101,8 +103,8 @@ const Representations = ({ data }) => {
                 <MembersCarrousel members={orderMembers} />
                 <button
                   style={{
-                    width: "3rem",
-                    height: "3rem",
+                    width: "2.5rem",
+                    height: "2.5rem",
                     padding: ".8rem",
                     borderRadius: "50%",
                     border: "1px solid #333",
@@ -118,7 +120,7 @@ const Representations = ({ data }) => {
             </div>
           </>
         )}
-        <div
+        {/* <div
           style={{
             maxWidth: "30rem",
             width: "auto",
@@ -131,7 +133,7 @@ const Representations = ({ data }) => {
         >
           <ButtonChangePage>Retornar</ButtonChangePage>
           <ButtonChangePage>Próxima</ButtonChangePage>
-        </div>
+        </div> */}
       </section>
     </div>
   );

@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { Button } from "antd";
 import React from "react";
 
-const CardGeneric = ({ data, link }) => {
+const CardGeneric = ({ data, link, maximize }) => {
   return (
     <Box
       style={{
@@ -47,9 +47,9 @@ const CardGeneric = ({ data, link }) => {
         </div>
         <Box
           style={{
-            width: "50%",
-            height: "8rem",
-            marginTop: "2rem",
+            width: maximize ? "calc(50% + 4rem)" : "50%",
+            height: maximize ? "12rem" : "8rem",
+            marginTop: maximize ? "1rem" : "2rem",
           }}
         >
           <img
