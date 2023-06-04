@@ -10,11 +10,16 @@ import {
   AccordionPanel,
   Box,
   AccordionIcon,
+  Button,
 } from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react";
+import ModalLogin from "./ModalLogin";
 
 const Forum = () => {
   const options = ["Últimas Discussões", "Fixadas", "Mais Curtidas"];
   const [widthScreen, setWidthScreen] = useState(window.innerWidth);
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   useEffect(() => {
     const updateScreen = () => {
@@ -30,6 +35,7 @@ const Forum = () => {
 
   return (
     <div>
+      <ModalLogin isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
       <div className="forumcontainer">
         <div className="navforum">
           <button>
@@ -44,44 +50,14 @@ const Forum = () => {
             {" "}
             <AiFillFire />{" "}
           </button>
-          <button>
+          <Button onClick={onOpen}>
             {" "}
             <MdAccessTimeFilled />{" "}
-          </button>
+          </Button>
         </div>
 
         <div className="secondcontainerforum">
           <div className="postsforum">
-            <h2>teste</h2>
-            <input type="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-              accusantium, neque vitae commodi omnis ut impedit eius eos, quam
-            </p>
-            <h2>teste</h2>
-            <input type="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-              accusantium, neque vitae commodi omnis ut impedit eius eos, quam
-            </p>
-            <h2>teste</h2>
-            <input type="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-              accusantium, neque vitae commodi omnis ut impedit eius eos, quam
-            </p>
-            <h2>teste</h2>
-            <input type="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-              accusantium, neque vitae commodi omnis ut impedit eius eos, quam
-            </p>
-            <h2>teste</h2>
-            <input type="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-              accusantium, neque vitae commodi omnis ut impedit eius eos, quam
-            </p>
             <h2>teste</h2>
             <input type="" />
             <p>
@@ -140,10 +116,10 @@ const Forum = () => {
                 {" "}
                 <AiFillFire />{" "}
               </button>
-              <button>
+              <Button onClick={onOpen}>
                 {" "}
                 <MdAccessTimeFilled />{" "}
-              </button>
+              </Button>
             </div>
           )}
         </div>
