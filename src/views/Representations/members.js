@@ -130,10 +130,10 @@ export const members = {
                 "img": emilyCalicomp,
                 "name": "Emilly Maria Santos Luna"
             },
-            // "Membro6": {
-            //     "img": "",
-            //     "name": "Luan Felix de Jesus"
-            // },
+            "Membro6": {
+                 "img": gustavoCalicomp,
+                 "name": "Luiz Gustavo Sampaio Sá Caldas"
+            },
             "Membro7": {
                 "img": pauloCalicomp,
                 "name": "Paulo Henrique Barreto dos Santos"
