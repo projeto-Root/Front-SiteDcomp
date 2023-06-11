@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 import ModalLogin from "./ModalLogin";
+import PostForum from "./PostForum";
 
 const Forum = () => {
   const options = ["Últimas Discussões", "Fixadas", "Mais Curtidas"];
@@ -58,18 +59,7 @@ const Forum = () => {
 
         <div className="secondcontainerforum">
           <div className="postsforum">
-            <h2>teste</h2>
-            <input type="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-              accusantium, neque vitae commodi omnis ut impedit eius eos, quam
-            </p>
-            <h2>teste</h2>
-            <input type="" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-              accusantium, neque vitae commodi omnis ut impedit eius eos, quam
-            </p>
+            <PostForum></PostForum>
           </div>
           <div className="dropdownforum">
             <Accordion defaultIndex={[0]} allowMultiple>
