@@ -116,7 +116,7 @@ export const profsInfo = [
     },
     {
         name: 'Bruno Otavio Piedade Prado',
-        image: 'http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4744292J2',
+        image: 'https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4744292J2',
         areas: [
             {
                 name: 'Arquitet. de Computadores',
@@ -270,7 +270,7 @@ export const profsInfo = [
     },
     {
         name: 'Janio Coutinho Canuto',
-        image: 'http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4180742Y0',
+        image: 'https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4180742Y0',
         areas: [
             {
                 name: 'Inteligência Artificial',
