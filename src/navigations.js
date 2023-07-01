@@ -4,6 +4,8 @@ import { componentRoutes } from './componentsRoutes'
 //Aqui são importadas as rotas de navegação
 import { routes } from './routes'
 import DataComp from './views/DataComp/DataComp'
+import Forum from './views/Forum/Forum'
+import ModalLogin from './views/Forum/ModalLogin'
 import MyComp from './views/MyComp/MyComp'
 
 //Aqui são os componentes de rota importados
@@ -93,7 +95,14 @@ export const navigate = [
         title: "Contate-nos",
         component: <Contato/>,
         template: true,
-    }
+    },
+    {
+        path: '/forum',
+        name: 'FORUM',
+        title: "Forum",
+        component: <Forum/>,
+        template: true,
+    },
 ]
 
 

@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.upLine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: grey;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.downLine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.complaint{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: #4489EC;
+    display: flex;
+    justify-content: right;
+
+    
+}
+
+.favorite {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.number {
+    font-size: 15px;
+    margin-top: 4px;
+    padding-left: 3px;
+}
+
+.inputField{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.answer{
+    width: 40vw;
+    height: 2vw;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: gray;
+    padding-inline-start: 10px;
+}
+
+.submit{
+    width: 130px;
+    height: 40px;
+    background-color: #4489EC;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.submit:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #1e7bde , #241178);
+}
+.chat{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 47vw;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.first{
+    text-align: left;
+    padding: 10px;
+    
+}
+
+.second{
+    padding: 10px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.third{
+    text-align: left;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.user{
+    color: #4489EC;
+}
+
+.coment{
+    padding-top: 10px;
+}
+
+.like{
+    padding-right: 10px;
+}
+
+.like:hover {opacity: 1}
+
+.containerpost {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+@media (max-width:1440px){
+    .card{
+        height: fit-content;
+    }
+
+    .complaint{
+        display: flex;
+        justify-content: right;
+
+    }
+}
+
+@media (max-width:1024px){
+    .answer{
+        height: 30px;
+        font-size: 15px;
+    }
+    .submit{
+        font-size: 15px;
+    }
+    .upLine{
+        font-size: 12px;
+    }
+    .downLine{
+        font-size: 14px;
+    }
+    .chat{
+        font-size: 14px;
+    }
+    .number{
+        font-size: 14px;
+    }
+    .iconStar{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width:768px){
+    .card{
+        width: fit-content;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .upLine{
+        font-size: 10px;
+    }
+    .downLine{
+        font-size: 14px;
+    }
+    .answer{
+        height: 30px;
+        font-size: 14px;
+    }
+    .submit{
+        width: 80px;
+        font-size: 14px;
+    }
+    .chat{
+        width: fit-content;
+    }
+    .number{
+        font-size: 14px;
+    }
+    .iconStar{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width:426px){
+    .card{
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px;
+        justify-content: center;
+        font-size: smaller;
+    }
+
+    .chat{
+        text-align: start;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .answer{
+        width: 70vw;
+    }
+}
+
+@media (max-width:376px){
+    .card{
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px;
+        justify-content: center;
+        font-size: smaller;
+    }
+
+    .chat{
+        text-align: start;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width:321px){
+    .card {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px;
+        justify-content: center;
+        font-size: smaller;
+    }
+
+    .complaint{
+        display: flex;
+        justify-content: right;
+    }
+
+    .chat {
+        text-align: start;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width:280px) {
+    .card {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px;
+        justify-content: center;
+        font-size: smaller;
+    }
+
+    .complaint{
+        display: flex;
+        justify-content: right;
+
+    }
+
+    .chat {
+        text-align: start;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+    }
+    
+}

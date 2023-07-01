@@ -133,7 +133,7 @@ const Template = ({ element, isHome, title }) => {
           </ul>
         </nav>
       </header>
-      <main style={{ backgroundColor: "#fafafa", paddingBottom: '2rem' }}>
+      <main style={{ backgroundColor: "#fafafa", paddingBottom: "2rem" }}>
         <section
           style={{
             height: isHome ? "100vh" : "50vh",
