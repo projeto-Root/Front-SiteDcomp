@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border-color: #4489EC;
+}
+
+.cards{
+    margin-top: 10px;
+}
+
+.dados-curriculo{
+    box-shadow: 5px 5px 15px;
+    padding: 5px;
+    width: 320px;
+    margin: auto;
+    margin-left: 0%;
+    align-items: start;
+    justify-content: start;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.titulo-dados-curriculo{
+    text-decoration: underline;
+    color: #4489EC;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.info-dados-curriculo{
+    font-size: 12px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.estrutura-curricular{
+    width: 800px;
+    box-shadow: 5px 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.titulo-estrutura-curricular{
+    text-decoration: underline;
+    color: #4489EC;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.subtitulo-estrutura-curricular{
+    color: #4489EC;
+}
+
+.info-dados-estrutura{
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.requisitos{
+    width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+.chefe-curso{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icone-chefe-curso{
+    text-align: center;
+    margin: auto;
+    width: 120px;
+    border-radius: 100px;
+    height: 120px;
+}

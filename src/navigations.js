@@ -1,4 +1,5 @@
 //Aqui é importado os componentes referente as rotas de navegação
+import Disciplina from './components/Disciplina/Disciplina'
 import { componentRoutes } from './componentsRoutes'
 
 //Aqui são importadas as rotas de navegação
@@ -92,6 +93,13 @@ export const navigate = [
         name: 'CONTATO',
         title: "Contate-nos",
         component: <Contato/>,
+        template: true,
+    },
+    {
+        path: '/Disciplinas',
+        name: 'SI',
+        title: "CURSOS",
+        component: <Disciplina/>,
         template: true,
     }
 ]
