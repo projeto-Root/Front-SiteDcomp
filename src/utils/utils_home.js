@@ -22,6 +22,7 @@ export const descriptionOfCourses = [
       operacional e gerencial, através da análise, projeto e implementação 
       de sistemas.`,
     img: cc,
+    path: 'ciencia'
   },
   {
     name: "Engenharia da Computação",
@@ -30,6 +31,7 @@ export const descriptionOfCourses = [
       e profissional geral que o capacite com os conhecimentos de Ciência da Computação 
       e de Engenharia Elétrica necessários ao projeto de sistemas de computação completos.`,
     img: ec,
+    path: 'engenharia'
   },
   {
     name: "Sistemas da Informação",
@@ -38,6 +40,7 @@ export const descriptionOfCourses = [
       associados e métodos de gestão da área de sistemas de informação além de modelos empregados 
       no diagnóstico, planejamento, implementação e avaliação de projetos de sistemas de informação.`,
     img: si,
+    path: 'sistemas'
   },
 ];
 

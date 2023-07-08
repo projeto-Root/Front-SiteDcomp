@@ -11,7 +11,7 @@ import MyComp from './views/MyComp/MyComp'
 const { Home, Representations, Profs, MenuAreas, Contato, Cursos } = componentRoutes
 
 //Aqui são as rotas importadas
-const { routesRepresentations, routesMenuAreas } = routes
+const { routesRepresentations, routesMenuAreas, routesCursos } = routes
 
 //navigate está relacionada com as rotas do menu principal
 export const navigate = [
@@ -36,6 +36,9 @@ export const navigate = [
         title: "Cursos do DCOMP",
         component: <Cursos/>,
         template: true,
+        collections: [
+            ...routesCursos
+        ]
     },
     // {
     //     path: '/forum',
@@ -94,13 +97,6 @@ export const navigate = [
         title: "Contate-nos",
         component: <Contato/>,
         template: true,
-    },
-    {
-        path: '/Disciplinas',
-        name: 'SI',
-        title: "CURSOS",
-        component: <Disciplina/>,
-        template: true,
     }
 ]
 
@@ -109,5 +105,6 @@ export const navigate = [
 export const navigations = [
     ...navigate,
     ...routesRepresentations,
-    ...routesMenuAreas
+    ...routesMenuAreas,
+    ...routesCursos
 ]

@@ -5,12 +5,12 @@ import { Select } from 'antd'
 import { Option } from 'antd/es/mentions'
 import { useLocation } from 'react-router-dom'
 
-const Disciplina = () => {
-    const [curso, setCurso] = useState(Sistemas) 
+const Disciplina = ({initialCourse}) => {
+    const [curso, setCurso] = useState(initialCourse) 
     const [periodo, setPeriodo] = useState("Primeiro_Periodo")
     const [disciplinas, setDisciplinas] = useState([])
     const periodos = ['Primeiro_Periodo', 'Segundo_Periodo', 'Terceiro_Periodo', 'Quarto_Periodo', 'Quinto_Periodo', 'Sexto_Periodo', 'Setimo_Periodo','Oitavo_Periodo','Nono_Periodo','Decimo_Periodo']
-    
+
     const getDisciplinas = () => {
         if (periodo == 'Primeiro_Periodo') {
             setDisciplinas(curso.Primeiro_Periodo);
