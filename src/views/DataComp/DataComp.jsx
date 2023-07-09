@@ -44,7 +44,9 @@ const DataComp = () => {
             ? "600"
             : widthScreen > 410
             ? "400"
-            : "300"
+            : widthScreen > 300
+            ? "300"
+            : "275"
         }
         height={
           widthScreen > 1050

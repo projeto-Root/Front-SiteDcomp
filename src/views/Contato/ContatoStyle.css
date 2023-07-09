@@ -47,3 +47,18 @@
     color: #555;
     font-weight: 400;
 }
+
+@media (min-width: 280px) and (max-width: 330px){
+    .contate-nos{
+        width: 100%;
+    }
+    .contact-col div h5{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 331px) and (max-width: 400px){
+    .contate-nos{
+        width: 100%;
+    }
+}
