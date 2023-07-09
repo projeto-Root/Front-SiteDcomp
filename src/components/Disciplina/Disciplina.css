@@ -83,16 +83,213 @@ hr{
     height: 120px;
 }
 
-@media (min-width: 280px) and (max-width: 319px){
+@media (min-width: 280px) and (max-width: 300px){
     .dados-curriculo{
-        margin-left: 290px;
+        margin-left: 40px;
         margin-bottom: 20px;
-        width: 270px;
+        width: 200px;
     } 
     .estrutura-curricular{
-        width: 270px;
-        margin-left: 290px;
-        margin-right: 290px;
+        width: 200px;
+        margin-left: 40px;
+    }
+    .info-dados-curriculo{
+        font-size: 10px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 10px;
+
+    }
+    .requisitos{
+        width: 280px;
+    }
+    .titulo-estrutura-curricular{
+        font-size: 1rem;
+    }
+    .titulo-dados-curriculo{
+        font-size: 15px;
+    }
+    .subtitulo-estrutura-curricular{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 349px){
+    .dados-curriculo{
+        margin-left: 50px;
+        margin-bottom: 20px;
+        width: 230px;
+    } 
+    .estrutura-curricular{
+        width: 230px;
+        margin-left: 50px;
+        margin-right: 10px;
+
+    }
+    .info-dados-curriculo{
+        font-size: 10px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 10px;
+
+    }
+    .requisitos{
+        width: 300px;
+    }
+    .titulo-estrutura-curricular{
+        font-size: 1rem;
+    }
+    .titulo-dados-curriculo{
+        font-size: 15px;
+    }
+    .subtitulo-estrutura-curricular{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 370px){
+    .dados-curriculo{
+        margin-left: 50px;
+        margin-bottom: 20px;
+        width: 250px;
+    } 
+    .estrutura-curricular{
+        width: 250px;
+        margin-left: 50px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 12px;
+
+    }
+    .info-dados-curriculo{
+        font-size: 12px;
+
+    }
+    .requisitos{
+        width: 340px;
+    }
+    .titulo-estrutura-curricular{
+        font-size: 1rem;
+    }
+    .titulo-dados-curriculo{
+        font-size: 15px;
+    }
+    .subtitulo-estrutura-curricular{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 400px){
+    .dados-curriculo{
+        margin-left: 50px;
+        margin-bottom: 20px;
+        width: 280px;
+    } 
+    .estrutura-curricular{
+        width: 280px;
+        margin-left: 50px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 13px;
+
+    }
+    .info-dados-curriculo{
+        font-size: 13px;
+
+    }
+    .requisitos{
+        width: 360px;
+    }
+    .titulo-estrutura-curricular{
+        font-size: 1.1rem;
+    }
+    .titulo-dados-curriculo{
+        font-size: 18px;
+    }
+    .subtitulo-estrutura-curricular{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 440px){
+    .dados-curriculo{
+        margin-left: 40px;
+        margin-bottom: 20px;
+        width: 350px;
+    } 
+    .estrutura-curricular{
+        width: 350px;
+        margin-left: 40px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 13px;
+
+    }
+    .info-dados-curriculo{
+        font-size: 13px;
+
+    }
+    .requisitos{
+        width: 400px;
+    }
+    .titulo-estrutura-curricular{
+        font-size: 1rem;
+    }
+    .titulo-dados-curriculo{
+        font-size: 18px;
+    }
+    .subtitulo-estrutura-curricular{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 480px){
+    .dados-curriculo{
+        margin-left: 60px;
+        margin-bottom: 20px;
+        width: 350px;
+    } 
+    .estrutura-curricular{
+        width: 350px;
+        margin-left: 60px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 13px;
+
+    }
+    .info-dados-curriculo{
+        font-size: 13px;
+
+    }
+    .requisitos{
+        width: 400px;
+    }
+    .titulo-estrutura-curricular{
+        font-size: 1rem;
+    }
+    .titulo-dados-curriculo{
+        font-size: 18px;
+    }
+    .subtitulo-estrutura-curricular{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 510px){
+    .dados-curriculo{
+        margin-left: 50px;
+        margin-bottom: 20px;
+        width: 400px;
+    } 
+    .estrutura-curricular{
+        width: 400px;
+        margin-left: 50px;
 
     }
     .info-dados-estrutura{
@@ -100,21 +297,20 @@ hr{
 
     }
     .requisitos{
-        width: 356px;
+        width: 480px;
     }
 
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 511px) and (max-width: 550px){
     .dados-curriculo{
-        margin-left: 290px;
+        margin-left: 70px;
         margin-bottom: 20px;
-        width: 310px;
+        width: 400px;
     } 
     .estrutura-curricular{
-        width: 310px;
-        margin-left: 290px;
-        margin-right: 290px;
+        width: 400px;
+        margin-left: 70px;
 
     }
     .info-dados-estrutura{
@@ -122,42 +318,20 @@ hr{
 
     }
     .requisitos{
-        width: 380px;
+        width: 480px;
     }
 
 }
 
-@media (min-width: 480px) and (max-width: 620px){
+@media (min-width: 551px) and (max-width: 620px){
     .dados-curriculo{
-        margin-left: 260px;
+        margin-left: 90px;
         margin-bottom: 20px;
-        width: 430px;
+        width: 400px;
     } 
     .estrutura-curricular{
-        width: 430px;
-        margin-left: 260px;
-        margin-right: 250px;
-
-    }
-    .info-dados-estrutura{
-        font-size: 12px;
-
-    }
-    .requisitos{
-        width: 500px;
-    }
-
-}
-@media (min-width: 620px) and (max-width: 832px){
-    .dados-curriculo{
-        margin-left: 260px;
-        margin-bottom: 20px;
-        width: 500px;
-    } 
-    .estrutura-curricular{
-        width: 490px;
-        margin-left: 260px;
-        margin-right: 250px;
+        width: 400px;
+        margin-left: 90px;
 
     }
     .info-dados-estrutura{
@@ -165,11 +339,75 @@ hr{
 
     }
     .requisitos{
-        width: 650px;
+        width: 550px;
     }
 
 }
-@media (min-width: 833px) and (max-width: 1140px){
+
+@media (min-width: 621px) and (max-width: 749px){
+    .dados-curriculo{
+        margin-left: 80px;
+        margin-bottom: 20px;
+        width: 490px;
+    } 
+    .estrutura-curricular{
+        width: 490px;
+        margin-left: 80px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 14px;
+
+    }
+    .requisitos{
+        width: 620px;
+    }
+
+}
+
+@media (min-width: 661px) and (max-width: 749px){
+    .dados-curriculo{
+        margin-left: 100px;
+        margin-bottom: 20px;
+        width: 490px;
+    } 
+    .estrutura-curricular{
+        width: 490px;
+        margin-left: 100px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 14px;
+
+    }
+    .requisitos{
+        width: 660px;
+    }
+
+}
+
+@media (min-width: 750px) and (max-width: 849px){
+    .dados-curriculo{
+        margin-left: 130px;
+        margin-bottom: 20px;
+        width: 550px;
+    } 
+    .estrutura-curricular{
+        width: 550px;
+        margin-left: 130px;
+
+    }
+    .info-dados-estrutura{
+        font-size: 14px;
+
+    }
+    .requisitos{
+        width: 750px;
+    }
+
+}
+
+@media (min-width: 850px) and (max-width: 1140px){
     .dados-curriculo{
         margin-left: 10px;
         margin-bottom: 10px;
