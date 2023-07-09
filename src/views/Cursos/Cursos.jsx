@@ -17,7 +17,7 @@ const Cursos = () => {
       }}
     >
       {descriptionOfCourses.map((elem, key) => {
-        return <CardGeneric data={elem} key={key} link='#'/>;
+        return <CardGeneric data={elem} key={key} link={`/courses/${elem.path}`}/>;
       })}
     </Box>
   );
