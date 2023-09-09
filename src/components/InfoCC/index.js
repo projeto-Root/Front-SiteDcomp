@@ -4,7 +4,7 @@ import cc from "../../assets/cc.png";
 function InfoCC() {
   return (
     <div className={styles.container}>
-      <img src={cc} alt="Ciência da Computação" />
+      <img src={cc} alt="icon Ciência da Computação" />
       <h1>Ciência da Computação</h1>
       <p>
         Computação deverá assumir um papel de racionalização, desenvolvimento e

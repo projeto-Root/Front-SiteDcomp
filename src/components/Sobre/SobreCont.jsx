@@ -18,7 +18,7 @@ export const SobreCont = () => {
           <button className={styles.explore}>Explore mais</button>
         </div>
         <div>
-          <img src={about} alt="sobre" />
+          <img src={about} alt="foto empresarial" />
         </div>
       </div>
     </section>

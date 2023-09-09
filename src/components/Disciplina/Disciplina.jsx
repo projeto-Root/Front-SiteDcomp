@@ -86,7 +86,7 @@ const Disciplina = ({initialCourse}) => {
             </div>
 
             <div className='chefe-curso'>
-                <h1>Chefe de curso</h1>
+                <h1>Coordenador do curso</h1>
                 <img src={curso.Chefe} alt="" className='icone-chefe-curso' />
             </div>
         </div>
