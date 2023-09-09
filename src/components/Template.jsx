@@ -52,6 +52,8 @@ const Template = ({ element, isHome, title }) => {
         <Menu>
           <MenuButton
             colorScheme="blue"
+            name="Menu"
+            title="Menu"
             as={IconButton}
             icon={<HamburgerIcon />}
             style={{
@@ -102,7 +104,7 @@ const Template = ({ element, isHome, title }) => {
       >
         <img
           src={LOGO}
-          alt="logo"
+          alt="logo da UFS"
           style={{
             height: "5rem",
           }}

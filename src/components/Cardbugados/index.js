@@ -5,7 +5,8 @@ import LOGOBUGADOS from "../../assets/BUGADOS1.png";
 
 function CardB() {
   return (
-    <section
+    <div className="overlay">
+      <section
       className={styles.card}
       style={{
         backgroundImage: `url(${CardBugados})`,
@@ -28,6 +29,7 @@ function CardB() {
         <h1>Membro de representação</h1>
       </div>
     </section>
+    </div>
   );
 }
 

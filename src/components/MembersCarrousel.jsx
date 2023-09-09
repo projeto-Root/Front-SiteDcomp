@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import CardB from "../components/Cardbugados/index"
 
-const MembersCarrousel = ({ members }) => {
+const MembersCarrousel = ({ members, func }) => {
   const memberIndexDestacs = 2;
 
   return (
@@ -31,6 +32,7 @@ const MembersCarrousel = ({ members }) => {
               >
                 <img
                   src={elem.img}
+                  onClick={func}
                   style={{
                     width: "100%",
                     height: '100%',
@@ -68,6 +70,7 @@ const MembersCarrousel = ({ members }) => {
           }
         })}
     </div>
+
   );
 };
 

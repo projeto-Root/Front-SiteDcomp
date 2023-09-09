@@ -13,5 +13,13 @@
           max-width: 800px;
           padding: 0rem 2rem;
         }
+      .anterior {
+        width: 10rem;
+        height: 10rem;
+      }
+      .posterior {
+        width: 10rem;
+        height: 10rem;
+      }
         
   }

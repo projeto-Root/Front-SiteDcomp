@@ -7,9 +7,12 @@ import { lorem } from "../../utils/utils_content_messages";
 import CardGeneric from "../../components/CardGeneric";
 import "./Representation.css";
 import { members } from './members'
+import { dataRepresents2 } from "../../utils/utils_represents";
+import CardB from "../../components/Cardbugados";
+import { Modal } from "antd";
 const Representations = ({ data }) => {
   const [orderMembers, setOrderMembers] = useState(Object.values(members[data.title].members));
-
+  const [showModal, setShowModal] = useState(false)
   const handleCircularList = (operation) => {
     if (operation === "next")
       return setOrderMembers([
@@ -20,9 +23,19 @@ const Representations = ({ data }) => {
       return setOrderMembers([
         orderMembers[orderMembers.length - 1],
         ...orderMembers.slice(0, orderMembers.length - 1),
-      ]);
+      ]);   
   };
+  const RepresentationText = () => {
+    switch (data.title.toUpperCase()) {
+      case "BUGADOS":
+        return dataRepresents2[2]
+      case "SOFTEAM":
+        return dataRepresents2[1]
 
+      case "CALICOMP":
+        return dataRepresents2[0]
+    }
+  }
   return (
     <div
       style={{
@@ -38,7 +51,7 @@ const Representations = ({ data }) => {
       <h1 style={{ marginTop: "1rem", color: "#222", textAlign: "center" }}>
         O que é {data.title.toUpperCase()}
       </h1>
-      <section className="representation">{lorem}</section>
+      <section className="representation">{RepresentationText()}</section>
       <h2 style={{ color: "#222", marginTop: "1rem", textAlign: "center" }}>
         Projetos do {data.title.toUpperCase()}
       </h2>
@@ -85,7 +98,7 @@ const Representations = ({ data }) => {
                   gap: '1rem'
                 }}
               >
-                <button
+                <button className="anterior"
                   style={{
                     width: "2.5rem",
                     height: "2.5rem",
@@ -100,8 +113,8 @@ const Representations = ({ data }) => {
                 >
                   <img src={Previous} alt="voltar" style={{ width: "100%" }} />
                 </button>
-                <MembersCarrousel members={orderMembers} />
-                <button
+                <MembersCarrousel members={orderMembers} func={() => setShowModal(!showModal)}/>
+                <button className="posterior"
                   style={{
                     width: "2.5rem",
                     height: "2.5rem",
@@ -135,6 +148,11 @@ const Representations = ({ data }) => {
           <ButtonChangePage>Próxima</ButtonChangePage>
         </div> */}
       </section>
+      <Modal
+        open={showModal}
+        onCancel={() => setShowModal(false)}
+        width={600}
+      ><CardB/></Modal>
     </div>
   );
 };

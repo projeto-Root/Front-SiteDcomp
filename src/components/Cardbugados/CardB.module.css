@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 .card {
   width: 800px;
   height: 450px;
