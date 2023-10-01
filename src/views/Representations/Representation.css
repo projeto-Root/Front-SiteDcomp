@@ -6,20 +6,41 @@
     max-width: 1200px;
     padding: 0rem 4rem;
   }
-  
-  
-  @media (max-width: 1100px) {
-      .representation {
-          max-width: 800px;
-          padding: 0rem 2rem;
-        }
-      .anterior {
-        width: 10rem;
-        height: 10rem;
+
+.anterior {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: .8rem;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.posterior {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: .8rem;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+@media (max-width: 380px) {
+    .representation {
+        max-width: 800px;
+        padding: 0rem 2rem;
       }
-      .posterior {
-        width: 10rem;
-        height: 10rem;
-      }
-        
-  }
+    .anterior {
+      width: 2rem;
+      height: 2rem;
+    }
+    .posterior {
+      width: 2rem;
+      height: 2rem;
+    }
+      
+}

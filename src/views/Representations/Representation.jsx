@@ -9,7 +9,10 @@ import "./Representation.css";
 import { members } from './members'
 import { dataRepresents2 } from "../../utils/utils_represents";
 import CardB from "../../components/Cardbugados";
+import CardC from "../../components/Cardcalicomp"
+import CardS from "../../components/Cardsofteam"
 import { Modal } from "antd";
+
 const Representations = ({ data }) => {
   const [orderMembers, setOrderMembers] = useState(Object.values(members[data.title].members));
   const [showModal, setShowModal] = useState(false)
@@ -99,32 +102,12 @@ const Representations = ({ data }) => {
                 }}
               >
                 <button className="anterior"
-                  style={{
-                    width: "2.5rem",
-                    height: "2.5rem",
-                    padding: ".8rem",
-                    borderRadius: "50%",
-                    border: "1px solid #333",
-                    backgroundColor: "#fff",
-                    cursor: "pointer",
-                    marginTop: "3rem",
-                  }}
                   onClick={() => handleCircularList("previous")}
                 >
                   <img src={Previous} alt="voltar" style={{ width: "100%" }} />
                 </button>
                 <MembersCarrousel members={orderMembers} func={() => setShowModal(!showModal)}/>
                 <button className="posterior"
-                  style={{
-                    width: "2.5rem",
-                    height: "2.5rem",
-                    padding: ".8rem",
-                    borderRadius: "50%",
-                    border: "1px solid #333",
-                    backgroundColor: "#fff",
-                    cursor: "pointer",
-                    marginTop: "3rem",
-                  }}
                   onClick={() => handleCircularList("next")}
                 >
                   <img src={Next} alt="proximo" style={{ width: "100%" }} />
@@ -152,7 +135,9 @@ const Representations = ({ data }) => {
         open={showModal}
         onCancel={() => setShowModal(false)}
         width={600}
-      ><CardB/></Modal>
+      >
+        {data.title.toUpperCase() == "BUGADOS" ? <CardB name={orderMembers[2].name} img={orderMembers[2].img} cargo={orderMembers[2].cargo}/> : <CardC name={orderMembers[2].name} img={orderMembers[2].img} cargo={orderMembers[2].cargo}/>}
+      </Modal>
     </div>
   );
 };

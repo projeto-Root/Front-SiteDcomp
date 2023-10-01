@@ -504,7 +504,7 @@ export const CardProf = ({ name, areas, image, dataProf, isModal, handleOpen }) 
             zIndex: "2",
           }}
         >
-          {areas.map((elem, key) => {
+          {areas && areas.map((elem, key) => {
             return (
               <div
                 style={{

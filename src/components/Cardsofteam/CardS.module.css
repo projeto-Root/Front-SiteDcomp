@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .card {
-  width: 800px;
-  height: 450px;
+  width: 550px;
+  height: 400px;
   display: grid;
   grid-template-columns: 1fr 0.03fr 3fr;
   margin: 50px 0;
   font-family: 'Poppins';
+  border-radius: 10px;
 }
 
 .vertical {
   border-left: 5px solid white;
-  height: 450px;
+  height: 400px;
 }
 
 .left {
@@ -45,4 +46,244 @@
 
 .right h1 {
   padding: 0 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 640px){
+  .card {
+    width: 520px;
+    height: 400px;
+  }
+  .left img {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 599px){
+  .card {
+    width: 480px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 520px) and (max-width: 559px){
+  .card {
+    width: 440px;
+    height: 380px;
+  }
+  .left img {
+    width: 130px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 519px){
+  .card {
+    width: 400px;
+    height: 370px;
+  }
+  .left img {
+    width: 100px;
+  }
+  .softeam__texto {
+    font-size: 25px;
+  }
+  .softeam {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 479px){
+  .card {
+    width: 350px;
+    height: 340px;
+  }
+  .vertical {
+    height: 340px;
+  }
+  .left img {
+    width: 120px;
+  }
+  .softeam__texto {
+    font-size: 25px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 10px;
+    font-size: large;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 439px){
+  .card {
+    width: 340px;
+    height: 300px;
+  }
+  .vertical {
+    height: 300px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .softeam__texto {
+    font-size: 25px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 10px;
+    font-size: large;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 420px){
+  .card {
+    width: 320px;
+    height: 300px;
+  }
+  .vertical {
+    height: 300px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .softeam__texto {
+    font-size: 25px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 10px;
+    font-size: large;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 399px){
+  .card {
+    width: 300px;
+    height: 280px;
+  }
+  .vertical {
+    height: 280px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .softeam__texto {
+    font-size: 25px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 10px;
+    font-size: large;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 379px){
+  .card {
+    width: 280px;
+    height: 270px;
+  }
+  .vertical {
+    height: 270px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .softeam__texto {
+    font-size: 25px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 1px;
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 330px) and (max-width: 359px){
+  .card {
+    width: 260px;
+    height: 250px;
+  }
+  .vertical {
+    height: 250px;
+  }
+  .left img {
+    width: 80px;
+  }
+  .softeam__texto {
+    font-size: 20px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 1px;
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 311px) and (max-width: 329px){
+  .card {
+    width: 230px;
+    height: 230px;
+  }
+  .vertical {
+    height: 230px;
+  }
+  .left img {
+    width: 70px;
+  }
+  .softeam__texto {
+    font-size: 15px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 1px;
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 291px) and (max-width: 310px){
+  .card {
+    width: 230px;
+    height: 230px;
+  }
+  .vertical {
+    height: 230px;
+  }
+  .left img {
+    width: 70px;
+  }
+  .softeam__texto {
+    font-size: 15px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 1px;
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 290px){
+  .card {
+    width: 210px;
+    height: 230px;
+  }
+  .vertical {
+    height: 230px;
+  }
+  .left img {
+    width: 70px;
+  }
+  .softeam__texto {
+    font-size: 15px;
+  }
+  .softeam {
+    height: 100px;
+  }
+  .right h1 {
+    padding: 0 0;
+    font-size: small;
+  }
 }

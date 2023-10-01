@@ -3,7 +3,7 @@ import CardBugados from "../../assets/CardBugados.svg";
 import ICONbugados from "../../assets/ICONbugados.svg";
 import LOGOBUGADOS from "../../assets/BUGADOS1.png";
 
-function CardB() {
+function CardB({img, name, cargo}) {
   return (
     <div className="overlay">
       <section
@@ -16,17 +16,17 @@ function CardB() {
       }}
     >
       <div className={styles.left}>
-        <img src={ICONbugados} alt="foto de perfil" />
+        <img src={img} alt="foto de perfil" className="fotoPerfil"/>
         <img
           src={LOGOBUGADOS}
           alt="logo da atlética Bugados"
-          className={styles.bugados}
+          className="bugados"
         />
-        <div className={styles.bugados__texto}>BUGADOS</div>
       </div>
       <div className={styles.vertical}></div>
       <div className={styles.right}>
-        <h1>Membro de representação</h1>
+        <h1>{name}</h1>
+        <h2>{cargo}</h2>
       </div>
     </section>
     </div>
