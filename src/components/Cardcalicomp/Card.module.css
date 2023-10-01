@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .card {
+  width: 540px;
+  height: 350px;
   display: grid;
   grid-template-columns: 1fr 0.03fr 3fr;
-  width: 800px;
-  height: 450px;
   font-family: 'Poppins';
+  border-radius: 10px;
 }
 
 .vertical {
   border-left: 5px solid white;
-  height: 430px;
+  height: 350px;
 }
 
 .left {
@@ -31,7 +32,7 @@
 }
 
 .calicomp__texto {
-  font-size: 33px;
+  font-size: 25px;
 }
 
 .right {
@@ -43,4 +44,198 @@
 
 .right h1 {
   padding: 0 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 640px){
+  .card {
+    width: 520px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 599px){
+  .card {
+    width: 480px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 520px) and (max-width: 559px){
+  .card {
+    width: 440px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 519px){
+  .card {
+    width: 400px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 479px){
+  .card {
+    width: 350px;
+    height: 340px;
+  }
+  .vertical {
+    height: 340px;
+  }
+  .left img {
+    width: 120px;
+  }
+  .calicomp__texto{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 439px){
+  .card {
+    width: 340px;
+    height: 250px;
+  }
+  .vertical {
+    height: 250px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .calicomp__texto{
+    font-size: 20px;
+  }
+  .right h1 {
+    padding: 0 10px;
+    font-size: large;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 420px){
+  .card {
+    width: 320px;
+    height: 250px;
+  }
+  .vertical {
+    height: 250px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .calicomp__texto{
+    font-size: 20px;
+  }
+  .right h1 {
+    font-size: large;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 399px){
+  .card {
+    width: 300px;
+    height: 250px;
+  }
+  .vertical {
+    height: 250px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .calicomp__texto{
+    font-size: 20px;
+  }
+  .right h1 {
+    font-size: large;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 379px){
+  .card {
+    width: 280px;
+    height: 250px;
+  }
+  .vertical {
+    height: 250px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .calicomp__texto{
+    font-size: 20px;
+  }
+  .right h1 {
+    font-size: large;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 330px) and (max-width: 359px){
+  .card {
+    width: 260px;
+    height: 250px;
+  }
+  .vertical {
+    height: 250px;
+  }
+  .left img {
+    width: 98px;
+  }
+  .calicomp__texto{
+    font-size: 18px;
+  }
+  .right h1 {
+    font-size: medium;
+    padding: 0 5px;
+  }
+}
+@media screen and (min-width: 311px) and (max-width: 329px){
+  .card {
+    width: 230px;
+    height: 230px;
+  }
+  .vertical {
+    height: 230px;
+  }
+  .left img {
+    width: 90px;
+  }
+  .calicomp__texto{
+    font-size: 15px;
+  }
+  .right h1 {
+    font-size: medium;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (min-width: 291px) and (max-width: 310px){
+  .card {
+    width: 200px;
+    height: 230px;
+  }
+  .vertical {
+    height: 230px;
+  }
+  .left img {
+    width: 90px;
+  }
+  .calicomp__texto{
+    font-size: 12px;
+  }
+  .right h1 {
+    font-size: medium;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 290px){
+  .card {
+    width: 200px;
+    height: 230px;
+  }
+  .vertical {
+    height: 230px;
+  }
+  .left img {
+    width: 90px;
+  }
+  .calicomp__texto{
+    font-size: 10px;
+  }
+  .right h1 {
+    font-size: medium;
+    padding: 0 0;
+  }
 }

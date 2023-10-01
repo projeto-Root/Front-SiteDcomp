@@ -112,7 +112,7 @@ export const members = {
         "members": {
             "Membro1": {
                 "img": anaCalicomp,
-                "name": "Ana Vitória de Almeida Bizo"
+                "name": "Ana Vitória de Almeida Bizo",
             },
             "Membro2": {
                 "img": camiloCalicomp,
@@ -120,7 +120,7 @@ export const members = {
             },
             "Membro3": {
                 "img": augustoCalicomp,
-                "name": "Augusto Cesar Honorato dos Santosv"
+                "name": "Augusto Cesar Honorato dos Santos"
             },
             "Membro4": {
                 "img": edilsonCalicomp,
@@ -152,7 +152,8 @@ export const members = {
             },
             "Membro3": {
                 "img": annaBugados,
-                "name": "Anna Clara"
+                "name": "Anna Clara",
+                "cargo": "Marketing"
             },
             "Membro4": {
                 "img": danielBugados,

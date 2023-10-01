@@ -6,12 +6,18 @@ import Next from "../../assets/next.svg";
 import { profsArea } from "./profsArea"
 import MembersCarrousel from "../../components/MembersCarrousel"
 import Previous from "../../assets/previous.svg";
+import { Modal, Pagination } from "antd";
+import { CardProf } from "../Profs/CardProf";
+import { members } from "../Representations/members";
 
 const AreasSelected = ({ data }) => {
-
+  const [memberSelect, setMemberSelect] = useState()
+  console.log(memberSelect)
+  const [open, setOpen] = useState(false)
   const [widthScreen, setWidthScreen] = useState(window.innerWidth);
-
-  const [orderProfs, setOrderProfs] = useState(Object.values(profsArea["Aprendizado de Máquina"].profsArea));
+  console.log(data)
+  const [orderProfs, setOrderProfs] = useState(Object.values(profsArea[data].profsArea));
+  console.log(orderProfs)
   const handleCircularList = (operation) => {
     if (operation === "next")
       return setOrderProfs([
@@ -35,7 +41,12 @@ const AreasSelected = ({ data }) => {
       window.removeEventListener("resize", updateScreen);
     };
   }, []);
-
+  useEffect(() => {
+    if (orderProfs){
+      setMemberSelect(orderProfs.length == 3 ? 1 : orderProfs.length == 1 ? 0 : 2)
+    }
+    
+  }, [orderProfs])
   return (
     <>
       {data && (
@@ -121,7 +132,7 @@ const AreasSelected = ({ data }) => {
           >
             <img src={Previous} alt="voltar" style={{ width: "100%" }} />
           </button>
-          <MembersCarrousel profs={orderProfs} />
+          <MembersCarrousel members={orderProfs} func={()=>setOpen(!open)}/>
           <button
             style={{
               width: "2.5rem",
@@ -139,6 +150,31 @@ const AreasSelected = ({ data }) => {
           </button>
         </div>
       </div>
+      <Modal
+        open={open}
+        onCancel={() => setOpen(false)}
+        cancelText="Cancel"
+        onOk={() => setOpen(false)}
+        okText="Ok"
+        width={600}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+          {orderProfs.length > 0 && (
+            <CardProf
+              name={orderProfs[orderProfs.length == 3 ? 1 : orderProfs.length == 1 ? 0 : 2].name}
+              areas={orderProfs[orderProfs.length == 3 ? 1 : orderProfs.length == 1 ? 0 : 2].areas}
+              image={orderProfs[orderProfs.length == 3 ? 1 : orderProfs.length == 1 ? 0 : 2].img}
+              isModal={true}
+            />
+          )}
+        </div>
+      </Modal>
     </>
   );
 };

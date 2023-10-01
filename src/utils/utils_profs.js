@@ -31,7 +31,7 @@ import visao from '../assets/visao-computacional.png'
 
 export const profsInfo = [
     {
-        name: 'Aldicineia Aparecida de Oliveira',
+        name: 'Adicineia Aparecida de Oliveira',
         image: 'https://sigaa.ufs.br/sigaa/verFoto?idFoto=2552750&key=9a118fcc3fa898eea8618faa638191cc',
         areas: [
             {

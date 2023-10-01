@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import CardB from "../components/Cardbugados/index"
 
 const MembersCarrousel = ({ members, func }) => {
-  const memberIndexDestacs = 2;
-
+  const memberIndexDestacs = members.length == 3 ? 1 : 2;
   return (
     <div
       style={{
@@ -19,6 +18,31 @@ const MembersCarrousel = ({ members, func }) => {
     >
       {members &&
         members?.map((elem, key) => {
+          if (members.length == 1) {
+            const member = members[0]
+            return (
+              <div
+                onClick={func}
+                key={member}
+                style={{
+                  width: "5.5rem",
+                  height: '5.5rem',
+                  borderRadius: '50%',
+                  overflow: 'hidden'
+                }}
+              >
+                <img
+                  src={member.img}
+                  style={{
+                    width: "100%",
+                    height: '100%',
+                    backgroundColor: "#111",
+                  }}
+                  alt="members"
+                />
+              </div>
+            )
+          } 
           if (key === memberIndexDestacs) {
             return (
               <div
@@ -43,6 +67,7 @@ const MembersCarrousel = ({ members, func }) => {
               </div>
             );
           } else if (
+            members.length < 4 ||
             key === memberIndexDestacs - 1 ||
             key === memberIndexDestacs + 1
           ) {
