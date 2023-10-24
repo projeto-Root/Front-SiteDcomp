@@ -1,3 +1,4 @@
+import "./MembersCarrousel.css"
 import React, { useState } from "react";
 import CardB from "../components/Cardbugados/index"
 
@@ -46,10 +47,10 @@ const MembersCarrousel = ({ members, func }) => {
           if (key === memberIndexDestacs) {
             return (
               <div
+                className="middle-img"
                 key={key}
                 style={{
-                  width: "5.5rem",
-                  height: '5.5rem',
+                  height: '5rem',
                   borderRadius: '50%',
                   overflow: 'hidden'
                 }}
@@ -73,12 +74,9 @@ const MembersCarrousel = ({ members, func }) => {
           ) {
             return (
               <div
+                className="side-img"
                 key={key}
                 style={{
-                  width: "3.5rem",
-                  height: '3.5rem',
-                  borderRadius: '50%',
-                  overflow: 'hidden'
                 }}
               >
                 <img

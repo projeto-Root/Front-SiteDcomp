@@ -75,7 +75,7 @@ const Representations = ({ data }) => {
             return <CardGeneric maximize={true} key={key} data={elem} link={elem.link} />;
           })}
       </section>
-      <section>
+      <section className="members-carrousel">
         {data?.title != "Softeam" && (
           <>
             <h2
@@ -104,7 +104,7 @@ const Representations = ({ data }) => {
                 <button className="anterior"
                   onClick={() => handleCircularList("previous")}
                 >
-                  <img src={Previous} alt="voltar" style={{ width: "100%" }} />
+                  <img src={Previous} alt="voltar" style={{ width: "100%"}} />
                 </button>
                 <MembersCarrousel members={orderMembers} func={() => setShowModal(!showModal)}/>
                 <button className="posterior"
@@ -134,7 +134,7 @@ const Representations = ({ data }) => {
       <Modal
         open={showModal}
         onCancel={() => setShowModal(false)}
-        width={600}
+        width={"fit-content"}
       >
         {data.title.toUpperCase() == "BUGADOS" ? <CardB name={orderMembers[2].name} img={orderMembers[2].img} cargo={orderMembers[2].cargo}/> : <CardC name={orderMembers[2].name} img={orderMembers[2].img} cargo={orderMembers[2].cargo}/>}
       </Modal>

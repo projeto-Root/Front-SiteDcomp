@@ -33,8 +33,10 @@
   font-weight: bold;
 }
 
+
 .left img {
-  width: 140px;
+  width: 120px;
+  border-radius: 10px;
 }
 
 .bugados__texto {
@@ -50,7 +52,9 @@
 .right h1 {
   font-size: larger;
   padding: 0 10px;
+  text-align: start;
 }
+
 @media screen and (min-width: 600px) and (max-width: 640px){
   .card {
     width: 520px;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CardProf } from "./CardProf";
+import { CardModalProf } from "./CardModalProf";
 import { profsInfo } from "../../utils/utils_profs";
 import { Modal, Pagination } from "antd";
 import { Spinner } from "@chakra-ui/react";
@@ -117,11 +118,11 @@ export const Profs = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
           }}
         >
           {dataProf && (
-            <CardProf
+            <CardModalProf
               name={dataProf.name}
               areas={dataProf.areas}
               image={dataProf.image}

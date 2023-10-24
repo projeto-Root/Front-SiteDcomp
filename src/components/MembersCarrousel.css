@@ -1,0 +1,22 @@
+.middle-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.side-img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+@media (max-width:376px) {
+    .middle-img{
+        width: 6rem;
+    }
+    .side-img{
+        width: 3rem;
+    }
+}
