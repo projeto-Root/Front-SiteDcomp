@@ -113,30 +113,37 @@ export const members = {
             "Membro1": {
                 "img": anaCalicomp,
                 "name": "Ana Vitória de Almeida Bizo",
+                "cargo": "Diretora de Marketing"
             },
             "Membro2": {
                 "img": camiloCalicomp,
-                "name": "Antonio Camilo Santos Feitosa"
+                "name": "Antonio Camilo Santos Feitosa",
+                "cargo": "Secretário Geral"
             },
             "Membro3": {
                 "img": augustoCalicomp,
-                "name": "Augusto Cesar Honorato dos Santos"
+                "name": "Augusto Cesar Honorato dos Santos",
+                "cargo": "Diretor de Sistemas de Informação"
             },
             "Membro4": {
                 "img": edilsonCalicomp,
-                "name": "Edilson Leite Santos Junior"
+                "name": "Edilson Leite Santos Junior",
+                "cargo": "Diretor de Ciência da Computação"
             },
             "Membro5": {
                 "img": emilyCalicomp,
-                "name": "Emilly Maria Santos Luna"
+                "name": "Emilly Maria Santos Luna",
+                "cargo": "Diretor de Ciência da Computação"
             },
             "Membro6": {
                  "img": gustavoCalicomp,
-                 "name": "Luiz Gustavo Sampaio Sá Caldas"
+                 "name": "Luiz Gustavo Sampaio Sá Caldas",
+                 "cargo": "Diretor de Engenharia de Computação"
             },
             "Membro7": {
                 "img": pauloCalicomp,
-                "name": "Paulo Henrique Barreto dos Santos"
+                "name": "Paulo Henrique Barreto dos Santos",
+                "cargo": "Presidente"
             }
         }
     },
@@ -144,68 +151,83 @@ export const members = {
         "members": {
             "Membro1": {
                 "img": alexBugados,
-                "name": "Álex Matheus"
+                "name": "Álex Matheus",
+                "cargo": "Secretário de Esportes"
             },
             "Membro2": {
                 "img": anaBugados,
-                "name": "Ana Bizo"
+                "name": "Ana Bizo",
+                "cargo": "Diretora de Marketing"
             },
             "Membro3": {
                 "img": annaBugados,
                 "name": "Anna Clara",
-                "cargo": "Marketing"
+                "cargo": "Secretária de Marketing"
             },
             "Membro4": {
                 "img": danielBugados,
-                "name": "Daniel D'Ávilla"
+                "name": "Daniel D'Ávilla",
+                "cargo": "Vice Diretor de Eventos"
             },
             "Membro5": {
                 "img": deanBugados,
-                "name": "Dean Vinícius"
+                "name": "Dean Vinícius",
+                "cargo": "Diretor de Esportes"
             },
             "Membro6": {
                 "img": gabryelBugados,
-                "name": "Gabryel de Jesus"
+                "name": "Gabryel de Jesus",
+                "cargo": "Vice Presidente"
             },
             "Membro7": {
                 "img": joaoBugados,
-                "name": "João Vitor"
+                "name": "João Vitor",
+                "cargo": "Diretor de Patrimônio"
             },
             "Membro8": {
                 "img": laurenBugados,
-                "name": "Lauren Victoria"
+                "name": "Lauren Victoria",
+                "cargo": "Diretora de Eventos"
             },
             "Membro9": {
                 "img": luanBugados,
-                "name": "Luan Meireles"
+                "name": "Luan Meireles",
+                "cargo": "Secretário de Eventos"
             },
             "Membro10": {
                 "img": lucioBugados,
-                "name": "Lucio Melo"
+                "name": "Lucio Melo",
+                "cargo": "Secretário de Finanças"
             },
             "Membro11": {
                 "img": manoelBugados,
-                "name": "Manoel Vítor"
+                "name": "Manoel Vítor",
+                "cargo": "Diretor de vendas"
             },
             "Membro12": {
                 "img": mariaBugados,
-                "name": "Maria Luiza"
+                "name": "Maria Luiza",
+                "cargo": "Diretora de E-sports"
             },
             "Membro13": {
                 "img": ryanBugados,
-                "name": "Ryan Oliveira"
+                "name": "Ryan Oliveira",
+                "cargo": "Secretário de Vendas"
             },
             "Membro14": {
                 "img": victor,
-                "name": "Victor Benevides"
+                "name": "Victor Benevides",
+                "cargo": "Presidente"
             },
             "Membro15": {
                 "img": virnaBugados,
-                "name": "Virna Oliveira"
+                "name": "Virna Oliveira",
+                "cargo": "Diretora Geral"
             },
             "Membro16": {
                 "img": vitorBugados,
-                "name": "Vitor Pinho"
+                "name": "Vitor Pinho",
+                "cargo": "Secretário de E-sports"
             }
         }
     }

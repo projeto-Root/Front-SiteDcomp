@@ -7,7 +7,7 @@ import { profsArea } from "./profsArea"
 import MembersCarrousel from "../../components/MembersCarrousel"
 import Previous from "../../assets/previous.svg";
 import { Modal, Pagination } from "antd";
-import { CardProf } from "../Profs/CardProf";
+import { CardModalProf } from "../Profs/CardModalProf";
 import { members } from "../Representations/members";
 
 const AreasSelected = ({ data }) => {
@@ -166,7 +166,7 @@ const AreasSelected = ({ data }) => {
           }}
         >
           {orderProfs.length > 0 && (
-            <CardProf
+            <CardModalProf
               name={orderProfs[orderProfs.length == 3 ? 1 : orderProfs.length == 1 ? 0 : 2].name}
               areas={orderProfs[orderProfs.length == 3 ? 1 : orderProfs.length == 1 ? 0 : 2].areas}
               image={orderProfs[orderProfs.length == 3 ? 1 : orderProfs.length == 1 ? 0 : 2].img}
