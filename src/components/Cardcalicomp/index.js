@@ -8,7 +8,6 @@ function Card({name, img, cargo}) {
             <div className={styles.left}>
                 <img src={img} alt="foto de perfil" />
                 <img src={LOGOCALICOMP} alt="Logo do CALICOMP"/>
-                <div className={styles.calicomp__texto}>CALICOMP</div>
             </div>
             <div className={styles.vertical}></div>
             <div className={styles.right}>

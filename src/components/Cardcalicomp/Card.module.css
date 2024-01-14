@@ -24,11 +24,14 @@
   background-color: #bb6197;
   color: white;
   font-size: 20px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .left img {
-  width: 180px;
+  width: 120px;
+  height: 120px;
   padding: 3px;
+  border-radius: 10px;
 }
 
 .calicomp__texto {
@@ -40,10 +43,18 @@
   background-image: linear-gradient(to right, #a23e7a 40%, #983e7e, #723a81);
   color: white;
   padding-left: 20px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .right h1 {
   padding: 0 10px;
+  text-align: center;
+}
+
+.right h2{
+  padding-top: 30px;
+  text-align: start;
+  padding: 10px;
 }
 
 @media screen and (min-width: 600px) and (max-width: 640px){
@@ -69,6 +80,10 @@
     width: 400px;
     height: 350px;
   }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 440px) and (max-width: 479px){
   .card {
@@ -80,6 +95,10 @@
   }
   .left img {
     width: 120px;
+  }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
   }
   .calicomp__texto{
     font-size: 20px;
@@ -93,11 +112,23 @@
   .vertical {
     height: 250px;
   }
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+    font-weight: bold;
+  }
   .left img {
     width: 98px;
   }
   .calicomp__texto{
     font-size: 20px;
+  }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
   }
   .right h1 {
     padding: 0 10px;
@@ -118,6 +149,10 @@
   .calicomp__texto{
     font-size: 20px;
   }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
+  }
   .right h1 {
     font-size: large;
     padding: 0 10px;
@@ -133,9 +168,14 @@
   }
   .left img {
     width: 98px;
+    height: 100px;
   }
   .calicomp__texto{
     font-size: 20px;
+  }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
   }
   .right h1 {
     font-size: large;
@@ -151,14 +191,19 @@
     height: 250px;
   }
   .left img {
-    width: 98px;
+    width: 100px;
+    height: 90px;
   }
   .calicomp__texto{
     font-size: 20px;
   }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
+  }
   .right h1 {
-    font-size: large;
-    padding: 0 10px;
+    font-size: medium;
+    padding: 0 5px;
   }
 }
 @media screen and (min-width: 330px) and (max-width: 359px){
@@ -170,10 +215,15 @@
     height: 250px;
   }
   .left img {
-    width: 98px;
+    width: 100px;
+    height: 90px;
   }
   .calicomp__texto{
     font-size: 18px;
+  }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
   }
   .right h1 {
     font-size: medium;
@@ -188,15 +238,23 @@
   .vertical {
     height: 230px;
   }
+  .left{
+    width: 70px;
+  }
   .left img {
-    width: 90px;
+    width: 100px;
+    height: 90px;
   }
   .calicomp__texto{
     font-size: 15px;
   }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
+  }
   .right h1 {
     font-size: medium;
-    padding: 0 5px;
+    padding: 0 10px;
   }
 }
 
@@ -208,11 +266,17 @@
   .vertical {
     height: 230px;
   }
-  .left img {
-    width: 90px;
+  .left{
+    width: 70px;
   }
-  .calicomp__texto{
-    font-size: 12px;
+  .left img {
+    width: 70px;
+    height: 65px;
+    border-radius: 10px;
+  }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
   }
   .right h1 {
     font-size: medium;
@@ -228,14 +292,21 @@
   .vertical {
     height: 230px;
   }
-  .left img {
-    width: 90px;
+  .left{
+    width: 70px;
   }
-  .calicomp__texto{
-    font-size: 10px;
+  .left img {
+    width: 70px;
+    height: 90px;
+    border-radius: 10px;
+  }
+  .right {
+    padding-left: 2px;
+    font-size: 14px;
   }
   .right h1 {
-    font-size: medium;
-    padding: 0 0;
+    font-size: medium ;
+    padding: 0 10px;
+    text-align: center;
   }
 }
