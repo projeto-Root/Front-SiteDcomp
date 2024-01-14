@@ -1,50 +1,62 @@
 .representation {
-    text-align: justify;
-    font-weight: 300;
-    font-size: 14px;
-    margin-top: 1rem;
-    max-width: 1200px;
-    padding: 0rem 4rem;
-  }
+  text-align: justify;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 1rem;
+  max-width: 1200px;
+  padding: 0rem 4rem;
+}
 
 .anterior {
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: .8rem;
-  border-radius: 50%;
-  border: 1px solid #333;
-  background-color: #fff;
-  cursor: pointer;
-  margin-top: 3rem;
+width: 2.5rem;
+height: 2.5rem;
+padding: .8rem;
+border-radius: 50%;
+border: 1px solid #333;
+background-color: #fff;
+cursor: pointer;
+margin-top: 3rem;
 }
 
 .posterior {
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: .8rem;
-  border-radius: 50%;
-  border: 1px solid #333;
-  background-color: #fff;
-  cursor: pointer;
-  margin-top: 3rem;
+width: 2.5rem;
+height: 2.5rem;
+padding: .8rem;
+border-radius: 50%;
+border: 1px solid #333;
+background-color: #fff;
+cursor: pointer;
+margin-top: 3rem;
 }
 
 @media (max-width: 380px) {
-    .representation {
-        max-width: 800px;
-        padding: 0rem 2rem;
-      }
-    .anterior {
-      width: 2rem;
-      height: 2rem;
+  .representation {
+      max-width: 800px;
+      padding: 0rem 2rem;
     }
-    .posterior {
-      width: 2rem;
-      height: 2rem;
-    }
-    .members-carrousel{
-      width: 320px;
-    }
+  .anterior {
+    width: 2rem;
+    height: 2rem;
+  }
+  .posterior {
+    width: 2rem;
+    height: 2rem;
+  }
+  .members-carrousel{
+    width: 320px;
+  }
+  
     
-      
+}
+
+@media screen and (min-width: 280px) and (max-width: 300px) {
+.members-carrousel{
+  width: 280px;
+}
+}
+
+@media screen and (min-width: 300px) and (max-width: 320px){
+.members-carrousel{
+  width: 300px;
+}
 }
